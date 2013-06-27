@@ -1,0 +1,20 @@
+/* ICONS 27
+---------------------------------------------------------------------------------------------------- */
+.ico-27 {
+  background: url('/img/ico-27.png') no-repeat;
+  display: inline-block;
+  height: 27px;
+  width: 27px;
+}
+.ico-27.__dashboards {background-position: 0 0;}
+.ico-27.__messages   {background-position: -27px 0;}
+.ico-27.__calendar   {background-position: -54px 0;}
+.ico-27.__items      {background-position: -81px 0;}
+.ico-27.__classmates {background-position: -108px 0;}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+  .ico-27 {
+    background: url('/img/ico-27@2x.png') no-repeat;
+    background-size: cover;
+  }
+}

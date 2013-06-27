@@ -1,4 +1,4 @@
-markup_skycampus
-================
+SkyCampus
+========
 
-Верстка проекта "skycampus.com"
+Верстка проекта "SkyCampus"

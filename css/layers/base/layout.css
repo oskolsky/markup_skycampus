@@ -1,0 +1,82 @@
+html {height: 100%;}
+
+button, input, select, textarea, th, td {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* CONTAINER
+---------------------------------------------------------------------------------------------------- */
+.ctn {
+  /*margin: 0 auto;*/
+  width: 700px;
+}
+
+/* MODULE
+---------------------------------------------------------------------------------------------------- */
+.mod {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* COLUMNS
+---------------------------------------------------------------------------------------------------- */
+.cols {margin: 0 0 -20px -20px;}
+ 
+  /* Gutter */
+  .cols > [class*="cols-"] {
+    margin: 0 0 20px 20px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+ 
+  /* Width */
+  .cols-1  {width: 60px;}
+  .cols-2  {width: 140px;}
+  .cols-3  {width: 220px;}
+  .cols-4  {width: 300px;}
+  .cols-5  {width: 380px;}
+  .cols-6  {width: 460px;}
+  .cols-7  {width: 540px;}
+  .cols-8  {width: 620px;}
+  .cols-9  {width: 700px;}
+  .cols-10 {width: 780px;}
+  .cols-11 {width: 860px;}
+  .cols-12 {width: 940px;}
+ 
+  /* Offset */
+  .offset-1  {margin-left: 80px;}
+  .offset-2  {margin-left: 160px;}
+  .offset-3  {margin-left: 240px;}
+  .offset-4  {margin-left: 320px;}
+  .offset-5  {margin-left: 400px;}
+  .offset-6  {margin-left: 480px;}
+  .offset-7  {margin-left: 560px;}
+  .offset-8  {margin-left: 640px;}
+  .offset-9  {margin-left: 720px;}
+  .offset-10 {margin-left: 800px;}
+  .offset-11 {margin-left: 880px;}
+  .offset-12 {margin-left: 960px;}
+ 
+  .cols > .offset-1  {margin-left: 100px !important;}
+  .cols > .offset-2  {margin-left: 180px !important;}
+  .cols > .offset-3  {margin-left: 260px !important;}
+  .cols > .offset-4  {margin-left: 340px !important;}
+  .cols > .offset-5  {margin-left: 420px !important;}
+  .cols > .offset-6  {margin-left: 500px !important;}
+  .cols > .offset-7  {margin-left: 580px !important;}
+  .cols > .offset-8  {margin-left: 660px !important;}
+  .cols > .offset-9  {margin-left: 740px !important;}
+  .cols > .offset-10 {margin-left: 820px !important;}
+  .cols > .offset-11 {margin-left: 900px !important;}
+  .cols > .offset-12 {margin-left: 980px !important;}
+
+/* BOTTOM INDENT
+---------------------------------------------------------------------------------------------------- */
+.m-b_2  {margin-bottom: 2rem !important;}
+.m-b_4  {margin-bottom: 4rem !important;}
+.m-b_6  {margin-bottom: 6rem !important;}
+.m-b_8  {margin-bottom: 8rem !important;}
+.m-b_10 {margin-bottom: 10rem !important;}
