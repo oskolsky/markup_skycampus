@@ -313,6 +313,7 @@
 }
 .table_d_tr {
   background: #fafafc;
+  cursor: pointer;
 }
 .table_d_tr:nth-child(2n) {
   background: #fff;
