@@ -118,7 +118,6 @@
   font-weight: 400;
   height: 2.4rem;
   line-height: 2.4rem;
-  padding: 0 1.3rem;
   vertical-align: middle;
 }
 .nav_prev, .nav_next {
@@ -134,8 +133,14 @@
     background-size: cover;
   }
 }
-.nav_prev {background-position: 0 0;}
-.nav_next {background-position: -11px 0;}
+.nav_prev {
+  background-position: 0 0;
+  margin-right: 1.3rem;
+}
+.nav_next {
+  background-position: -11px 0;
+  margin-left: 1.3rem;
+}
 
 /* Menu */
 /* to-do: refactoring */
