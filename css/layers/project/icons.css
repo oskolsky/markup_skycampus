@@ -17,6 +17,22 @@
   }
 }
 
+/* ICONS 9
+---------------------------------------------------------------------------------------------------- */
+.ico-9 {
+  background: url('/img/ico-9.png') no-repeat;
+  display: inline-block;
+  height: 9px;
+  width: 9px;
+}
+.ico-9.__star {background-position: 0 0;}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+  .ico-9 {
+    background: url('/img/ico-9@2x.png') no-repeat;
+    background-size: cover;
+  }
+}
 /* ICONS 27
 ---------------------------------------------------------------------------------------------------- */
 .ico-27 {

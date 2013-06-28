@@ -8,16 +8,17 @@
     <!--#include virtual="/views/layouts/_alerts.html" -->
     <!--#include virtual="/views/layouts/_header.html" -->
     <!--#include virtual="/views/layouts/_sidebar.html" -->
-    <!--#include virtual="/views/index/_navigation.html" -->
+    <!--#include virtual="/views/schedule/_navigation.html" -->
     <section id="section" class="section" role="main">
       <div class="ctn">
         <div class="cols">
           <div class="cols-9 mod">
             <h1 class="section_t">Расписание<span>лекции и семинары проходят по <b>нечетным</b> неделям</span></h1>
-          </div><div class="cols-9 mod">
-
-
-
+          </div><div class="cols-6 mod">
+            <!--#include virtual="/views/schedule/_schedule.html" -->
+            <!--#include virtual="/views/schedule/_notify.html" -->
+          </div><div class="cols-3 mod">
+            <!--#include virtual="/views/schedule/_datepiker.html" -->
           </div>
         </div>
       </div>

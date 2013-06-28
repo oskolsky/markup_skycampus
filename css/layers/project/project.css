@@ -6,7 +6,7 @@
   height: 7rem;
   padding: 0 3rem;
   position: relative;
-  text-shadow: .1em .1em .2em #999;
+  /*text-shadow: .1em .1em .2em #999;*/
   z-index: 9999;
 }
 .header_left {
@@ -162,31 +162,36 @@
   padding: 0 1rem;
   position: relative;
   text-decoration: none;
-  text-shadow: .1em .1em .2em #999;
+  /*text-shadow: .1em .1em .2em #999;*/
 }
 .nav_menu_i_a:hover, .nav_menu_i_a.__current {
   background: #575f73;
-  border-right: 1px solid transparent;
-  color: #c9cfe0;
+  border-color: transparent !important;
+  color: #fff;
 }
-/*.nav_menu_i_a.__current:before {*/
-  /*content: '';*/
-  /*border-left:   .5rem solid transparent;*/
-  /*border-right:  .5rem solid transparent;*/
-  /*border-bottom: .5rem solid #f0f1f5;*/
-  /*bottom: -1.8rem;*/
-  /*height: 0;*/
-  /*left: 50%;*/
-  /*margin-left: -.5rem;*/
-  /*position: absolute;  */
-  /*width: 0;*/
-/*}*/
+
 .nav_menu_i:first-child .nav_menu_i_a {border-radius: .3em 0 0 .3em;}
 .nav_menu_i:last-child  .nav_menu_i_a {border-radius: 0 .3em .3em 0;}
 
-/* __grey */
+/* __default */
 .nav_menu.__default .nav_menu_i_a {background: #6c788c; border-color: #646f82;}
 .nav_menu.__default .nav_menu_i_a:hover, .nav_menu.__default .nav_menu_i_a.__current {background: #575f73;}
+
+/* __color */
+.nav_menu.__color .nav_menu_i_a {background: #07a6a6; border-color: #069797;}
+.nav_menu.__color .nav_menu_i_a:hover, .nav_menu.__color .nav_menu_i_a.__current {background: #575f73; position: relative;}
+.nav_menu.__color .nav_menu_i_a.__current:before {
+  content: '';
+  border-left:   .5rem solid transparent;
+  border-right:  .5rem solid transparent;
+  border-bottom: .5rem solid #f0f1f5;
+  bottom: -1.8rem;
+  height: 0;
+  left: 50%;
+  margin-left: -.5rem;
+  position: absolute;
+  width: 0;
+}
 
 /* SIDEBAR
 ---------------------------------------------------------------------------------------------------- */
@@ -218,7 +223,7 @@
   padding: 0 3rem;
   position: relative;
   text-decoration: none;
-  text-shadow: .1em .1em .2em #3e414b;
+  /*text-shadow: .1em .1em .2em #3e414b;*/
 }
 .menu_i_a:hover, .menu_i_a.__current {
   background: #4c4f5c;
@@ -286,6 +291,33 @@
   color: #9aa1b1;
 }
 
+/* SCHEDULE
+---------------------------------------------------------------------------------------------------- */
+.schedule {
+ margin-bottom: 4rem;
+}
+.schedule_t {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.schedule_t > b {
+  font-family: "gotham_probold", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+/* Progress */
+.schedule_progress:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.schedule_progress_label {
+  color: #9aa1b1;
+}
+.schedule_progress_label > b {
+  color: #575f73;
+  font-family: "gotham_probold", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
 /* TABLE
 ---------------------------------------------------------------------------------------------------- */
 .table {
@@ -335,6 +367,18 @@
   vertical-align: middle;
 }
 
+/* NOTIFY
+---------------------------------------------------------------------------------------------------- */
+.notify {
+
+}
+.notify_i {
+  line-height: 2.7rem;
+}
+.notify_i_ico {
+  margin-right: .8rem;
+}
+
 /* BADGES
 ---------------------------------------------------------------------------------------------------- */
 .badge {
@@ -382,7 +426,7 @@
   font-family: "gotham_probold", Helvetica, Arial, sans-serif;
   font-weight: 700;
   position: relative;
-  text-shadow: .1em .1em .2em #999;
+  /*text-shadow: .1em .1em .2em #999;*/
 }
 .progress_value_percent {
   font-family: "gotham_proregular", Helvetica, Arial, sans-serif;
