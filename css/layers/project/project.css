@@ -169,18 +169,18 @@
   border-right: 1px solid transparent;
   color: #c9cfe0;
 }
-.nav_menu_i_a.__current:before {
-  content: '';
-  border-left:   .5rem solid transparent;
-  border-right:  .5rem solid transparent;
-  border-bottom: .5rem solid #f0f1f5;
-  bottom: -1.8rem;
-  height: 0;
-  left: 50%;
-  margin-left: -.5rem;
-  position: absolute;  
-  width: 0;
-}
+/*.nav_menu_i_a.__current:before {*/
+  /*content: '';*/
+  /*border-left:   .5rem solid transparent;*/
+  /*border-right:  .5rem solid transparent;*/
+  /*border-bottom: .5rem solid #f0f1f5;*/
+  /*bottom: -1.8rem;*/
+  /*height: 0;*/
+  /*left: 50%;*/
+  /*margin-left: -.5rem;*/
+  /*position: absolute;  */
+  /*width: 0;*/
+/*}*/
 .nav_menu_i:first-child .nav_menu_i_a {border-radius: .3em 0 0 .3em;}
 .nav_menu_i:last-child  .nav_menu_i_a {border-radius: 0 .3em .3em 0;}
 
@@ -256,6 +256,17 @@
 .section_t {
   color: #07a6a6;
 }
+.section_t > span {
+  color: #9aa1b1;
+  font-family: "gotham_proregular", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-left: 2rem;
+  vertical-align: middle;
+}
+.section_t > span > b {
+  color: #575f73;
+}
 
 /* CLASSES
 ---------------------------------------------------------------------------------------------------- */
@@ -263,7 +274,7 @@
 
 }
 .classes_t {
-  font-family: 700 "gotham_probold", Helvetica, Arial, sans-serif;
+  font-family: "gotham_probold", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 2rem;
