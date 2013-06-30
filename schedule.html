@@ -8,7 +8,7 @@
     <!--#include virtual="/views/layouts/_alerts.html" -->
     <!--#include virtual="/views/layouts/_header.html" -->
     <!--#include virtual="/views/layouts/_sidebar.html" -->
-    <!--#include virtual="/views/schedule/_navigation.html" -->
+    <!--#include virtual="/views/classes/common/_navigation.html" -->
     <section id="section" class="section" role="main">
       <div class="ctn">
         <div class="cols">
@@ -16,7 +16,11 @@
             <h1 class="section_t">Расписание<span>лекции и семинары проходят по <b>нечетным</b> неделям</span></h1>
           </div><div class="cols-6 mod">
             <!--#include virtual="/views/schedule/_schedule.html" -->
-            <!--#include virtual="/views/schedule/_notify.html" -->
+            <ul class="notify">
+              <li class="notify_i"><i class="ico-9 __star notify_i_ico"></i>Экзамен пройдет <b>1 июня</b></li>
+              <li class="notify_i"><b>15 мая</b> семинар <b>отменяется</b></li>
+              <li class="notify_i"><b>31 мая</b> лекция <b>отменяется</b></li>
+            </ul>
           </div><div class="cols-3 mod">
             <!--#include virtual="/views/schedule/_datepiker.html" -->
           </div>
