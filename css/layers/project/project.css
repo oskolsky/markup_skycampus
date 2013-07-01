@@ -581,6 +581,7 @@
   background: #abb4c3;
   border: 1px solid #abb4c3 !important;
   color: #fff;
+  cursor: default;
   font-size: 1.1rem;
   letter-spacing: 1px;
   padding-top: .5rem;
