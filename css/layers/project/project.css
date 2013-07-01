@@ -545,6 +545,7 @@
   border: 1px solid #6c788c !important;
   text-align: left;
   padding: 0 2.5rem;
+  white-space: nowrap;
 }
 .table_th.__current {
   background: #575f73;
