@@ -39,21 +39,6 @@
   }
 }
 
-/* ICONS MESSAGE
----------------------------------------------------------------------------------------------------- */
-.ico-message {
-  background: url("/img/ico-message.png") no-repeat;
-  display: inline-block;
-  height: 9px;
-  width: 12px;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  .ico-message {
-    background: url('/img/ico-message@2x.png') no-repeat;
-    background-size: cover;
-  }
-}
-
 /* ICONS 9
 ---------------------------------------------------------------------------------------------------- */
 .ico-9 {
@@ -78,8 +63,11 @@
   display: inline-block;
   height: 12px;
   width: 12px;
+  vertical-align: middle;
 }
-.ico-12.__users {background-position: 0 0;}
+.ico-12.__users    {background-position: 0 0;}
+.ico-12.__message  {background-position: -12px 0;}
+.ico-12.__comments {background-position: -24px 0;}
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   .ico-12 {

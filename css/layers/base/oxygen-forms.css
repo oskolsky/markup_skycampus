@@ -13,6 +13,7 @@ input:focus, select:focus, textarea:focus, button:focus {outline: none;}
 
 /* Button */
 .form_button {
+  border: none;
   border-radius: .3em;
   color: #fff;
   display: inline-block;
@@ -49,6 +50,19 @@ input:focus, select:focus, textarea:focus, button:focus {outline: none;}
 .form_button.__color:not([disabled]):active {
   background: #08b7b7;
 }
+
+/* Textarea */
+.form_textarea {
+  background: #fff;
+  border: 1px solid #e3e5ea;
+  border-radius: .3em;
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 1.5rem;
+}
+
+
+
 
   /*
     <INPUT TYPE="TEXT">,
@@ -264,15 +278,7 @@ input:focus, select:focus, textarea:focus, button:focus {outline: none;}
       
     }
   
-  /* <TEXTAREA></TEXTAREA> */
-  .form_textarea {
-    padding: .3rem .6rem;
-    border: 1px solid #ccc;
-    -webkit-border-radius: .2em;
-            border-radius: .2em;
-    font-size: 1.5rem;
-  }
-  
+
   /* ATTRIBUTES */
   /* Disabled*/
   [disabled] {

@@ -12,6 +12,7 @@ body {
   font-size: 1.2rem;
   line-height: 1.5;
   min-width: 1000px;
+  overflow-y: scroll;
 }
 
 
@@ -23,6 +24,11 @@ hr {
 img {-ms-interpolation-mode: bicubic;}
 
 menu, ol, ul {list-style: none;}
+
+b {
+  font-family: "gotham_probold", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
 
 /* LINKS
 ---------------------------------------------------------------------------------------------------- */

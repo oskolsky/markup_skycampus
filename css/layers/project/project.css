@@ -295,10 +295,6 @@
   font-size: 1.4rem;
   margin-bottom: .5rem;
 }
-.activity_t > b {
-  font-family: "gotham_probold", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-}
 
 /* Progress */
 .activity_progress:not(:last-child) {
@@ -314,10 +310,6 @@
   font-size: 1.4rem;
   margin-bottom: 1rem;
 }
-.schedule_t > b {
-  font-family: "gotham_probold", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-}
 
 /* Progress */
 .schedule_progress:not(:last-child) {
@@ -325,24 +317,65 @@
 }
 .schedule_progress_label > b {
   color: #575f73;
+}
+
+/* TASKS
+---------------------------------------------------------------------------------------------------- */
+.tasks {
+
+}
+.tasks .table_td {
+  vertical-align: top;
+}
+.tasks .table_d_tr {
+  cursor: default;
+}
+
+/* Description switch */
+.tasks_switch {
+  color: #575f73;
+  display: inline-block;
   font-family: "gotham_probold", Helvetica, Arial, sans-serif;
   font-weight: 700;
+  margin-right: 12px;
+  position: relative;
+  text-decoration: none;
+}
+.tasks_switch:hover {
+  color: #575f73;
+}
+.tasks_switch:before {
+  content: '';
+  background: url("/img/arrow.png") 0 0 no-repeat;
+  height: 9px;
+  left: -25px;
+  position: absolute;
+  top: 4px;
+  width: 13px;
+}
+.tasks_switch.__current:before {
+  background-position: -13px 0;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+  .tasks_switch:before {
+    background: url('/img/arrow@2x.png') 0 0 no-repeat;
+    background-size: cover;
+  }
+}
+
+/* Description */
+.tasks_description {
+  display: none;
+  padding: 2rem 0;
+}
+.tasks_description_tx {
+  margin-bottom: 2rem;
 }
 
 /* FILES
 ---------------------------------------------------------------------------------------------------- */
 .files {
 
-}
-.files_group {
-  border: none !important;
-  background: #abb4c3;
-  color: #fff;
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  padding-top: .5rem !important;
-  padding-bottom: .5rem !important;
-  text-transform: uppercase;
 }
 
 /* TEACHERS
@@ -368,6 +401,7 @@
   font-family: "gotham_proregular", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
+  margin-left: 1rem;
   vertical-align: middle;
 }
 .teachers_i_a {
@@ -376,6 +410,72 @@
 }
 .teachers_i_a:hover {
   color: #9aa1b1;
+}
+
+/* COMMENTS
+---------------------------------------------------------------------------------------------------- */
+.comments {
+
+}
+.comments_i:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.comments_i_avatar {
+  display: inline-block;
+  margin-right: 1.5rem;
+  vertical-align: top;
+}
+.comments_i_avatar > img {
+  vertical-align: top;
+}
+.comments_i_body {
+  background: #f5f6f7;
+  display: inline-block;
+  padding: 1.5rem;
+  position: relative;
+  width: calc(100% - 73px);
+  vertical-align: top;
+}
+.comments_i_body:before {
+  content: '';
+  border-bottom: .5rem solid transparent;
+  border-top:    .5rem solid transparent;
+  border-right:  .5rem solid #f5f6f7;
+  left: -.5rem;
+  position: absolute;
+  top: 1rem;
+  height: 0;
+  width: 0;
+}
+.comments_i_body_user {
+  margin-bottom: .5rem;
+}
+.comments_i_body_message {
+  margin-bottom: .5rem;
+  word-wrap: break-word;
+}
+.comments_i_body_published {
+  color: #9aa1b1;
+}
+.comments_i_body_reply {
+  bottom: 1.5rem;
+  color: #9aa1b1;
+  position: absolute;
+  right: 1.5rem;
+  text-decoration: none;
+}
+.comments_i_body_reply:hover {
+  color: #9aa1b1;
+}
+
+/* Add */
+.comments_i_add {
+  display: inline-block;
+  width: calc(100% - 43px);
+  vertical-align: top;
+}
+.comments_i_add .form_textarea {
+  margin-bottom: 1rem;
 }
 
 /* CHART
@@ -442,6 +542,7 @@
   text-transform: uppercase;
 }
 .table_th {
+  border: 1px solid #6c788c !important;
   text-align: left;
   padding: 0 2.5rem;
 }
@@ -475,6 +576,24 @@
   vertical-align: middle;
 }
 
+/* Group */
+.table_group {
+  background: #abb4c3;
+  border: 1px solid #abb4c3 !important;
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  text-transform: uppercase;
+}
+
+/* Action */
+.table_action {
+  /*border-left: none !important;*/
+  text-align: center;
+}
+
 /* NOTIFY
 ---------------------------------------------------------------------------------------------------- */
 .notify {
@@ -482,10 +601,6 @@
 }
 .notify_i {
   line-height: 2.7rem;
-}
-.notify_i b {
-  font-family: "gotham_probold", Helvetica, Arial, sans-serif;
-  font-weight: 700;
 }
 .notify_i span {
   color: #07a6a6;

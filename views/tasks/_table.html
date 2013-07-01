@@ -1,0 +1,33 @@
+<table class="table tasks">
+  <thead class="table_h">
+    <tr>
+      <th class="table_th"><a href="#" class="table_th_a">Название <i class="ico-sorting __default table_th_sort"></i></a></th>
+      <th class="table_th"><a href="#" class="table_th_a">Тип <i class="ico-sorting __default table_th_sort"></i></a></th>
+      <th class="table_th __current"><a href="#" class="table_th_a">Дата <i class="ico-sorting __bottom table_th_sort"></i></a></th>
+    </tr>
+  </thead>
+  <tbody class="table_b">
+    <!--#include virtual="/views/tasks/_item_group.html" -->
+    <!--#include virtual="/views/tasks/_item.html" -->
+    <!--#include virtual="/views/tasks/_item.html" -->
+    <!--#include virtual="/views/tasks/_item_group.html" -->
+    <!--#include virtual="/views/tasks/_item.html" -->
+    <!--#include virtual="/views/tasks/_item.html" -->
+  </tbody>
+</table>
+<script type="text/javascript">
+  $(function() {
+
+    $('.tasks').find('.tasks_switch').click(function() {
+      if ( $(this).closest('.table_d_tr').find('.tasks_description').is(':hidden') ) {
+        $(this).closest('.table_d_tr').find('.tasks_description').slideDown();
+        $(this).addClass('__current');
+      } else {
+        $(this).closest('.table_d_tr').find('.tasks_description').slideUp();
+        $(this).removeClass('__current');
+      }
+      return false;
+    });
+
+  });
+</script>
