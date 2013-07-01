@@ -17,6 +17,43 @@
   }
 }
 
+/* ICONS FILE
+---------------------------------------------------------------------------------------------------- */
+.ico-file {
+  background: url("/img/ico-file.png") no-repeat;
+  color: #fff;
+  display: inline-block;
+  font-family: "gotham_probold", Helvetica, Arial, sans-serif;
+  font-size: .8rem;
+  font-style: normal;
+  font-weight: 700;
+  height: 24px;
+  line-height: 28px;
+  text-align: center;
+  width: 20px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+  .ico-file {
+    background: url('/img/ico-file@2x.png') no-repeat;
+    background-size: cover;
+  }
+}
+
+/* ICONS MESSAGE
+---------------------------------------------------------------------------------------------------- */
+.ico-message {
+  background: url("/img/ico-message.png") no-repeat;
+  display: inline-block;
+  height: 9px;
+  width: 12px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+  .ico-message {
+    background: url('/img/ico-message@2x.png') no-repeat;
+    background-size: cover;
+  }
+}
+
 /* ICONS 9
 ---------------------------------------------------------------------------------------------------- */
 .ico-9 {
@@ -33,6 +70,24 @@
     background-size: cover;
   }
 }
+
+/* ICONS 12
+---------------------------------------------------------------------------------------------------- */
+.ico-12 {
+  background: url('/img/ico-12.png') no-repeat;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+}
+.ico-12.__users {background-position: 0 0;}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
+  .ico-12 {
+    background: url('/img/ico-12@2x.png') no-repeat;
+    background-size: cover;
+  }
+}
+
 /* ICONS 27
 ---------------------------------------------------------------------------------------------------- */
 .ico-27 {

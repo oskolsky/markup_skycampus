@@ -29,7 +29,7 @@
 
 /* Logo */
 .logo {
-  margin-top: 2rem;
+  margin-top: 2.4rem;
   vertical-align: top;
 }
 
@@ -285,11 +285,24 @@
   font-weight: 700;
   line-height: 2rem;
 }
-.classes_type {
-  color: #9aa1b1;
+
+/* ACTIVITY
+---------------------------------------------------------------------------------------------------- */
+.activity {
+  margin-bottom: 4rem;
 }
-.classes_couple {
-  color: #9aa1b1;
+.activity_t {
+  font-size: 1.4rem;
+  margin-bottom: .5rem;
+}
+.activity_t > b {
+  font-family: "gotham_probold", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+/* Progress */
+.activity_progress:not(:last-child) {
+  margin-bottom: 1rem;
 }
 
 /* SCHEDULE
@@ -310,27 +323,59 @@
 .schedule_progress:not(:last-child) {
   margin-bottom: 1rem;
 }
-.schedule_progress_label {
-  color: #9aa1b1;
-}
 .schedule_progress_label > b {
   color: #575f73;
   font-family: "gotham_probold", Helvetica, Arial, sans-serif;
   font-weight: 700;
 }
 
-/* ACTIVITY
+/* FILES
 ---------------------------------------------------------------------------------------------------- */
-.activity {
-  margin-bottom: 4rem;
+.files {
+
 }
-.activity_t {
-  font-size: 1.4rem;
-  margin-bottom: .5rem;
+.files_group {
+  border: none !important;
+  background: #abb4c3;
+  color: #fff;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  padding-top: .5rem !important;
+  padding-bottom: .5rem !important;
+  text-transform: uppercase;
 }
-.activity_t > b {
-  font-family: "gotham_probold", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+
+/* TEACHERS
+---------------------------------------------------------------------------------------------------- */
+.teachers {
+
+}
+.teachers_i:not(:last-child) {
+  border-bottom: 1px solid #e3e5ea;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+}
+.teachers_i_photo {
+  border-radius: .3em;
+  vertical-align: top;
+}
+.teachers_i_name {
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+.teachers_i_name > span {
+  color: #07a6a6;
+  font-family: "gotham_proregular", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  vertical-align: middle;
+}
+.teachers_i_a {
+  color: #9aa1b1;
+  text-decoration: none;
+}
+.teachers_i_a:hover {
+  color: #9aa1b1;
 }
 
 /* CHART

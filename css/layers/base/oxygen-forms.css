@@ -4,52 +4,51 @@ input:focus, select:focus, textarea:focus, button:focus {outline: none;}
 
 .form {}
 
-  .form_row {margin-bottom: 2rem;}
+.form_row {margin-bottom: 2rem;}
   
-  .form_el.__block {
-    display: block;
-    width: 100%;
-  }
+.form_el.__block {
+  display: block;
+  width: 100%;
+}
 
-  /*
-    <BUTTON></BUTTON>,
-    <INPUT TYPE="BUTTON">,
-    <INPUT TYPE="RESET">,
-    <INPUT TYPE="SUBMIT">
-  */
-  .form_button {
-    padding: .3rem .9rem;
-    background: rgb(238,238,238);
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZGRkZGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(221,221,221,1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(221,221,221,1)));
-    background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(221,221,221,1) 100%);
-    background: -o-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(221,221,221,1) 100%);
-    background: -ms-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(221,221,221,1) 100%);
-    background: linear-gradient(to bottom, rgba(238,238,238,1) 0%,rgba(221,221,221,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#dddddd',GradientType=0);
-    border: 1px solid #ccc;
-    -webkit-border-radius: .2em;
-            border-radius: .2em;
-    cursor: pointer;
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-  .form_button:not([disabled]):hover {
-    -webkit-box-shadow: inset 0 0 .3em rgba(0, 0, 0, .1);
-            box-shadow: inset 0 0 .3em rgba(0, 0, 0, .1);
-  }
-  .form_button:not([disabled]):active {
-    background: rgb(221,221,221);
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RkZGRkZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZWVlZWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top, rgba(221,221,221,1) 0%, rgba(238,238,238,1) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(221,221,221,1)), color-stop(100%,rgba(238,238,238,1)));
-    background: -webkit-linear-gradient(top, rgba(221,221,221,1) 0%,rgba(238,238,238,1) 100%);
-    background: -o-linear-gradient(top, rgba(221,221,221,1) 0%,rgba(238,238,238,1) 100%);
-    background: -ms-linear-gradient(top, rgba(221,221,221,1) 0%,rgba(238,238,238,1) 100%);
-    background: linear-gradient(to bottom, rgba(221,221,221,1) 0%,rgba(238,238,238,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dddddd', endColorstr='#eeeeee',GradientType=0);
-  }
+/* Button */
+.form_button {
+  border-radius: .3em;
+  color: #fff;
+  display: inline-block;
+  font-family: "gotham_probold", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  text-decoration: none;
+}
+
+/* __default */
+.form_button.__default {
+  background: #6c788c;
+  padding: 0 3.8rem;
+}
+.form_button.__default:not([disabled]):hover {
+  background: #7a889f;
+  color: #fff;
+}
+.form_button.__default:not([disabled]):active {
+  background: #7a889f;
+}
+
+/* __color */
+.form_button.__color {
+  background: #07a6a6;
+  padding: 0 1rem;
+}
+.form_button.__color:not([disabled]):hover {
+  background: #08b7b7;
+  color: #fff;
+}
+.form_button.__color:not([disabled]):active {
+  background: #08b7b7;
+}
 
   /*
     <INPUT TYPE="TEXT">,

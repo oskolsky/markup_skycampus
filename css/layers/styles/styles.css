@@ -133,3 +133,6 @@ textarea {resize: none;}
 /* Text-transform */
 .tx.__lower {text-transform: lowercase;}
 .tx.__upper {text-transform: uppercase;}
+
+/* Color */
+.tx.__muted {color: #9aa1b1;}
