@@ -282,6 +282,7 @@
 }
 .messages_i {
   border-bottom: 1px solid #e3e5ea;
+  cursor: pointer;
   padding: 2.5rem 0;
   position: relative;
 }
