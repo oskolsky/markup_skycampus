@@ -273,7 +273,7 @@
 }
 .section_t > span {
   color: #9aa1b1;
-  font-family: "gotham_proregular", Helvetica, Arial, sans-serif;
+  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   margin-left: 2rem;
@@ -558,7 +558,7 @@
 }
 .teachers_i_name > span {
   color: #07a6a6;
-  font-family: "gotham_proregular", Helvetica, Arial, sans-serif;
+  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   margin-left: 1rem;
@@ -685,7 +685,7 @@
 .chart_total:before, .chart_total:after {
   color: #07a6a6;
   display: inline-block;
-  font-family: "gotham_proregular", Helvetica, Arial, sans-serif;
+  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   left: 0;
@@ -826,7 +826,7 @@
   width: 60%;
 }
 .progress_bar > span {
-  font-family: "gotham_proregular", Helvetica, Arial, sans-serif;
+  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   font-weight: 400;
   /*z-index: 999;*/
 }
