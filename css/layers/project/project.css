@@ -7,7 +7,7 @@
   padding: 0 3rem;
   position: relative;
   /*text-shadow: .1em .1em .2em #999;*/
-  z-index: 9999;
+  z-index: 9998;
 }
 .header_left {
   float: left;
@@ -202,7 +202,7 @@
   position: fixed;
   top: 0;
   width: 24rem;
-  z-index: 9998;
+  z-index: 9997;
 }
 
 /* Menu */

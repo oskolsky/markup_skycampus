@@ -23,7 +23,7 @@ $(function() {
   });
 
   /* Close dialog */
-  $('.dialog_close').click(function() {
+  $('.dialog_h_close').click(function() {
     var $this = $(this),
            id = $this.closest('.dialog').attr('id');
     $('#' + id).arcticmodal('close');

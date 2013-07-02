@@ -129,7 +129,7 @@ textarea {resize: none;}
 ---------------------------------------------------------------------------------------------------- */
 /* Font-size */
 .tx.__small {font-size: 1rem;}
-.tx.__large {font-size: 2rem;}
+.tx.__large {font-size: 1.4rem;}
 
 /* Text-align */
 .tx.__left {text-align: left;}

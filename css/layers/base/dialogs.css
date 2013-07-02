@@ -1,14 +1,31 @@
 /* DIALOG
 ---------------------------------------------------------------------------------------------------- */
+.arcticmodal-overlay {
+  z-index: 9999;
+}
 .dialog {
   position: relative;
-  z-index: 1000;
-  padding: 4rem;
-  background: #fff;
+  z-index: 9999;
 }
-  .dialog_close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 1001;
-  }
+.dialog_h {
+  background: #07a6a6;
+  color: #fff;
+  font-size: 1.6rem;
+  height: 5.5rem;
+  line-height: 5.5rem;
+  padding: 0 2.5rem;
+  position: relative;
+}
+.dialog_h_close {
+  background: #038a8a;
+  height: 5.5rem;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 5.5rem;
+}
+.dialog_b {
+  background: #f0f1f5;
+  padding: 4rem 0;
+}
