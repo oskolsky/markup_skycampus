@@ -8,7 +8,7 @@ body {
   background: #f0f1f5;
   color: #575f73;
   font-weight: 400;
-  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
+  font-family: "ltroman", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
   min-width: 1000px;
@@ -20,14 +20,14 @@ hr {
   border: 0;
 }
 
+b {
+  font-family: "ltblack", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
 img {-ms-interpolation-mode: bicubic;}
 
 menu, ol, ul {list-style: none;}
-
-b {
-  font-family: "gotham_probold", Helvetica, Arial, sans-serif;
-  font-weight: 700;
-}
 
 /* LINKS
 ---------------------------------------------------------------------------------------------------- */
@@ -41,8 +41,8 @@ a:active {color: gray;}
 /* HEADERS
 ---------------------------------------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
+  font-family: "ltblack", Helvetica, Arial, sans-serif;
   font-weight: 700;
-  font-family: "gotham_probold", Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
 }
 
