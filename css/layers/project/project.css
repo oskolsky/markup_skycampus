@@ -142,6 +142,15 @@
   margin-left: 1.3rem;
 }
 
+/* Text */
+.nav_tx {
+  color: #fff;
+  margin-left: 3rem;
+  position: relative;
+  top: .4rem;
+  vertical-align: bottom;
+}
+
 /* Menu */
 /* to-do: refactoring */
 .nav_menu {
@@ -334,6 +343,96 @@
 .messages_i.__unread {background: #fff;}
 .messages_i.__unread:before {background: #fff;}
 .messages_i.__unread:after  {background: #fff;}
+
+/* CHAT
+---------------------------------------------------------------------------------------------------- */
+.chat {
+
+}
+.chat_h {
+  margin-bottom: 2rem;
+}
+.chat_b {
+  margin-bottom: 4rem;
+}
+.chat_f {
+
+}
+
+/* List */
+.chat_list {
+
+}
+.chat_list_i {
+  background: #abb4c3;
+  color: #fff;
+  display: inline-block;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  padding: 0 1rem;
+}
+.chat_list_i:not(:last-child) {
+  border-right: 1px solid #98a2b2;
+}
+.chat_list_i:first-child {border-radius: .3rem 0 0 .3rem;}
+.chat_list_i:last-child  {border-radius: 0 .3rem .3rem 0;}
+
+/* Item */
+.chat_i {
+  background: #fff;
+  padding: 1.5rem;
+  position: relative;
+}
+.chat_i:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.chat_i:before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  height: 0;
+  width: 0;
+}
+.chat_i.__left:before  {
+  border-bottom: .5rem solid transparent;
+  border-top:    .5rem solid transparent;
+  border-right:  .5rem solid #fff;
+  left: -.5rem;
+}
+.chat_i.__right:before {
+  border-bottom: .5rem solid transparent;
+  border-top:    .5rem solid transparent;
+  border-left:  .5rem solid #fff;
+  right: -.5rem;
+}
+
+/* Avatar */
+.chat_i_avatar {
+  position: absolute;
+  top: 0;
+}
+.chat_i.__left .chat_i_avatar  {left: -3.8rem;}
+.chat_i.__right .chat_i_avatar {right: -3.8rem;}
+
+/* Head */
+.chat_i_h {
+
+}
+.chat_i_head_a {
+  color: #575f73;
+  text-decoration: none;
+}
+.chat_i_head_a:hover {
+  color: #575f73;
+}
+
+/* Add */
+.chat_add {
+
+}
+.chat_add .form_textarea {
+  margin-bottom: 1rem;
+}
 
 /* CLASSES
 ---------------------------------------------------------------------------------------------------- */
