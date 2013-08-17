@@ -26,17 +26,25 @@
         
         $('#calendar').fullCalendar({
           header: false,
-          firstDay: 1,
           defaultView: 'agendaWeek',
+          firstDay: 1,
+          firstHour: 8,
+          axisFormat: 'H:mm',
           events: '/data/feed.json',
-          editable: true,
+          editable: false,
+          allDayText: 'День',
           monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
           monthNamesShort: ['Янв.','Фев.','Март','Апр.','Май','Июнь','Июль','Авг.','Сент.','Окт.','Ноя.','Дек.'],
           dayNames: ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],
-          dayNamesShort: ['ВС','ПН','ВТ','СР','ЧТ','ПТ','СБ']
+          dayNamesShort: ['ВС','ПН','ВТ','СР','ЧТ','ПТ','СБ'],
+          viewDisplay: function(view) {
+            try {
+              setTimeline();
+            } catch(err) {}
+          }
         });
 
-        getTitle(); // to-do: найти калюак типо onLoad и перевесит туда
+        getTitle(); // to-do: найти калбак типо onLoad и перевесит туда
 
         // Next & Prev click
         $('#nav').find('.nav_a').click(function() {
@@ -66,6 +74,42 @@
           var view = $('#calendar').fullCalendar('getView');
           $('#nav').find('.nav_current').html(view.title);  
         }
+
+        function setTimeline(view) {
+          var parentDiv = jQuery(".fc-agenda-slots:visible").parent();
+          var timeline = parentDiv.children(".timeline");
+          if (timeline.length == 0) { //if timeline isn't there, add it
+            timeline = jQuery("<hr>").addClass("timeline");
+            parentDiv.prepend(timeline);
+          }
+
+          var curTime = new Date();
+
+          var curCalView = jQuery("#calendar").fullCalendar('getView');
+          if (curCalView.visStart < curTime && curCalView.visEnd > curTime) {
+            timeline.show();
+          } else {
+            timeline.hide();
+            return;
+          }
+
+          var curSeconds = (curTime.getHours() * 60 * 60) + (curTime.getMinutes() * 60) + curTime.getSeconds();
+          var percentOfDay = curSeconds / 86400; //24 * 60 * 60 = 86400, # of seconds in a day
+          var topLoc = Math.floor(parentDiv.height() * percentOfDay);
+
+          timeline.css("top", topLoc + "px");
+
+          if (curCalView.name == "agendaWeek") { //week view, don't want the timeline to go the whole way across
+            var dayCol = jQuery(".fc-today:visible");
+            var left = dayCol.position().left + 1;
+            var width = dayCol.width()-2;
+            timeline.css({
+              left: left + "px",
+              width: width + "px"
+            });
+          }
+
+        }        
 
       });
     </script>

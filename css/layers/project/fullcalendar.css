@@ -451,9 +451,10 @@ table.fc-border-separate {
 	}
 	
 .fc-agenda .fc-agenda-axis {
-	color: #fff;
-	width: 50px;
-	padding: 0 4px;
+	background-color: #6c788c; 
+	color: #98a1af;
+	width: 70px;
+	padding: 0 5px;
 	vertical-align: middle;
 	text-align: right;
 	white-space: nowrap;
@@ -520,7 +521,7 @@ table.fc-border-separate {
 	border-top-width: 0;
 	}
 
-.fc-agenda-slots tr.fc-minor th,
+/*.fc-agenda-slots tr.fc-minor th,*/
 .fc-agenda-slots tr.fc-minor td {
 	border-top-style: dotted;
 	}
@@ -595,4 +596,26 @@ table.fc-border-separate {
 	_overflow: hidden;
 	}
 	
-	
+
+/* Timeline
+------------------------------------------------------------------------*/
+
+.timeline {
+  border: none;
+  border-top: 1px solid #68d3d3;
+  left: 20px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+	}
+	.timeline:before {
+		background-color: #68d3d3;
+		border-radius: 50%;
+		content: '';
+		height: 7px;
+		position: absolute;
+		top: -4px;
+		width: 7px;
+	}
