@@ -25,13 +25,9 @@
         var y = date.getFullYear();
         
         $('#calendar').fullCalendar({
-          header: {
-            left: '',
-            center: '',
-            right: ''
-          },
+          header: false,
           firstDay: 1,
-          defaultView: 'agendaWeek',
+          // defaultView: 'agendaWeek',
           events: '/data/feed.json',
           editable: true,
           monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
