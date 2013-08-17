@@ -4,8 +4,10 @@
   background: #07a6a6;
   color: #fff;
   height: 7rem;
+  left: 0;
   padding: 0 3rem;
-  position: relative;
+  position: fixed;
+  right: 0;
   /*text-shadow: .1em .1em .2em #999;*/
   z-index: 9998;
 }
@@ -104,9 +106,14 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
   height: 6rem;
+  left: 0;
   line-height: 6rem;
+  margin-top: 7rem;
   margin-left: 24rem;
   padding: 0 3rem;
+  position: fixed;
+  right: 0;
+  z-index: 9999;
 }
 
 /* Current page */
@@ -265,7 +272,7 @@
 ---------------------------------------------------------------------------------------------------- */
 .section {
   margin-left: 24rem;
-  padding-top: 3rem;
+  padding-top: 16rem;
   padding-left: 3rem;
 }
 .section_t {
@@ -281,6 +288,12 @@
 }
 .section_t > span > b {
   color: #575f73;
+}
+
+/* CALENDAR
+---------------------------------------------------------------------------------------------------- */
+.calendar {
+  padding-right: 3rem;
 }
 
 /* MESSAGES

@@ -21,7 +21,7 @@
 ---------------------------------------------------------------------------------------------------- */
 @import url(/css/media/media.css) all;
 @import url(/css/media/phone.css) all and (max-width: 640px);
-@import url(/css/media/tablet.css) all and (min-width: 641px) and (max-width: 940px);
+@import url(/css/media/tablet.css) all and (min-width: 641px) and (max-width: 1000px);
 
 /* FONTS STOCK
 ---------------------------------------------------------------------------------------------------- */

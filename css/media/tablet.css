@@ -2,3 +2,14 @@
 .visible-desktop {display: none !important;}
 .hidden-desktop,
 .visible-tablet  {display: inherit !important;}
+
+.header {
+  position: relative;
+}
+.nav {
+  margin-top: 0;
+  position: static;
+}
+.section {
+  padding-top: 3rem;
+}
