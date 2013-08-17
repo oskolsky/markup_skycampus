@@ -124,17 +124,6 @@
           var topLoc = Math.floor(parentDiv.height() * percentOfDay);
 
           timeline.css("top", topLoc + "px");
-
-          if (curCalView.name == "agendaWeek") { //week view, don't want the timeline to go the whole way across
-            var dayCol = jQuery(".fc-today:visible");
-            var left = dayCol.position().left + 1;
-            var width = dayCol.width()-2;
-            timeline.css({
-              left: left + "px",
-              width: width + "px"
-            });
-          }
-
         }        
 
       });
