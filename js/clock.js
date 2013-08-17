@@ -7,7 +7,7 @@ function clock() {
 
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById('clock').innerHTML = h + ':' + m + ':' +s;
+  document.getElementById('clock').innerHTML = h + ':' + m;
   t = setTimeout(function() { clock() }, 500);
 }
 
