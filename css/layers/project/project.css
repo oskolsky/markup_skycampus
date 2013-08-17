@@ -295,6 +295,27 @@
 .calendar {
   padding-right: 3rem;
 }
+.calendar_nav {
+
+}
+.calendar_nav_checkbox {
+  margin-top: .4rem;
+}
+.calendar_nav_checkbox_i {
+  margin-right: 2rem;
+}
+.calendar_nav_menu {
+
+}
+.calendar_nav_button {
+  margin-left: 2rem;
+}
+.calendar_nav_button.__settings {
+  padding: 0 .4rem;
+}
+  .calendar_nav_button.__settings .ico-16 {
+    vertical-align: middle;
+  }
 
 /* MESSAGES
 ---------------------------------------------------------------------------------------------------- */

@@ -11,6 +11,26 @@
     <!--#include virtual="/views/calendar/common/_navigation.html" -->
     <section id="section" class="section" role="main">
       <div class="calendar">
+        <nav class="calendar_nav clearfix m-b_2">
+          <div class="f-l calendar_nav_checkbox">
+            <label class="form_label calendar_nav_checkbox_i">
+              <span class="form_checkbox form_el __fake"><input type="checkbox" class="form_checkbox form_el __real"></span>Учебный
+            </label>
+            <label class="form_label calendar_nav_checkbox_i">
+              <span class="form_checkbox form_el __fake"><input type="checkbox" class="form_checkbox form_el __real"></span>Личный
+            </label>
+          </div>
+          <div class="f-r">
+            <menu class="nav_menu __default calendar_nav_menu">
+              <li class="nav_menu_i"><a href="#" class="nav_menu_i_a">Все</a></li>
+              <li class="nav_menu_i"><a href="#" class="nav_menu_i_a">Лекции</a></li>
+              <li class="nav_menu_i"><a href="#" class="nav_menu_i_a">Семинары</a></li>
+              <li class="nav_menu_i"><a href="#" class="nav_menu_i_a">Прочее</a></li>
+            </menu>
+            <a href="#" class="form_button __default calendar_nav_button">Создать событие</a>
+            <a href="#" class="form_button __default calendar_nav_button __settings"><i class="ico-16 __settings"></i></a>            
+          </div>
+        </nav>
         <div id="calendar"></div>
       </div>
     </section>
@@ -38,13 +58,19 @@
           dayNames: ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],
           dayNamesShort: ['ВС','ПН','ВТ','СР','ЧТ','ПТ','СБ'],
           viewDisplay: function(view) {
+            getTitle();
+            var first = true;
+            if (first) {
+              first = false;
+            } else {
+              window.clearInterval(timelineInterval);
+            }
+            timelineInterval = window.setInterval(setTimeline, 60000);
             try {
               setTimeline();
             } catch(err) {}
           }
         });
-
-        getTitle(); // to-do: найти калбак типо onLoad и перевесит туда
 
         // Next & Prev click
         $('#nav').find('.nav_a').click(function() {
