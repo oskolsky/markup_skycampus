@@ -388,6 +388,12 @@
   .dashboard_i_details_time {
     color: #9aa1b1;
   }
+/* _theme */
+.dashboard_i_theme {
+  color: #07a6a6;
+  font-weight: 700;
+  text-align: right;
+}
 /* _caption */
 .dashboard_i_caption {
   background: #fff;
