@@ -290,31 +290,91 @@
   color: #575f73;
 }
 
-/* CALENDAR
+/* DASHBOARD
 ---------------------------------------------------------------------------------------------------- */
-.calendar {
-  padding-right: 3rem;
+.dashboard {
+  position: relative;
 }
-.calendar_nav {
+.dashboard:before {
+  background: #e6e8ed;
+  bottom: 0;
+  content: '';
+  left: 1rem;
+  position: absolute;
+  top: 4.4rem; 
+  width: .2rem;
+}
+
+/* Head */
+.dashboard_h {
+  background: #e6e8ed;
+  border-radius: .3rem;
+  margin-bottom: 6rem;
+  padding: 1.4rem 1rem 1rem;
+}
+.dashboard_h_checkbox {
 
 }
-.calendar_nav_checkbox {
-  margin-top: .4rem;
-}
-.calendar_nav_checkbox_i {
+.dashboard_h_checkbox_i {
   margin-right: 2rem;
 }
-.calendar_nav_menu {
 
+/* Body */
+.dashboard_b {
+  padding-left: 4rem;
 }
-.calendar_nav_button {
-  margin-left: 2rem;
+
+/* Date */
+.dashboard_date {
+  background: #e6e8ed;
+  border-radius: .3rem;
+  color: #5f6678;
+  display: inline-block;
+  font-weight: 700;
+  left: -4rem;
+  margin: 1rem 0 2rem;
+  padding: .5rem 1.2rem;
+  position: relative;
 }
-.calendar_nav_button.__settings {
-  padding: 0 .4rem;
+
+/* Item */
+.dashboard_i {
+  border: 1px solid #e5e6e9;
+  border-radius: .3rem;
+  box-shadow: 0 0 1px 1px rgba(231, 232, 235, .3);
+  display: block;
+  position: relative;
 }
-  .calendar_nav_button.__settings .ico-16 {
-    vertical-align: middle;
+.dashboard_i:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.dashboard_i:before {
+  background: #07a6a6;
+  border: .3rem solid #e6e8ed;
+  border-radius: 50%;
+  content: '';
+  height: 1.8rem;
+  left: -4.2rem;
+  position: absolute;
+  top: .5rem;
+  width: 1.8rem;
+}
+/* _header */
+.dashboard_i_h {
+  background: #fafafc;
+  border-bottom: 1px solid #f0f1f5;
+  border-radius: .3rem .3rem 0 0;
+  padding: 1rem;
+}
+/* _caption */
+.dashboard_i_caption {
+  background: #fff;
+  border-radius: 0 0 .3rem .3rem;
+  padding: 2rem;
+}
+  .dashboard_i_caption a {
+    color: #a9add0;
+    text-decoration: none;
   }
 
 /* MESSAGES
@@ -467,6 +527,33 @@
 .chat_add .form_textarea {
   margin-bottom: 1rem;
 }
+
+/* CALENDAR
+---------------------------------------------------------------------------------------------------- */
+.calendar {
+  padding-right: 3rem;
+}
+.calendar_nav {
+
+}
+.calendar_nav_checkbox {
+  margin-top: .4rem;
+}
+.calendar_nav_checkbox_i {
+  margin-right: 2rem;
+}
+.calendar_nav_menu {
+
+}
+.calendar_nav_button {
+  margin-left: 2rem;
+}
+.calendar_nav_button.__settings {
+  padding: 0 .4rem;
+}
+  .calendar_nav_button.__settings .ico-16 {
+    vertical-align: middle;
+  }
 
 /* CLASSES
 ---------------------------------------------------------------------------------------------------- */

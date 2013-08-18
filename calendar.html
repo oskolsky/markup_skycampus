@@ -8,7 +8,7 @@
     <!--#include virtual="/views/layouts/_alerts.html" -->
     <!--#include virtual="/views/layouts/_header.html" -->
     <!--#include virtual="/views/layouts/_sidebar.html" -->
-    <!--#include virtual="/views/calendar/common/_navigation.html" -->
+    <!--#include virtual="/views/calendar/_navigation.html" -->
     <section id="section" class="section" role="main">
       <div class="calendar">
         <nav class="calendar_nav clearfix m-b_2">
@@ -51,6 +51,7 @@
           firstHour: 8,
           axisFormat: 'H:mm',
           events: '/data/feed.json',
+          timeFormat: 'H:mm{ - H:mm}',
           editable: false,
           allDayText: 'День',
           monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],

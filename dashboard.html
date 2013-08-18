@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU" class="no-js">
+  <head>
+    <title>Дэшборд / SkyCampus</title>
+    <!--#include virtual="/views/layouts/_head.html" -->
+  </head>
+  <body>
+    <!--#include virtual="/views/layouts/_alerts.html" -->
+    <!--#include virtual="/views/layouts/_header.html" -->
+    <!--#include virtual="/views/layouts/_sidebar.html" -->
+    <!--#include virtual="/views/dashboard/_navigation.html" -->
+    <section id="section" class="section" role="main">
+      <div class="ctn">
+        <div class="cols">
+          <div class="cols-9 mod">
+            <div class="dashboard">
+              <header class="dashboard_h">
+                <div class="dashboard_h_checkbox">
+                  <label class="form_label dashboard_h_checkbox_i">
+                    <span class="form_checkbox form_el __fake"><input type="checkbox" class="form_checkbox form_el __real" checked></span>Задания
+                  </label>
+                  <label class="form_label dashboard_h_checkbox_i">
+                    <span class="form_checkbox form_el __fake"><input type="checkbox" class="form_checkbox form_el __real" checked></span>Успеваемость
+                  </label>
+                  <label class="form_label dashboard_h_checkbox_i">
+                    <span class="form_checkbox form_el __fake"><input type="checkbox" class="form_checkbox form_el __real" checked></span>Календарь
+                  </label>
+                  <label class="form_label dashboard_h_checkbox_i">
+                    <span class="form_checkbox form_el __fake"><input type="checkbox" class="form_checkbox form_el __real" checked></span>Прочее
+                  </label>
+                </div>
+              </header>
+              <section class="dashboard_b">
+                <div class="dashboard_date">Сегодня</div>
+                <!--#include virtual="/views/dashboard/_item.html" -->
+                <!--#include virtual="/views/dashboard/_item.html" -->
+                <!--#include virtual="/views/dashboard/_item.html" -->
+                <!--#include virtual="/views/dashboard/_item.html" -->
+                <!--#include virtual="/views/dashboard/_item.html" -->
+                <div class="dashboard_date">Вчера</div>
+                <!--#include virtual="/views/dashboard/_item.html" -->
+                <!--#include virtual="/views/dashboard/_item.html" -->
+                <!--#include virtual="/views/dashboard/_item.html" -->
+                <div class="dashboard_date">28.07.2013</div>
+                <!--#include virtual="/views/dashboard/_item.html" -->
+                <!--#include virtual="/views/dashboard/_item.html" -->
+              </section>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--#include virtual="/views/layouts/_footer.html" -->
+  </body>
+</html>
