@@ -366,6 +366,28 @@
   border-radius: .3rem .3rem 0 0;
   padding: 1rem;
 }
+  /* Details */
+  .dashboard_i_details {
+    display: inline-block;
+    line-height: 1.6rem;
+    margin-left: .5rem;
+    vertical-align: top;
+  }
+  /* User */
+  .dashboard_i_details_user {
+
+  }
+  .dashboard_i_details_user_a {
+    color: #575f73;
+    text-decoration: none;
+  }
+  .dashboard_i_details_user_a:hover {
+    color: #575f73;
+  }
+  /* Time */
+  .dashboard_i_details_time {
+    color: #9aa1b1;
+  }
 /* _caption */
 .dashboard_i_caption {
   background: #fff;
