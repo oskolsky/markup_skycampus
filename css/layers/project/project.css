@@ -98,6 +98,22 @@
   vertical-align: top;
 }
 
+/* __online */
+.user-avatar.__online {
+  position: relative;
+}
+.user-avatar.__online:after {
+  background: #07a6a6;
+  border: .2rem solid #fafafc;
+  border-radius: 50%;
+  bottom: -.2rem;
+  content: '';
+  height: .4rem;
+  position: absolute;
+  right: -.2rem;
+  width: .4rem;
+}
+
 /* NAVIGATION
 ---------------------------------------------------------------------------------------------------- */
 .nav {
@@ -358,6 +374,15 @@
   position: absolute;
   top: .5rem;
   width: 1.8rem;
+}
+.dashboard_i:after {
+  background: url(/img/dialog@2x.png) 0 0 no-repeat;
+  content: '';
+  height: 11px;
+  left: -17px;
+  position: absolute;
+  top: 1.1rem;
+  width: 18px;
 }
 /* _header */
 .dashboard_i_h {
