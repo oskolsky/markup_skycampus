@@ -377,12 +377,13 @@
 }
 .dashboard_i:after {
   background: url(/img/dialog@2x.png) 0 0 no-repeat;
+  background-size: cover;
   content: '';
-  height: 11px;
-  left: -17px;
+  height: 6px;
+  left: -9px;
   position: absolute;
-  top: 1.1rem;
-  width: 18px;
+  top: 1.5rem;
+  width: 9px;
 }
 /* _header */
 .dashboard_i_h {
