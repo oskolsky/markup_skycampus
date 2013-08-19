@@ -145,6 +145,7 @@
   background: url(/img/item-arrow.png) no-repeat;
   display: inline-block;
   height: 16px;
+  margin-top: .6rem;
   width: 11px;
   vertical-align: middle;
 }
@@ -629,6 +630,12 @@
 }
 
 /* Progress */
+.activity_progress {
+
+}
+.activity_progress_label {
+  font-weight: 300;
+}
 .activity_progress:not(:last-child) {
   margin-bottom: 1rem;
 }
@@ -716,10 +723,6 @@
   padding-bottom: 3rem;
   margin-bottom: 3rem;
 }
-.teachers_i_photo {
-  border-radius: .3em;
-  vertical-align: top;
-}
 .teachers_i_name {
   font-size: 1.8rem;
   line-height: 2rem;
@@ -727,6 +730,7 @@
 .teachers_i_name > span {
   color: #07a6a6;
   font-size: 1.2rem;
+  font-weight: 400;
   margin-left: 1rem;
   vertical-align: middle;
 }
@@ -769,10 +773,11 @@
   vertical-align: top;
 }
 .comments_i_body {
-  background: #f5f6f7;
+  background: #f0f1f5;
   display: inline-block;
   padding: 1.5rem;
   position: relative;
+  width: 372px; /* Safari fix */
   width: calc(100% - 73px);
   vertical-align: top;
 }
@@ -780,7 +785,7 @@
   content: '';
   border-bottom: .5rem solid transparent;
   border-top:    .5rem solid transparent;
-  border-right:  .5rem solid #f5f6f7;
+  border-right:  .5rem solid #f0f1f5;
   left: -.5rem;
   position: absolute;
   top: 1rem;
@@ -790,12 +795,16 @@
 .comments_i_body_user {
   margin-bottom: .5rem;
 }
+.comments_i_body_user a {
+  text-decoration: none;
+}
 .comments_i_body_message {
   margin-bottom: .5rem;
   word-wrap: break-word;
 }
 .comments_i_body_published {
   color: #9aa1b1;
+  font-weight: 300;
 }
 .comments_i_body_reply {
   bottom: 1.5rem;
@@ -863,19 +872,21 @@
 /* TABLE
 ---------------------------------------------------------------------------------------------------- */
 .table {
+  border: 1px solid #e8e8ea !important;
+  box-shadow: 0 0 0 .1rem #e8e8ea;
   width: 100%;
 }
 
 /* Head */
 .table_h {
   background: #6c788c;
-  font-weight: 600;
   height: 3.6rem;
   line-height: 3.6rem;
   text-transform: uppercase;
 }
 .table_th {
   border: 1px solid #6c788c !important;
+  font-weight: 600;
   text-align: left;
   padding: 0 2.5rem;
   white-space: nowrap;
@@ -884,6 +895,7 @@
   background: #575f73;
 }
 .table_th_a, .table_th_a:hover {
+  color: #fff;
   text-decoration: none;
 }
 .table_th_sort {
@@ -916,6 +928,7 @@
   color: #fff;
   cursor: default;
   font-size: 1.1rem;
+  font-weight: 300;
   padding-top: .5rem;
   padding-bottom: .5rem;
   text-transform: uppercase;
@@ -937,6 +950,7 @@
 }
 .notify_i span {
   color: #07a6a6;
+  font-weight: 600;
 }
 .notify_i_ico {
   margin-right: .8rem;

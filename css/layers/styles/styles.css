@@ -31,7 +31,7 @@ menu, ol, ul {list-style: none;}
 ---------------------------------------------------------------------------------------------------- */
 a {
   display: inline-block;
-  color: mediumblue;
+  color: #575f73;
 }
 /*a:hover  {color: silver;}*/
 /*a:active {color: gray;}*/
