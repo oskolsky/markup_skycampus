@@ -47,8 +47,8 @@
   vertical-align: top;
 }
 .clock_time {
-  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
+  font-weight: 600;
   margin-right: 1.8rem;
 }
 .clock_tx {
@@ -135,8 +135,8 @@
 .nav_current {
   color: #fff;
   display: inline-block;
-  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   font-size: 2.2rem;
+  font-weight: 600;
   height: 2.4rem;
   line-height: 2.4rem;
   vertical-align: middle;
@@ -184,8 +184,8 @@
 .nav_menu_i_a {
   border-right: 1px solid;
   color: #fff;
-  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
+  font-weight: 600;
   height: 2.4rem;
   line-height: 2.4rem;
   padding: 0 1rem;
@@ -233,15 +233,6 @@
   z-index: 9997;
 }
 
-/* Coopyright */
-.copyright {
-  color: #fff;
-  font-size: 1rem;
-  left: 3rem;
-  position: absolute;
-  bottom: 213px;
-}
-
 /* Menu */
 .menu {
 
@@ -252,8 +243,8 @@
 .menu_i_a {
   color: #fff;
   display: block;
-  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
+  font-weight: 600;
   height: 4.6rem;
   line-height: 4.6rem;
   padding: 0 3rem;
@@ -347,7 +338,7 @@
   border-radius: .3rem;
   color: #5f6678;
   display: inline-block;
-  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
+  font-weight: 600;
   left: -4rem;
   margin: 1rem 0 2rem;
   padding: .5rem 1.2rem;
@@ -398,7 +389,7 @@
   .dashboard_i_details {
     display: inline-block;
     line-height: 1.6rem;
-    margin-left: .5rem;
+    margin-left: .6rem;
     vertical-align: top;
   }
   /* User */
@@ -412,11 +403,15 @@
   /* Time */
   .dashboard_i_details_time {
     color: #9aa1b1;
+    font-weight: 300;
+  }
+  .dashboard_i_details_time_ico {
+    margin-right: .4rem;
   }
 /* _theme */
 .dashboard_i_theme {
   color: #07a6a6;
-  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
+  font-weight: 600;
   position: absolute;
   right: 1.5rem;
   top: 50%;
@@ -618,8 +613,8 @@
 
 }
 .classes_t {
-  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
+  font-weight: 600;
   line-height: 2rem;
 }
 
@@ -672,7 +667,7 @@
 .tasks_switch {
   color: #575f73;
   display: inline-block;
-  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
+  font-weight: 600;
   margin-right: 12px;
   position: relative;
   text-decoration: none;
@@ -835,8 +830,8 @@
 
 .chart_total {
   color: #07a6a6;
-  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   font-size: 3.6rem;
+  font-weight: 600;
   height: 100%;
   left: 0;
   line-height: 17.8rem;
@@ -874,7 +869,7 @@
 /* Head */
 .table_h {
   background: #6c788c;
-  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
+  font-weight: 600;
   height: 3.6rem;
   line-height: 3.6rem;
   text-transform: uppercase;
@@ -921,7 +916,6 @@
   color: #fff;
   cursor: default;
   font-size: 1.1rem;
-  letter-spacing: 1px;
   padding-top: .5rem;
   padding-bottom: .5rem;
   text-transform: uppercase;
@@ -971,7 +965,7 @@
           box-sizing: border-box;
   color: #fff;
   display: inline-block;
-  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
+  font-weight: 600;
   position: relative;
   width: 100%;
 }
@@ -1028,6 +1022,7 @@
 .footer_nav_a {
   color: #fff;
   font-size: 1rem;
+  font-weight: 300;
   margin-left: 1rem;
   text-decoration: none;
 }

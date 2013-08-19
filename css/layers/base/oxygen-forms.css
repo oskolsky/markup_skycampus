@@ -17,7 +17,6 @@ input:focus, select:focus, textarea:focus, button:focus {outline: none;}
   border-radius: .3em;
   color: #fff;
   display: inline-block;
-  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   height: 2.4rem;
   line-height: 2.4rem;
@@ -224,8 +223,7 @@ input:focus, select:focus, textarea:focus, button:focus {outline: none;}
   /* <LABEL></LABEL> */
   .form_label {
     color: #5f6678;
-    font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
-    letter-spacing: -1px;
+    font-weight: 600;
     line-height: 2rem;    
   }
 

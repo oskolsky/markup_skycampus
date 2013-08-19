@@ -47,7 +47,8 @@
   height: 9px;
   width: 9px;
 }
-.ico-9.__star {background-position: 0 0;}
+.ico-9.__star  {background-position: 0 0;}
+.ico-9.__clock {background-position: -9px 0;}
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   .ico-9 {
