@@ -7,8 +7,7 @@ html {
 body {
   background: #f0f1f5;
   color: #575f73;
-  font-weight: 400;
-  font-family: "ltroman", Helvetica, Arial, sans-serif;
+  font-family: "gotham_proregular", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
   min-width: 1000px;
@@ -21,8 +20,8 @@ hr {
 }
 
 b {
-  font-family: "ltblack", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
+  letter-spacing: -1px;
 }
 
 img {-ms-interpolation-mode: bicubic;}
@@ -35,14 +34,13 @@ a {
   display: inline-block;
   color: mediumblue;
 }
-a:hover  {color: silver;}
-a:active {color: gray;}
+/*a:hover  {color: silver;}*/
+/*a:active {color: gray;}*/
 
 /* HEADERS
 ---------------------------------------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "ltblack", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
 }
 

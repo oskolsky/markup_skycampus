@@ -47,9 +47,8 @@
   vertical-align: top;
 }
 .clock_time {
-  font-family: "ltblack", Helvetica, Arial, sans-serif;
+  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
-  font-weight: 700;
   margin-right: 1.8rem;
 }
 .clock_tx {
@@ -136,9 +135,8 @@
 .nav_current {
   color: #fff;
   display: inline-block;
-  font-family: "ltroman", Helvetica, Arial, sans-serif;
+  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   font-size: 2.2rem;
-  font-weight: 400;
   height: 2.4rem;
   line-height: 2.4rem;
   vertical-align: middle;
@@ -186,9 +184,8 @@
 .nav_menu_i_a {
   border-right: 1px solid;
   color: #fff;
-  font-family: "ltblack", Helvetica, Arial, sans-serif;
+  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
-  font-weight: 700;
   height: 2.4rem;
   line-height: 2.4rem;
   padding: 0 1rem;
@@ -199,7 +196,6 @@
 .nav_menu_i_a:hover, .nav_menu_i_a.__current {
   background: #575f73;
   border-color: transparent !important;
-  color: #fff;
 }
 
 .nav_menu_i:first-child .nav_menu_i_a {border-radius: .3em 0 0 .3em;}
@@ -237,6 +233,15 @@
   z-index: 9997;
 }
 
+/* Coopyright */
+.copyright {
+  color: #fff;
+  font-size: 1rem;
+  left: 3rem;
+  position: absolute;
+  bottom: 213px;
+}
+
 /* Menu */
 .menu {
 
@@ -247,9 +252,8 @@
 .menu_i_a {
   color: #fff;
   display: block;
-  font-family: "ltblack", Helvetica, Arial, sans-serif;
+  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
-  font-weight: 700;
   height: 4.6rem;
   line-height: 4.6rem;
   padding: 0 3rem;
@@ -260,7 +264,6 @@
 }
 .menu_i_a:hover, .menu_i_a.__current {
   background: #4c4f5c;
-  color: #fff;  
 }
 .menu_i_a.__current:after {
   content: '';
@@ -296,9 +299,7 @@
 }
 .section_t > span {
   color: #9aa1b1;
-  font-family: "ltroman", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
-  font-weight: 400;
   margin-left: 2rem;
   vertical-align: middle;
 }
@@ -346,7 +347,7 @@
   border-radius: .3rem;
   color: #5f6678;
   display: inline-block;
-  font-weight: 700;
+  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   left: -4rem;
   margin: 1rem 0 2rem;
   padding: .5rem 1.2rem;
@@ -391,6 +392,7 @@
   border-bottom: 1px solid #f0f1f5;
   border-radius: .3rem .3rem 0 0;
   padding: 1rem;
+  position: relative;
 }
   /* Details */
   .dashboard_i_details {
@@ -407,9 +409,6 @@
     color: #575f73;
     text-decoration: none;
   }
-  .dashboard_i_details_user_a:hover {
-    color: #575f73;
-  }
   /* Time */
   .dashboard_i_details_time {
     color: #9aa1b1;
@@ -417,8 +416,15 @@
 /* _theme */
 .dashboard_i_theme {
   color: #07a6a6;
-  font-weight: 700;
-  text-align: right;
+  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform:    translate(0, -50%);
+  -ms-transform:     translate(0, -50%);
+  -o-transform:      translate(0, -50%);
+  transform:         translate(0, -50%);  
 }
 /* _caption */
 .dashboard_i_caption {
@@ -570,9 +576,6 @@
   color: #575f73;
   text-decoration: none;
 }
-.chat_i_head_a:hover {
-  color: #575f73;
-}
 
 /* Add */
 .chat_add {
@@ -615,9 +618,8 @@
 
 }
 .classes_t {
-  font-family: "ltblack", Helvetica, Arial, sans-serif;
+  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
-  font-weight: 700;
   line-height: 2rem;
 }
 
@@ -670,14 +672,10 @@
 .tasks_switch {
   color: #575f73;
   display: inline-block;
-  font-family: "ltblack", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   margin-right: 12px;
   position: relative;
   text-decoration: none;
-}
-.tasks_switch:hover {
-  color: #575f73;
 }
 .tasks_switch:before {
   content: '';
@@ -733,18 +731,13 @@
 }
 .teachers_i_name > span {
   color: #07a6a6;
-  font-family: "ltroman", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
-  font-weight: 400;
   margin-left: 1rem;
   vertical-align: middle;
 }
 .teachers_i_a {
   color: #9aa1b1;
   text-decoration: none;
-}
-.teachers_i_a:hover {
-  color: #9aa1b1;
 }
 
 /* AUTOCOMPLETE
@@ -816,9 +809,6 @@
   right: 1.5rem;
   text-decoration: none;
 }
-.comments_i_body_reply:hover {
-  color: #9aa1b1;
-}
 
 /* Add */
 .comments_i_add {
@@ -845,9 +835,8 @@
 
 .chart_total {
   color: #07a6a6;
-  font-family: "ltblack", Helvetica, Arial, sans-serif;
+  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   font-size: 3.6rem;
-  font-weight: 700;
   height: 100%;
   left: 0;
   line-height: 17.8rem;
@@ -860,9 +849,7 @@
 .chart_total:before, .chart_total:after {
   color: #07a6a6;
   display: inline-block;
-  font-family: "ltroman", Helvetica, Arial, sans-serif;
   font-size: 1rem;
-  font-weight: 400;
   left: 0;
   line-height: 1rem;
   position: absolute;
@@ -887,8 +874,7 @@
 /* Head */
 .table_h {
   background: #6c788c;
-  font-family: "ltblack", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   height: 3.6rem;
   line-height: 3.6rem;
   text-transform: uppercase;
@@ -903,7 +889,6 @@
   background: #575f73;
 }
 .table_th_a, .table_th_a:hover {
-  color: #fff;
   text-decoration: none;
 }
 .table_th_sort {
@@ -986,8 +971,7 @@
           box-sizing: border-box;
   color: #fff;
   display: inline-block;
-  font-family: "ltblack", Helvetica, Arial, sans-serif;
-  font-weight: 700;
+  font-family: "gotham_promedium", Helvetica, Arial, sans-serif;
   position: relative;
   width: 100%;
 }
@@ -1001,8 +985,6 @@
   width: 60%;
 }
 .progress_bar > span {
-  font-family: "ltroman", Helvetica, Arial, sans-serif;
-  font-weight: 400;
   /*z-index: 999;*/
 }
 .progress_bar.__secondary {
@@ -1034,10 +1016,20 @@
 /* FOOTER
 ---------------------------------------------------------------------------------------------------- */
 .footer {
-  background: #4c4f5c;
-  height: 3rem;
+  background: #40434b;
   margin-left: 24rem;
-  padding-left: 3rem;
+  padding: .6rem 3rem;
+}
+
+/* Footer navigation */
+.footer_nav {
+  text-align: right;
+}
+.footer_nav_a {
+  color: #fff;
+  font-size: 1rem;
+  margin-left: 1rem;
+  text-decoration: none;
 }
 
 /* DEBAG
