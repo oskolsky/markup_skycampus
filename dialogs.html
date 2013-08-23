@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU" class="no-js">
+  <head>
+    <title>Сообщения / SkyCampus</title>
+    <!--#include virtual="/views/layouts/_head.html" -->
+  </head>
+  <body>
+    <!--#include virtual="/views/layouts/_alerts.html" -->
+    <!--#include virtual="/views/layouts/_header.html" -->
+    <aside id="aside" class="aside">
+      <menu class="menu">
+        <li class="menu_i"><a href="/dashboard.html" class="menu_i_a"><i class="ico-27 __dashboards menu_i_a__ico"></i>Дэшборд</a></li>
+        <li class="menu_i"><a href="/dialogs.html" class="menu_i_a __current"><i class="ico-27 __messages menu_i_a__ico"></i>Сообщения <span class="badge __main">3</span></a></li>
+        <li class="menu_i"><a href="/calendar.html" class="menu_i_a"><i class="ico-27 __calendar menu_i_a__ico"></i>Календарь</a></li>
+        <li class="menu_i"><a href="/classes.html" class="menu_i_a"><i class="ico-27 __items menu_i_a__ico"></i>Предметы</a></li>
+        <li class="menu_i"><a href="/classmates.html" class="menu_i_a"><i class="ico-27 __classmates menu_i_a__ico"></i>Одногрупники</a></li>
+      </menu>
+    </aside>
+    <!--#include virtual="/views/messages/_navigation.html" -->
+    <section id="section" class="section" role="main">
+      <div class="ctn">
+        <div class="cols">
+          <div class="cols-7 mod">
+            <div class="search">
+              <form>
+                <input type="text" class="form_text search_input cols-3" placeholder="Поиск">
+                <a href="#" class="search_btn"></a>
+              </form>
+            </div>
+          </div><div class="cols-2 mod">
+            <a href="#" class="form_button __default form_el __block">Написать сообщение</a>
+          </div><div class="cols-9 mod">
+            <section class="messages">
+
+              <figure class="messages_i __push __unread">
+                <div class="messages_i_left">
+                  <div class="user-avatar __online"><img data-src="/js/vendor/holder.js/48x48/#999:#fff/text: " class="user-avatar_img" width="48" height="48"></div>
+                  <div class="details">
+                    <p class="details_user"><b>Ксения Бородина</b></p>
+                    <p class="details_time">сегодня в 17:06</p>
+                  </div>
+                </div><div class="messages_i_right">
+                  <article class="message_i_cnt">
+                    <p>Не желаешь на наш фестиваль заглянуть?</p>
+                    <p>https://vk.com/kfest201</p>
+                  </article>
+                </div>
+                <a href="#trash" class="messages_i_trash"><i class="ico-12 __trash"></i></a>
+              </figure>
+
+              <figure class="messages_i __push">
+                <div class="messages_i_left">
+                  <div class="user-avatar __online"><img data-src="/js/vendor/holder.js/48x48/#999:#fff/text: " class="user-avatar_img" width="48" height="48"></div>
+                  <div class="details">
+                    <p class="details_user"><b>Константин Константинопольский</b></p>
+                    <p class="details_time">вчера в 12:47</p>
+                  </div>
+                </div><div class="messages_i_right">
+                  <article class="message_i_cnt">
+                    <p>))</p>
+                  </article>
+                </div>
+                <a href="#trash" class="messages_i_trash"><i class="ico-12 __trash"></i></a>
+              </figure>
+
+              <figure class="messages_i __pull">
+                <div class="messages_i_left">
+                  <div class="user-avatar __online"><img data-src="/js/vendor/holder.js/48x48/#999:#fff/text: " class="user-avatar_img" width="48" height="48"></div>
+                  <div class="details">
+                    <p class="details_user"><b>Максим Повстасюк</b></p>
+                    <p class="details_time">вчера в 00:16</p>
+                  </div>
+                </div><div class="messages_i_right">
+                  <article class="message_i_cnt">
+                    <p>Ты чего не отвечаешь?</p>
+                  </article>
+                </div>
+                <a href="#trash" class="messages_i_trash"><i class="ico-12 __trash"></i></a>
+              </figure>
+
+              <figure class="messages_i __push __group">
+                <div class="messages_i_left">
+                  <p class="messages_i_group-title"><b>Экзамен по МатАну</b></p>
+                  <div class="users-avatar">
+                    <div class="user-avatar __online"><img data-src="/js/vendor/holder.js/24x24/#999:#fff/text: " class="user-avatar_img" width="24" height="24"></div>
+                    <div class="user-avatar"><img data-src="/js/vendor/holder.js/24x24/#999:#fff/text: " class="user-avatar_img" width="24" height="24"></div>
+                    <div class="user-avatar"><img data-src="/js/vendor/holder.js/24x24/#999:#fff/text: " class="user-avatar_img" width="24" height="24"></div>
+                    <div class="user-avatar __online"><img data-src="/js/vendor/holder.js/24x24/#999:#fff/text: " class="user-avatar_img" width="24" height="24"></div> 
+                  </div>
+                </div><div class="messages_i_right">
+                  <div class="user-avatar __online">
+                    <img data-src="/js/vendor/holder.js/24x24/#999:#fff/text: " class="user-avatar_img" width="24" height="24">
+                  </div><article class="message_i_cnt">
+                    <p>Как решить 3ий пункт?</p>
+                  </article>
+                </div>
+                <a href="#trash" class="messages_i_trash"><i class="ico-12 __trash"></i></a>
+              </figure>      
+
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--#include virtual="/views/layouts/_footer.html" -->
+  </body>
+</html>

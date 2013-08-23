@@ -59,58 +59,44 @@
 .search {
   display: inline-block;
   position: relative;
-  margin-right: 3.1rem;
-  vertical-align: top;
 }
 .search_input {
-  background: #069e9e;
-  border: 1px solid #069696;
-  border-radius: .3em;
-  color: #fff;
-  height: 2.8rem;
-  padding: 0 .8rem 0 2.5rem;
-  width: 127px;
-}
-.search_submit {
-  background: transparent url('/img/search.png') 0 0 no-repeat;
+  background: #e3e4e9;
   border: none;
-  cursor: pointer;
-  height: 15px;
-  left: 8px;
-  position: absolute;
-  top: 7px;
-  width: 15px;
+  color: #575f73;
+  padding-left: 3rem;
 }
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
-  .search_submit {
-    background: transparent url('/img/search@2x.png') 0 0 no-repeat;
-    background-size: cover;
-  }
-}
-
-/* User avatar */
-.user-avatar {
+.search_btn {
+  font-size: 1.6em; /* This controls the size. */
   display: inline-block;
-}
-.user-avatar_img {
-  border-radius: .3em;
-  vertical-align: top;
-}
-
-/* __online */
-.user-avatar.__online {
-  position: relative;
-}
-.user-avatar.__online:after {
-  background: #07a6a6;
-  border: .2rem solid #fafafc;
-  border-radius: 50%;
-  bottom: -.2rem;
-  content: '';
-  height: .4rem;
+  width: 0.4em;
+  height: 0.4em;
+  border: 0.1em solid #575f73;
   position: absolute;
-  right: -.2rem;
-  width: .4rem;
+  top: 50%;
+  left: 1rem;
+  -webkit-transform: translate(0, -50%);
+     -moz-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+       -o-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  border-radius: 0.35em;
+}
+.search_btn::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: -0.25em;
+  bottom: -0.1em;
+  border-width: 0;
+  background: #575f73;
+  width: 0.35em;
+  height: 0.08em;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 /* NAVIGATION
@@ -386,29 +372,6 @@
   padding: 1rem;
   position: relative;
 }
-  /* Details */
-  .dashboard_i_details {
-    display: inline-block;
-    line-height: 1.6rem;
-    margin-left: .6rem;
-    vertical-align: top;
-  }
-  /* User */
-  .dashboard_i_details_user {
-
-  }
-  .dashboard_i_details_user_a {
-    color: #575f73;
-    text-decoration: none;
-  }
-  /* Time */
-  .dashboard_i_details_time {
-    color: #9aa1b1;
-    font-weight: 300;
-  }
-  .dashboard_i_details_time_ico {
-    margin-right: .4rem;
-  }
 /* _theme */
 .dashboard_i_theme {
   color: #07a6a6;
@@ -436,63 +399,82 @@
 /* MESSAGES
 ---------------------------------------------------------------------------------------------------- */
 .messages {
-  position: relative;
-  top: -3rem;
+
 }
 .messages_i {
-  border-bottom: 1px solid #e3e5ea;
+  background: #ebecf0;
+  border-radius: .3rem;
   cursor: pointer;
-  padding: 2.5rem 0;
+  padding: 15px 3px 15px 15px;
   position: relative;
 }
-.messages_i:before, .messages_i:after {
-  content: '';
-  height: calc(100% + 1px);
-  position: absolute;
-  top: 0;
-  width: 3rem;
+.messages_i:not(:last-child) {
+  margin-bottom: .5rem;
 }
-.messages_i:before {left: -3rem;}
-.messages_i:after  {right: -3rem;}
-
+.messages_i.__unread {
+  background: #d3ebeb;
+}
 .messages_i:hover {
-  background: #eee !important;
+  background: #e4e6ed;
 }
-.messages_i:hover:before {background: #eee !important;}
-.messages_i:hover:after  {background: #eee !important;}
-
-/* User */
-.messages_i_user {
-
+.messages_i_left {
+  display: inline-block;
+  margin-right: 50px;
+  width: 280px;
+  vertical-align: middle;
 }
-.messages_i_user_avatar {
-  border-radius: .3rem;
-  vertical-align: top;
-}
-.messages_i_user_name {
-
-}
-.messages_i_user_published {
-  color: #9aa1b1;
-}
-.messages_i_user_status {
-  color: #07a6a6;
+.messages_i_right {
+  display: inline-block;
+  width: 325px;
+  vertical-align: middle;
 }
 
-/* Body */
-.messages_i_body {
-  word-wrap: break-word;
+/* Title */
+.messages_i_group-title {
+  margin-bottom: 1.5rem;
 }
 
-/* __read */
-.messages_i.__read {
-  background: #f0f1f5;
+/* Arrow */
+.messages_i:before {
+  background-image: url(/img/dialogs-arrow@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  height: 7px;
+  left: 320px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform:    translate(0, -50%);
+  -ms-transform:     translate(0, -50%);
+  -o-transform:      translate(0, -50%);
+  transform:         translate(0, -50%);    
+  width: 11px;
+}
+.messages_i.__push:before {background-position: 0 0;}
+.messages_i.__pull:before {background-position: -11px 0;}
+
+/* Message */
+.message_i_cnt {
+  display: inline-block;
+  vertical-align: middle;
+}
+.messages_i.__group .message_i_cnt {
+  margin-left: 15px;
+  width: 285px;
 }
 
-/* __unread */
-.messages_i.__unread {background: #fff;}
-.messages_i.__unread:before {background: #fff;}
-.messages_i.__unread:after  {background: #fff;}
+/* Trash */
+.messages_i_trash {
+  display: none;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 9999;
+}
+.messages_i:hover .messages_i_trash {
+  display: block;
+}
 
 /* CHAT
 ---------------------------------------------------------------------------------------------------- */
@@ -940,6 +922,65 @@
   text-align: center;
 }
 
+/* USER AVATAR
+---------------------------------------------------------------------------------------------------- */
+.users-avatar {
+  font-size: 0;
+  padding-right: 2rem;
+}
+.users-avatar .user-avatar {
+  margin-right: .2rem;
+  margin-bottom: .2rem;
+}
+
+.user-avatar {
+  display: inline-block;
+  vertical-align: middle;
+}
+.user-avatar_img {
+  border-radius: .3rem;
+  vertical-align: top;
+}
+
+/* __online */
+.user-avatar.__online {
+  position: relative;
+}
+.user-avatar.__online:after {
+  background: #07a6a6;
+  border: .2rem solid #fafafc;
+  border-radius: 50%;
+  bottom: -.2rem;
+  content: '';
+  height: .4rem;
+  position: absolute;
+  right: -.2rem;
+  width: .4rem;
+}
+
+/* USER DETAILS
+---------------------------------------------------------------------------------------------------- */
+.details {
+  display: inline-block;
+  line-height: 1.6rem;
+  margin-left: 1rem;
+  vertical-align: middle;
+}
+.details_user {
+
+}
+.details_user_a {
+  color: #575f73;
+  text-decoration: none;
+}
+.details_time {
+  color: #9aa1b1;
+  font-weight: 300;
+}
+.details_time_ico {
+  margin-right: .4rem;
+}
+
 /* NOTIFY
 ---------------------------------------------------------------------------------------------------- */
 .notify {
@@ -1024,34 +1065,29 @@
 /* ARROW
 ---------------------------------------------------------------------------------------------------- */
 .arrow {
-  height: 2rem;
+  width: 6rem; 
+  height: 6rem;
+  background: #000; 
   position: relative;
-  width: 1rem;
 }
-.arrow:before, .arrow:after {
-  border: solid transparent;
-  content: "";
-  height: 0;
-  pointer-events: none;
-  position: absolute;
-  width: 0;
+.arrow_svg {
+  width: 1rem; 
+  height: 2rem; 
+  left: 50%; 
+  position: absolute; 
+  top: 50%; 
+  -webkit-transform: translate(-50%, -50%);
+  vertical-align: top; 
 }
-.arrow.__prev:before, .arrow.__prev:after {right: 0;}
-.arrow.__next:before, .arrow.__next:after {left: 0;}
-.arrow:before {
-  border-width: 1rem;
-  margin-top: -1rem;
-  top: 50%;
+.arrow_svg_polyline {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 4;
 }
-.arrow:after {
-  border-width: .8rem;
-  margin-top: -.8rem;
-  top: 50%;
-}
-.arrow.__prev:before {border-right-color: #c2e1f5;} /* Background color */
-.arrow.__prev:after  {border-right-color: #f0f1f5;} /* Arrow color */
-.arrow.__next:before {border-left-color: #c2e1f5;}  /* Background color */
-.arrow.__next:after  {border-left-color: #f0f1f5;}  /* Arrow color */
+
+/* <a href="#" class="arrow"><svg class="arrow_svg" viewBox="0 0 10 20"><polyline class="arrow_svg_polyline" points="8,2 2,10 8,18" stroke-linecap="round" stroke-linejoin="round"></svg></a> */
+/* <a href="#" class="arrow"><svg class="arrow_svg" viewBox="0 0 10 20"><polyline class="arrow_svg_polyline" points="8,2 2,10 8,18" stroke-linecap="round" stroke-linejoin="round" transform="translate(10,0) scale(-1,1)"></svg></a> */
+
 
 /* DATEPIKER
 ---------------------------------------------------------------------------------------------------- */

@@ -7,7 +7,15 @@
   <body>
     <!--#include virtual="/views/layouts/_alerts.html" -->
     <!--#include virtual="/views/layouts/_header.html" -->
-    <!--#include virtual="/views/layouts/_sidebar.html" -->
+    <aside id="aside" class="aside">
+      <menu class="menu">
+        <li class="menu_i"><a href="/dashboard.html" class="menu_i_a"><i class="ico-27 __dashboards menu_i_a__ico"></i>Дэшборд</a></li>
+        <li class="menu_i"><a href="/dialogs.html" class="menu_i_a"><i class="ico-27 __messages menu_i_a__ico"></i>Сообщения <span class="badge __main">3</span></a></li>
+        <li class="menu_i"><a href="/calendar.html" class="menu_i_a"><i class="ico-27 __calendar menu_i_a__ico"></i>Календарь</a></li>
+        <li class="menu_i"><a href="/classes.html" class="menu_i_a"><i class="ico-27 __items menu_i_a__ico"></i>Предметы</a></li>
+        <li class="menu_i"><a href="/classmates.html" class="menu_i_a"><i class="ico-27 __classmates menu_i_a__ico"></i>Одногрупники</a></li>
+      </menu>
+    </aside>
     <!--#include virtual="/views/index/_navigation.html" -->
     <section id="section" class="section" role="main">
       <div class="ctn">
@@ -20,10 +28,10 @@
               <h1 class="m-b_2">Forms</h1>
               <form>
                 <div class="form_row">
-                  <a href="#" class="form_button __default">Отправить</a>
+                  <a href="#" class="form_button __default cols-2">Отправить</a>
                 </div>
                 <div class="form_row">
-                  <a href="#" class="form_button __color">Написать сообщение</a>
+                  <a href="#" class="form_button __color cols-2">Написать сообщение</a>
                 </div>
                 <div class="form_row">
                   <label class="form_label dashboard_h_checkbox_i">
@@ -35,6 +43,20 @@
                     <span class="form_radio form_el __fake"><input type="radio" class="form_radio form_el __real" name="radio"></span>Задания
                   </label>
                 </div>
+                <div class="form_row">
+                  <textarea rows="8" class="form_textarea form_el __block" placeholder="Введите Ваше сообщение.."></textarea>
+                </div>
+                <div class="form_row">
+                  <input type="text" class="form_text cols-3" placeholder="Ваше имя">
+                </div>
+                <div class="form_row">
+                  <div class="search">
+                    <form>
+                      <input type="text" class="form_text search_input cols-3" placeholder="Поиск">
+                      <a href="#" class="search_btn"></a>
+                    </form>
+                  </div>
+                </div>                
               </form>
             </div>
 

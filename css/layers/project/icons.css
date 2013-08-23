@@ -70,6 +70,7 @@
 .ico-12.__message  {background-position: -12px 0;}
 .ico-12.__comments {background-position: -24px 0;}
 .ico-12.__close    {background-position: -36px 0;}
+.ico-12.__trash    {background-position: -48px 0;}
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   .ico-12 {
