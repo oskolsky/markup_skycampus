@@ -1,0 +1,84 @@
+<div class="dialog" id="files_on_group">
+  <header class="dialog_h">
+    <div class="cols-8">
+      <p><b>Добавление задания для группы ПИНФ-ОД-1</b></p>
+      <a href="#" class="dialog_h_close js-dialog_close">&times;</a>
+    </div>
+  </header>
+  <section class="dialog_b">
+    <div class="cols-8">
+      <form class="form">
+        <div class="form_row">
+          <label class="form_label form_el __block">Заголовок</label>
+          <input type="text" class="form_text __l form_el __block" autofocus placeholder="Введите текст заголовка...">
+        </div>
+        <div class="form_row">
+          <label class="form_label form_el __block">Описание</label>
+          <textarea rows="4" class="form_textarea form_el __block m-b_2" placeholder="Введите текст описания..."></textarea>
+        </div>
+        <div class="form_row">
+          <label class="form_label form_el __block">Приложения</label>
+          <div class="form_array">
+            <div class="form_row">
+              <div class="form_file form_el __fake cols-5"><p>&nbsp;</p></div>
+              <input type="file" class="form_file form_el __real">
+              <a href="#"><i class="ico-12 __trash form_array_remove"></i></a>
+            </div> <!-- /form_row -->
+          </div>
+          <a href="#" class="form_button __default __l cols-2"><b>+</b> Добавить файл</a>
+        </div>
+        <div class="form_array">
+          <div class="form_row">
+            <div class="cols">
+              <div class="cols-3 mod">
+                <label class="form_label form_el __block">Группа</label>
+                <div class="form_select form_el __fake cols-3">
+                  <p>&nbsp;</p>
+                  <select class="form_select form_el __real">
+                    <option selected>Выберети группу...</option>
+                    <option>Первый</option>
+                    <option>Второй</option>
+                    <option>Третий третий третий третий</option>
+                  </select>
+                </div>
+              </div><div class="cols-3 mod">
+                <label class="form_label form_el __block">Дата сдачи</label>
+                <input type="text" class="form_text __l __datepiker cols-2 js-datepicker" placeholder="Дата...">
+                <!-- <a href="#"><i class="ico-12 __trash form_array_remove"></i></a> -->
+              </div>
+            </div>
+          </div>
+          <a href="#" class="form_button __default __l cols-2"><b>+</b> Добавить группу</a>         
+        </div>
+        <div class="form_row __nolable">
+          <input type="submit" class="form_button __color __l cols-4 offset-2" value="Сохранить">
+        </div>
+      </form>
+    </div>
+  </section>
+</div>
+
+<script type="text/javascript">
+  $.datepicker.regional['ru'] = { 
+    closeText: 'Закрыть', 
+    prevText: '&#x3c;Пред', 
+    nextText: 'След&#x3e;', 
+    currentText: 'Сегодня', 
+    monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'], 
+    monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'], 
+    dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'], 
+    dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'], 
+    dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'], 
+    dateFormat: 'dd.mm.yy', 
+    firstDay: 1, 
+    isRTL: false 
+  };
+  $.datepicker.setDefaults($.datepicker.regional['ru']); 
+  $('.js-datepicker').datepicker({
+    prevText: '',
+    nextText: ''
+    // showOn: 'button',
+    // buttonImage: '/img/calendar.png,
+    // buttonImageOnly: false
+  });
+</script>

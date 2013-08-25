@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU" class="no-js">
+  <head>
+    <title>Группы / SkyCampus</title>
+    <!--#include virtual="/views/layouts/_head.html" -->
+  </head>
+  <body>
+    <!--#include virtual="/views/layouts/_alerts.html" -->
+    <!--#include virtual="/views/layouts/_header.html" -->
+    <!--#include virtual="/views/layouts/_sidebar.html" -->
+    <nav id="nav" class="nav clearfix">
+      <span class="nav_current">Все группы</span>
+    </nav>
+    <section id="section" class="section" role="main">
+      <div class="ctn">
+        <div class="cols">
+          <div class="cols-2 offset-5 mod">
+            <a href="#" class="form_button __default __s cols-2"><b>+</b> Добавить задание</a>
+          </div><div class="cols-2 mod">
+            <a href="#" class="form_button __default __s cols-2"><b>+</b> Добавить материал</a>
+          </div><div class="cols-9 mod">
+            <table class="table classes">
+              <thead class="table_h">
+                <tr>
+                  <th class="table_th"><a href="#" class="table_th_a">Группа <i class="ico-sorting __default table_th_sort"></i></a></th>
+                  <th class="table_th __current"><a href="#" class="table_th_a">Предмет <i class="ico-sorting __bottom table_th_sort"></i></a></th>
+                  <th class="table_th"><a href="#" class="table_th_a">Пара <i class="ico-sorting __default table_th_sort"></i></a></th>
+                </tr>
+              </thead>
+              <tbody class="table_b">
+                <!--#include virtual="/views/group/_item.html" -->
+                <!--#include virtual="/views/group/_item.html" -->
+                <!--#include virtual="/views/group/_item.html" -->
+                <!--#include virtual="/views/group/_item.html" -->
+                <!--#include virtual="/views/group/_item.html" -->
+                <!--#include virtual="/views/group/_item.html" -->
+                <!--#include virtual="/views/group/_item.html" -->
+                <!--#include virtual="/views/group/_item.html" -->
+                <!--#include virtual="/views/group/_item.html" -->
+                <!--#include virtual="/views/group/_item.html" -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--#include virtual="/views/layouts/_footer.html" -->
+  </body>
+</html>

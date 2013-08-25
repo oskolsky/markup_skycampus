@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="ru-RU" class="no-js">
+  <head>
+    <title>Успеваемость / SkyCampus</title>
+    <!--#include virtual="/views/layouts/_head.html" -->
+  </head>
+  <body>
+    <!--#include virtual="/views/layouts/_alerts.html" -->
+    <!--#include virtual="/views/layouts/_header.html" -->
+    <!--#include virtual="/views/layouts/_sidebar.html" -->
+    <nav id="nav" class="nav clearfix">
+      <div class="f-l">
+        <a href="#" class="nav_prev"></a><span class="nav_current">КолАнал</span><a href="#" class="nav_next"></a>
+      </div>
+      <div class="f-r">
+        <menu class="nav_menu __color">
+          <li class="nav_menu_i"><a href="/classes_progress.html" class="nav_menu_i_a __current">Успеваемость</a></li>
+          <li class="nav_menu_i"><a href="/classes_schedule.html" class="nav_menu_i_a">Расписание</a></li>
+          <li class="nav_menu_i"><a href="/classes_tasks.html" class="nav_menu_i_a">Задания</a></li>
+          <li class="nav_menu_i"><a href="/classes_files.html" class="nav_menu_i_a">Материалы</a></li>
+          <li class="nav_menu_i"><a href="/classes_teachers.html" class="nav_menu_i_a">Преподы</a></li>
+        </menu>
+      </div>
+    </nav>
+    <section id="section" class="section" role="main">
+      <div class="ctn">
+        <div class="cols">
+          <div class="cols-9 mod">
+            <h1 class="section_t">Успеваемость</h1>
+          </div><div class="cols-6 mod">
+            <div class="cols activity">
+              <div class="cols-6 mod">
+                <div class="activity_t">Общее количество баллов <b>120</b> из <b>180</b> возможных</div>
+                <!--#include virtual="/views/common/_progress_l.html" -->
+              </div><div class="cols-3 mod">
+                <!--#include virtual="/views/classes/progress/_progress.html" -->
+                <!--#include virtual="/views/classes/progress/_progress.html" -->
+              </div><div class="cols-3 mod">
+                <!--#include virtual="/views/classes/progress/_progress.html" -->
+                <!--#include virtual="/views/classes/progress/_progress.html" -->
+              </div>
+            </div>
+            <ul class="notify">
+              <li class="notify_i"><b>25 апреля</b> получил <b>10</b> баллов за <span>Домашнее Задание</span></li>
+              <li class="notify_i"><b>27 апреля</b> получил <b>1</b> балл за <span>Посещение</span></li>
+              <li class="notify_i"><b>2 апреля</b> получил <b>14</b> баллов за <span>Домашнее Задание</span></li>
+              <li class="notify_i"><b>20 марта</b> получил <b>17</b> баллов за <span>Экзамен</span></li>
+              <li class="notify_i"><b>1 декабря</b> получил <b>26</b> баллов за <span>Курсовыю</span></li>
+            </ul>
+          </div><div class="cols-3 mod tx __right">
+            <div id="chart" class="chart __activity"><div class="chart_total"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--#include virtual="/views/layouts/_footer.html" -->
+    <script type="text/javascript">
+      $(function() {
+        var chart = new SingleChart({
+          height: 180,
+          avail: 2 * Math.PI,
+          disp: 1.5 * Math.PI,
+          clockwise: false,
+          border: {
+            size: 40,
+            color: "#e6e6e6"
+          },
+          parts: [
+            {color: "#6599ae", val: 70},
+            {color: "#a9add0", val: 50},
+            {color: "#b997c3", val: 20},
+            {color: "#73c2d6", val: 10}
+          ]
+        });
+        chart.createOn('chart');
+      });
+    </script>
+  </body>
+</html>

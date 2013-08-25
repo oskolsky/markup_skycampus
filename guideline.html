@@ -7,63 +7,164 @@
   <body>
     <!--#include virtual="/views/layouts/_alerts.html" -->
     <!--#include virtual="/views/layouts/_header.html" -->
-    <aside id="aside" class="aside">
-      <menu class="menu">
-        <li class="menu_i"><a href="/dashboard.html" class="menu_i_a"><i class="ico-27 __dashboards menu_i_a__ico"></i>Дэшборд</a></li>
-        <li class="menu_i"><a href="/dialogs.html" class="menu_i_a"><i class="ico-27 __messages menu_i_a__ico"></i>Сообщения <span class="badge __main">3</span></a></li>
-        <li class="menu_i"><a href="/calendar.html" class="menu_i_a"><i class="ico-27 __calendar menu_i_a__ico"></i>Календарь</a></li>
-        <li class="menu_i"><a href="/classes.html" class="menu_i_a"><i class="ico-27 __items menu_i_a__ico"></i>Предметы</a></li>
-        <li class="menu_i"><a href="/classmates.html" class="menu_i_a"><i class="ico-27 __classmates menu_i_a__ico"></i>Одногрупники</a></li>
-      </menu>
-    </aside>
-    <!--#include virtual="/views/index/_navigation.html" -->
+    <!--#include virtual="/views/layouts/_sidebar.html" -->
+    <nav id="nav" class="nav clearfix">
+      <span class="nav_current">Guideline</span>
+    </nav>
     <section id="section" class="section" role="main">
       <div class="ctn">
         <div class="cols">
-          <div class="cols-3 mod">
-            <h1 class="section_t">Guideline</h1>
-          </div><div class="cols-9 mod">
+          <div class="cols-9 mod">
 
-            <div class="m-b_4">
+            <section class="m-b_4" role="region" aria-label="Dialogs">
+              <h1 class="m-b_2">Dialogs</h1>
+              <p><a href="#" data-dialog="message_new">Написать сообщение</a></p>
+              <p><a href="#" id="show-push">Новое сообщение</a></p>
+              <p><a href="#" data-dialog="files_on_group">Добавление материала для группы</a></p>
+              <p><a href="#" data-dialog="files_on_groups">Добавление материала для нескольких групп</a></p>
+              <p><a href="#" data-dialog="task_on_group">Добавление задания для группы</a></p>
+              <p><a href="#" data-dialog="task_on_groups">Добавление задания для нескольких групп</a></p>
+            </section>
+
+            <section role="region" aria-label="Form elements">
               <h1 class="m-b_2">Forms</h1>
-              <form>
-                <div class="form_row">
-                  <a href="#" class="form_button __default cols-2">Отправить</a>
-                </div>
-                <div class="form_row">
-                  <a href="#" class="form_button __color cols-2">Написать сообщение</a>
-                </div>
-                <div class="form_row">
-                  <label class="form_label dashboard_h_checkbox_i">
-                    <span class="form_checkbox form_el __fake"><input type="checkbox" class="form_checkbox form_el __real" checked></span>Задания
-                  </label>
-                </div>
-                <div class="form_row">
-                  <label class="form_label">
-                    <span class="form_radio form_el __fake"><input type="radio" class="form_radio form_el __real" name="radio"></span>Задания
-                  </label>
-                </div>
-                <div class="form_row">
-                  <textarea rows="8" class="form_textarea form_el __block" placeholder="Введите Ваше сообщение.."></textarea>
-                </div>
-                <div class="form_row">
-                  <input type="text" class="form_text cols-3" placeholder="Ваше имя">
-                </div>
-                <div class="form_row">
-                  <div class="search">
-                    <form>
-                      <input type="text" class="form_text search_input cols-3" placeholder="Поиск">
-                      <a href="#" class="search_btn"></a>
-                    </form>
+              <form action="#" class="form">
+                <fieldset class="m-b_4">
+                  <legend class="form_legend m-b_2">Button</legend>
+                  <div class="form_row">
+                    <button class="form_button __default __s cols-2">Button default</button>
                   </div>
-                </div>                
+                  <div class="form_row">
+                    <button class="form_button __color __s cols-2">Button color</button>
+                  </div>
+                  <div class="form_row">
+                    <button class="form_button __default __l cols-2">Button default</button>
+                  </div>
+                  <div class="form_row">
+                    <button class="form_button __color __l cols-2">Button color</button>
+                  </div>
+                </fieldset>
+
+                <fieldset class="m-b_4">
+                  <legend class="form_legend m-b_2">Search</legend>
+                  <div class="form_row">
+                    <div class="search">
+                      <input type="text" class="form_text __s search_input cols-3" placeholder="Поиск">
+                      <a href="#" class="search_btn"></a>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset class="m-b_4">
+                  <legend class="form_legend m-b_2">Input</legend>
+                  <div class="form_row">
+                    <label class="form_label form_el __block">Label</label>
+                    <input type="text" class="form_text __s cols-5" placeholder="I am Text input">
+                  </div>
+                  <div class="form_row">
+                    <label class="form_label form_el __block">Label</label>
+                    <input type="text" class="form_text __l cols-5" placeholder="I am Text input">
+                  </div>
+                  <div class="form_row p-r">
+                    <input type="text" class="form_text __l __datepiker cols-2 js-datepicker" placeholder="Дата...">
+                  </div>
+                </fieldset>
+
+                <fieldset class="m-b_4">
+                  <legend class="form_legend m-b_2">Checkbox</legend>
+                  <div class="form_row">
+                    <span class="form_checkbox form_el __fake"><input type="checkbox" class="form_checkbox form_el __real"></span>
+                    <span class="form_checkbox form_el __fake"><input type="checkbox" class="form_checkbox form_el __real" checked></span>
+                    <span class="form_checkbox form_el __fake"><input type="checkbox" data-valid="false" class="form_checkbox form_el __real"></span>
+                    <span class="form_checkbox form_el __fake"><input type="checkbox" data-valid="true" class="form_checkbox form_el __real" checked></span>
+                    <span class="form_checkbox form_el __fake"><input type="checkbox" class="form_checkbox form_el __real" disabled></span>
+                    <span class="form_checkbox form_el __fake"><input type="checkbox" class="form_checkbox form_el __real" checked disabled></span>
+                  </div>
+                  <div class="form_row">
+                    <label for="checkbox" class="form_label">
+                      <span class="form_checkbox form_el __fake"><input type="checkbox" id="checkbox" class="form_checkbox form_el __real"></span> Checkbox
+                    </label>
+                  </div>
+                </fieldset>
+                <fieldset class="m-b_4">
+                  <legend class="form_legend m-b_2">Radiobutton</legend>
+                  <div class="form_row">
+                    <span class="form_radio form_el __fake"><input type="radio" class="form_radio form_el __real" name="radio1" checked></span>
+                    <span class="form_radio form_el __fake"><input type="radio" data-valid="true" class="form_radio form_el __real" name="radio1"></span>
+                    <span class="form_radio form_el __fake"><input type="radio" data-valid="false" class="form_radio form_el __real" name="radio1"></span>
+                    <span class="form_radio form_el __fake"><input type="radio" class="form_radio form_el __real" name="radio2" disabled></span>
+                  </div>
+                  <div class="form_row">
+                    <label for="radio" class="form_label">
+                      <span class="form_radio form_el __fake"><input type="radio" id="radio" class="form_radio form_el __real" name="radio2"></span> Radio
+                    </label>
+                  </div>
+                </fieldset>
+                
+                <fieldset class="m-b_4">
+                  <legend class="form_legend m-b_2">File</legend>
+                  <div class="form_row">
+                    <div class="form_file form_el __fake cols-5"><p>&nbsp;</p></div>
+                    <input type="file" class="form_file form_el __real">
+                  </div>
+                </fieldset>
+                
+                <fieldset class="m-b_4">
+                  <legend class="form_legend m-b_2">Select</legend>
+                  <div class="form_row">
+                    <div class="form_select form_el __fake cols-5">
+                      <p>&nbsp;</p>
+                      <select class="form_select form_el __real">
+                        <option selected>Выберите</option>
+                        <option>Первый</option>
+                        <option>Второй</option>
+                        <option>Третий третий третий третий</option>
+                      </select>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <fieldset>
+                  <legend class="form_legend m-b_2">Textarea</legend>
+                  <div class="form_row">
+                    <textarea rows="8" class="form_textarea form_el __block" placeholder="I am Textarea"></textarea>
+                  </div>
+                </fieldset>
+
               </form>
-            </div>
+            </section>
 
           </div>
         </div>
       </div>
     </section>
     <!--#include virtual="/views/layouts/_footer.html" -->
+    <div class="push-stack"><!--#include virtual="/views/dialogs/_push.html" --></div>
+    <script type="text/javascript">
+      $(function() {
+        $.datepicker.regional['ru'] = { 
+          closeText: 'Закрыть', 
+          prevText: '&#x3c;Пред', 
+          nextText: 'След&#x3e;', 
+          currentText: 'Сегодня', 
+          monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'], 
+          monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'], 
+          dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'], 
+          dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'], 
+          dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'], 
+          dateFormat: 'dd.mm.yy', 
+          firstDay: 1, 
+          isRTL: false 
+        };
+        $.datepicker.setDefaults($.datepicker.regional['ru']); 
+        $('.js-datepicker').datepicker({
+          prevText: '',
+          nextText: '',
+          showOn: "button",
+          buttonImage: "/img/calendar.png",
+          buttonImageOnly: true
+        });
+      });
+    </script>
   </body>
 </html>

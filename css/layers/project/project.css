@@ -1091,6 +1091,9 @@
 
 /* DATEPIKER
 ---------------------------------------------------------------------------------------------------- */
+.ui-datepicker {
+  z-index: 10000 !important;
+}
 .datepiker {
   border-radius: .3rem;
 }
@@ -1185,6 +1188,63 @@
 /* Helpers */
 .ui-datepicker-current-day a {
   border: 2px solid #07a6a6 !important;
+}
+
+/* Trigger */
+.ui-datepicker-trigger {
+  left: 11.3rem;
+  position: absolute;
+  top: .4rem;
+  vertical-align: middle;
+}
+
+/* PUSH
+---------------------------------------------------------------------------------------------------- */
+.push-stack {
+  bottom: 6rem;
+  position: fixed;
+  right: 3rem;
+}
+.push {
+  cursor: pointer;
+  z-index: 9999;
+}
+.push:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.push_h {
+  background: #07a6a6;
+  border-radius: .3rem .3rem 0 0;
+  color: #fff;
+  font-size: 1.2rem;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
+  position: relative;
+}
+.push_h_close {
+  color: #fff;
+  position: absolute;
+  right: 1rem;
+  text-align: center;
+  text-decoration: none;
+  top: 0;
+}
+.push_b {
+  background: #585b6a;
+  border-radius: 0 0 .3rem .3rem;
+  box-shadow: inset 0 .1rem .1rem .1rem rgba(0, 0, 0, .1);
+  padding: 1.6rem 1rem;
+}
+.push_b_cnt {
+  color: #fff;
+  line-height: 1.4;
+  width: 215px;
+}
+.push_b_cnt_t {
+  color: #9aa1b1;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 /* FOOTER

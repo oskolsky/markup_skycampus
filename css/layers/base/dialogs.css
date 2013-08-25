@@ -4,28 +4,31 @@
   z-index: 9999;
 }
 .dialog {
+  border-radius: .3rem;
   position: relative;
   z-index: 9999;
 }
 .dialog_h {
   background: #07a6a6;
+  border-radius: .3rem .3rem 0 0;
   color: #fff;
-  font-size: 1.6rem;
-  height: 5.5rem;
-  line-height: 5.5rem;
-  padding: 0 2.5rem;
+  font-size: 1.2rem;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1rem;
   position: relative;
 }
 .dialog_h_close {
-  background: #038a8a;
-  height: 5.5rem;
+  color: #fff;
   position: absolute;
-  right: 0;
+  right: 1rem;
   text-align: center;
+  text-decoration: none;
   top: 0;
-  width: 5.5rem;
 }
 .dialog_b {
   background: #f0f1f5;
-  padding: 4rem 0;
+  border-radius: 0 0 .3rem .3rem;
+  box-shadow: inset 0 .1rem .1rem .1rem rgba(0, 0, 0, .1);
+  padding: 2.5rem;
 }

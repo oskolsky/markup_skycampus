@@ -1,10 +1,10 @@
 /* ICONS SORTING
 ---------------------------------------------------------------------------------------------------- */
 .ico-sorting {
-  background: url('/img/ico-sorting.png') no-repeat;
   display: inline-block;
-  height: 10px;
   width: 7px;
+  height: 10px;
+  background: url('/img/ico-sorting.png') no-repeat;
 }
 .ico-sorting.__default {background-position: 0 0;}
 .ico-sorting.__bottom  {background-position: -7px 0;}
@@ -20,17 +20,17 @@
 /* ICONS FILE
 ---------------------------------------------------------------------------------------------------- */
 .ico-file {
+  display: inline-block;
+  width: 20px;
+  height: 24px;
   background: url("/img/ico-file.png") no-repeat;
   color: #fff;
-  display: inline-block;
-  font-family: "gotham_probold", Helvetica, Arial, sans-serif;
-  font-size: .8rem;
-  font-style: normal;
-  font-weight: 700;
-  height: 24px;
-  line-height: 28px;
   text-align: center;
-  width: 20px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: .8rem;
+  font-family: "gotham_probold", Helvetica, Arial, sans-serif;
+  line-height: 28px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   .ico-file {
@@ -38,14 +38,13 @@
     background-size: cover;
   }
 }
-
 /* ICONS 9
 ---------------------------------------------------------------------------------------------------- */
 .ico-9 {
-  background: url('/img/ico-9.png') no-repeat;
   display: inline-block;
-  height: 9px;
   width: 9px;
+  height: 9px;
+  background: url('/img/ico-9.png') no-repeat;
 }
 .ico-9.__star  {background-position: 0 0;}
 .ico-9.__clock {background-position: -9px 0;}
@@ -60,10 +59,10 @@
 /* ICONS 12
 ---------------------------------------------------------------------------------------------------- */
 .ico-12 {
-  background: url('/img/ico-12.png') no-repeat;
   display: inline-block;
-  height: 12px;
   width: 12px;
+  height: 12px;
+  background: url('/img/ico-12.png') no-repeat;
   vertical-align: middle;
 }
 .ico-12.__users    {background-position: 0 0;}
@@ -82,10 +81,10 @@
 /* ICONS 16
 ---------------------------------------------------------------------------------------------------- */
 .ico-16 {
-  background: url('/img/ico-16.png') no-repeat;
   display: inline-block;
-  height: 16px;
   width: 16px;
+  height: 16px;
+  background: url('/img/ico-16.png') no-repeat;
 }
 .ico-16.__settings {background-position: 0 0;}
 
@@ -99,16 +98,17 @@
 /* ICONS 27
 ---------------------------------------------------------------------------------------------------- */
 .ico-27 {
-  background: url('/img/ico-27.png') no-repeat;
   display: inline-block;
-  height: 27px;
   width: 27px;
+  height: 27px;
+  background: url('/img/ico-27.png') no-repeat;
 }
 .ico-27.__dashboards {background-position: 0 0;}
 .ico-27.__messages   {background-position: -27px 0;}
 .ico-27.__calendar   {background-position: -54px 0;}
 .ico-27.__items      {background-position: -81px 0;}
-.ico-27.__classmates {background-position: -108px 0;}
+.ico-27.__people     {background-position: -108px 0;}
+.ico-27.__group      {background-position: -135px 0;}
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 2) {
   .ico-27 {

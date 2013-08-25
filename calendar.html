@@ -7,16 +7,20 @@
   <body>
     <!--#include virtual="/views/layouts/_alerts.html" -->
     <!--#include virtual="/views/layouts/_header.html" -->
-    <aside id="aside" class="aside">
-      <menu class="menu">
-        <li class="menu_i"><a href="/dashboard.html" class="menu_i_a"><i class="ico-27 __dashboards menu_i_a__ico"></i>Дэшборд</a></li>
-        <li class="menu_i"><a href="/dialogs.html" class="menu_i_a"><i class="ico-27 __messages menu_i_a__ico"></i>Сообщения <span class="badge __main">3</span></a></li>
-        <li class="menu_i"><a href="/calendar.html" class="menu_i_a __current"><i class="ico-27 __calendar menu_i_a__ico"></i>Календарь</a></li>
-        <li class="menu_i"><a href="/classes.html" class="menu_i_a"><i class="ico-27 __items menu_i_a__ico"></i>Предметы</a></li>
-        <li class="menu_i"><a href="/classmates.html" class="menu_i_a"><i class="ico-27 __classmates menu_i_a__ico"></i>Одногрупники</a></li>
-      </menu>
-    </aside>
-    <!--#include virtual="/views/calendar/_navigation.html" -->
+    <!--#include virtual="/views/layouts/_sidebar.html" -->
+    <nav id="nav" class="nav clearfix">
+      <div class="f-l">
+        <a href="#" class="nav_a nav_prev" data-nav="prev"></a><span class="nav_current">Август 2013</span><a href="#" class="nav_a nav_next" data-nav="next"></a>
+      </div>
+      <div class="f-r">
+        <a href="#" class="form_button __color __s cols-2" id="today-button" style="margin-right: 2rem;">Сегодня</a>
+        <menu class="nav_menu __color" id="calendar-view">
+          <li class="nav_menu_i"><a href="#" class="nav_menu_i_a" data-view="agendaDay">День</a></li>
+          <li class="nav_menu_i"><a href="#" class="nav_menu_i_a __current" data-view="agendaWeek">Неделя</a></li>
+          <li class="nav_menu_i"><a href="#" class="nav_menu_i_a" data-view="month">Месяц</a></li>
+        </menu>
+      </div>
+    </nav>
     <section id="section" class="section" role="main">
       <div class="calendar">
         <nav class="calendar_nav clearfix m-b_2">
@@ -35,8 +39,8 @@
               <li class="nav_menu_i"><a href="#" class="nav_menu_i_a">Семинары</a></li>
               <li class="nav_menu_i"><a href="#" class="nav_menu_i_a">Прочее</a></li>
             </menu>
-            <a href="#" class="form_button __default calendar_nav_button cols-2">Создать событие</a>
-            <a href="#" class="form_button __default calendar_nav_button __settings"><i class="ico-16 __settings"></i></a>            
+            <a href="#" class="form_button __default __s calendar_nav_button cols-2"><b>+</b> Создать событие</a>
+            <a href="#" class="form_button __default __s calendar_nav_button __settings"><i class="ico-16 __settings"></i></a>            
           </div>
         </nav>
         <div id="calendar"></div>

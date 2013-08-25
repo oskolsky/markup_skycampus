@@ -7,34 +7,82 @@
   <body>
     <!--#include virtual="/views/layouts/_alerts.html" -->
     <!--#include virtual="/views/layouts/_header.html" -->
-    <aside id="aside" class="aside">
-      <menu class="menu">
-        <li class="menu_i"><a href="/dashboard.html" class="menu_i_a"><i class="ico-27 __dashboards menu_i_a__ico"></i>Дэшборд</a></li>
-        <li class="menu_i"><a href="/dialogs.html" class="menu_i_a"><i class="ico-27 __messages menu_i_a__ico"></i>Сообщения <span class="badge __main">3</span></a></li>
-        <li class="menu_i"><a href="/calendar.html" class="menu_i_a"><i class="ico-27 __calendar menu_i_a__ico"></i>Календарь</a></li>
-        <li class="menu_i"><a href="/classes.html" class="menu_i_a"><i class="ico-27 __items menu_i_a__ico"></i>Предметы</a></li>
-        <li class="menu_i"><a href="/classmates.html" class="menu_i_a"><i class="ico-27 __classmates menu_i_a__ico"></i>Одногрупники</a></li>
-      </menu>
-    </aside>
-    <!--#include virtual="/views/index/_navigation.html" -->
+    <!--#include virtual="/views/layouts/_sidebar.html" -->
+    <nav id="nav" class="nav clearfix">
+      <span class="nav_current">Перечень страниц</span>
+    </nav>
     <section id="section" class="section" role="main">
       <div class="ctn">
         <div class="cols">
-          <div class="cols-3 mod">
-            <h1 class="section_t">Заголовок</h1>
-          </div><div class="cols-9 mod">
-            <div class="cnt">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque sit amet leo nec eleifend. Maecenas posuere tempus accumsan. Pellentesque urna mi, porttitor in laoreet sed, interdum a eros. Suspendisse sit amet accumsan metus. Morbi sed faucibus neque. Duis justo lacus, mollis pulvinar varius non, sollicitudin quis velit. Maecenas at nunc non sem vehicula imperdiet molestie at purus. Nulla malesuada urna neque, eget convallis ligula pulvinar quis. Etiam rutrum fringilla sodales. Fusce consectetur eu diam eu faucibus. Morbi sed nibh mi. Phasellus scelerisque, odio non blandit fermentum, ante magna adipiscing purus, vulputate varius arcu leo ut odio. Fusce vel luctus justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam eget lorem ultrices metus eleifend feugiat id quis leo.</p>
-              <p>Morbi porta leo ac est consectetur consectetur. Mauris aliquam nisl non neque consectetur, ut tempor turpis laoreet. In arcu mauris, accumsan tristique est nec, ultrices euismod elit. Etiam nec auctor enim. Morbi varius egestas quam in viverra. Vivamus at lacus elementum, bibendum orci nec, elementum turpis. Fusce vitae libero eu tortor hendrerit sodales sit amet vel sem. Quisque molestie nunc ut imperdiet lobortis. Suspendisse vel diam sed neque faucibus rutrum quis quis nunc.</p>
-              <p>Vestibulum auctor eros nec accumsan tincidunt. Suspendisse ut lacus nec tellus auctor hendrerit ut eu lorem. Integer nibh purus, pretium non nibh eget, consequat eleifend urna. Suspendisse potenti. Phasellus in congue dui. Donec molestie ornare velit sed aliquam. In eros odio, vulputate et interdum ut, condimentum nec nisi. Nullam imperdiet tincidunt tempus. Fusce interdum quam et tortor molestie adipiscing.</p>
-              <p>Cras vel libero sit amet nisl egestas interdum eget at enim. Mauris porttitor mauris at luctus consequat. Suspendisse potenti. Sed vel dictum dui. Nunc accumsan, urna sed mollis ultrices, est mauris bibendum metus, at elementum tellus lorem non erat. Cras faucibus sapien mauris, id interdum sem rutrum a. Proin eu ornare metus. Nam ipsum tortor, congue sit amet sapien eget, pretium pretium massa. Proin laoreet blandit elit, id iaculis neque elementum sit amet. Curabitur vel nibh quam. Curabitur auctor turpis ut porttitor tempus. Integer magna libero, aliquet non porttitor a, pulvinar eget sapien. Curabitur id elit pulvinar, ultrices nibh ut, varius odio. Quisque ultrices, lorem ac interdum volutpat, eros diam congue elit, vel commodo orci velit vel turpis. Maecenas nunc lacus, venenatis a accumsan eu, rutrum eget tellus.</p>
-              <p>Donec accumsan faucibus leo id euismod. Suspendisse potenti. Vestibulum nec mi arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elit leo, sodales eget cursus vel, tristique tristique mauris. Aenean tortor nulla, consectetur eu urna eget, molestie eleifend dui. Pellentesque non hendrerit ipsum. Proin cursus erat at malesuada luctus. Nam accumsan sem a ligula commodo mattis. Aliquam ut velit non sapien molestie pharetra. Nunc vel suscipit justo. Quisque eget lacus a leo congue ornare. Proin sit amet sapien viverra, lacinia risus at, suscipit sem.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque sit amet leo nec eleifend. Maecenas posuere tempus accumsan. Pellentesque urna mi, porttitor in laoreet sed, interdum a eros. Suspendisse sit amet accumsan metus. Morbi sed faucibus neque. Duis justo lacus, mollis pulvinar varius non, sollicitudin quis velit. Maecenas at nunc non sem vehicula imperdiet molestie at purus. Nulla malesuada urna neque, eget convallis ligula pulvinar quis. Etiam rutrum fringilla sodales. Fusce consectetur eu diam eu faucibus. Morbi sed nibh mi. Phasellus scelerisque, odio non blandit fermentum, ante magna adipiscing purus, vulputate varius arcu leo ut odio. Fusce vel luctus justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam eget lorem ultrices metus eleifend feugiat id quis leo.</p>
-              <p>Morbi porta leo ac est consectetur consectetur. Mauris aliquam nisl non neque consectetur, ut tempor turpis laoreet. In arcu mauris, accumsan tristique est nec, ultrices euismod elit. Etiam nec auctor enim. Morbi varius egestas quam in viverra. Vivamus at lacus elementum, bibendum orci nec, elementum turpis. Fusce vitae libero eu tortor hendrerit sodales sit amet vel sem. Quisque molestie nunc ut imperdiet lobortis. Suspendisse vel diam sed neque faucibus rutrum quis quis nunc.</p>
-              <p>Vestibulum auctor eros nec accumsan tincidunt. Suspendisse ut lacus nec tellus auctor hendrerit ut eu lorem. Integer nibh purus, pretium non nibh eget, consequat eleifend urna. Suspendisse potenti. Phasellus in congue dui. Donec molestie ornare velit sed aliquam. In eros odio, vulputate et interdum ut, condimentum nec nisi. Nullam imperdiet tincidunt tempus. Fusce interdum quam et tortor molestie adipiscing.</p>
-              <p>Cras vel libero sit amet nisl egestas interdum eget at enim. Mauris porttitor mauris at luctus consequat. Suspendisse potenti. Sed vel dictum dui. Nunc accumsan, urna sed mollis ultrices, est mauris bibendum metus, at elementum tellus lorem non erat. Cras faucibus sapien mauris, id interdum sem rutrum a. Proin eu ornare metus. Nam ipsum tortor, congue sit amet sapien eget, pretium pretium massa. Proin laoreet blandit elit, id iaculis neque elementum sit amet. Curabitur vel nibh quam. Curabitur auctor turpis ut porttitor tempus. Integer magna libero, aliquet non porttitor a, pulvinar eget sapien. Curabitur id elit pulvinar, ultrices nibh ut, varius odio. Quisque ultrices, lorem ac interdum volutpat, eros diam congue elit, vel commodo orci velit vel turpis. Maecenas nunc lacus, venenatis a accumsan eu, rutrum eget tellus.</p>
-              <p>Donec accumsan faucibus leo id euismod. Suspendisse potenti. Vestibulum nec mi arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elit leo, sodales eget cursus vel, tristique tristique mauris. Aenean tortor nulla, consectetur eu urna eget, molestie eleifend dui. Pellentesque non hendrerit ipsum. Proin cursus erat at malesuada luctus. Nam accumsan sem a ligula commodo mattis. Aliquam ut velit non sapien molestie pharetra. Nunc vel suscipit justo. Quisque eget lacus a leo congue ornare. Proin sit amet sapien viverra, lacinia risus at, suscipit sem.</p>
-            </div>
+          <div class="cols-9 mod">
+            <table class="table classes">
+              <thead class="table_h">
+                <tr>
+                  <th class="table_th"><a href="#" class="table_th_a">Название</a></th>
+                  <th class="table_th"><a href="#" class="table_th_a">Ссылка</a></th>
+                </tr>
+              </thead>
+              <tbody class="table_b">
+                <tr class="table_d_tr"><td colspan="2" class="table_td table_group"><p>Служебные страницы</p></td></tr>
+                <tr class="table_d_tr">
+                  <td class="table_td"><p class="classes_t">Guideline</p></td>
+                  <td class="table_td"><p><a href="/guideline.html" target="_blank">guideline.html</a></p></td>
+                </tr>
+                <tr class="table_d_tr"><td colspan="2" class="table_td table_group"><p>Основные страницы</p></td></tr>
+                <tr class="table_d_tr">
+                  <td class="table_td"><p class="classes_t">Дэшборд</p></td>
+                  <td class="table_td"><p><a href="/dashboard.html" target="_blank">dashboard.html</a></p></td>
+                </tr>
+                <tr class="table_d_tr">
+                  <td class="table_td"><p class="classes_t">Сообщения</p></td>
+                  <td class="table_td"><p><a href="/messages.html" target="_blank">messages.html</a></p></td>
+                </tr>
+                <tr class="table_d_tr">
+                  <td class="table_td"><p class="classes_t">Чат</p></td>
+                  <td class="table_td"><p><a href="/messages_chat.html" target="_blank">messages_chat.html</a></p></td>
+                </tr>
+                <tr class="table_d_tr">
+                  <td class="table_td"><p class="classes_t">Календарь</p></td>
+                  <td class="table_td"><p><a href="/calendar.html" target="_blank">calendar.html</a></p></td>
+                </tr>
+                <tr class="table_d_tr">
+                  <td class="table_td"><p class="classes_t">Предметы</p></td>
+                  <td class="table_td"><p><a href="/classes.html" target="_blank">classes.html</a></p></td>
+                </tr>
+                <tr class="table_d_tr">
+                  <td class="table_td"><p class="classes_t">Успеваемость</p></td>
+                  <td class="table_td"><p><a href="/classes_progress.html" target="_blank">classes_progress.html</a></p></td>
+                </tr>
+                <tr class="table_d_tr">
+                  <td class="table_td"><p class="classes_t">Расписание</p></td>
+                  <td class="table_td"><p><a href="/classes_schedule.html" target="_blank">classes_schedule.html</a></p></td>
+                </tr>
+                <tr class="table_d_tr">
+                  <td class="table_td"><p class="classes_t">Задания</p></td>
+                  <td class="table_td"><p><a href="/classes_tasks.html" target="_blank">classes_tasks.html</a></p></td>
+                </tr>
+                <tr class="table_d_tr">
+                  <td class="table_td"><p class="classes_t">Учебные материалы</p></td>
+                  <td class="table_td"><p><a href="/classes_files.html" target="_blank">classes_files.html</a></p></td>
+                </tr>
+                <tr class="table_d_tr">
+                  <td class="table_td"><p class="classes_t">Преподаватели</p></td>
+                  <td class="table_td"><p><a href="/classes_teachers.html" target="_blank">classes_teachers.html</a></p></td>
+                </tr>
+                <tr class="table_d_tr">
+                  <td class="table_td"><p class="classes_t">Все группы</p></td>
+                  <td class="table_td"><p><a href="/group.html" target="_blank">group.html</a></p></td>
+                </tr>
+                <tr class="table_d_tr">
+                  <td class="table_td"><p class="classes_t">Одногруппники</p></td>
+                  <td class="table_td"><p><a href="/classmates.html" target="_blank">classmates.html</a></p></td>
+                </tr>
+                <tr class="table_d_tr">
+                  <td class="table_td"><p class="classes_t">Коллеги</p></td>
+                  <td class="table_td"><p><a href="/colleagues.html" target="_blank">colleagues.html</a></p></td>
+                </tr>
+              </tbody>
+            </table>           
           </div>
         </div>
       </div>

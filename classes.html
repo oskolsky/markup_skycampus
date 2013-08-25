@@ -7,16 +7,10 @@
   <body>
     <!--#include virtual="/views/layouts/_alerts.html" -->
     <!--#include virtual="/views/layouts/_header.html" -->
-    <aside id="aside" class="aside">
-      <menu class="menu">
-        <li class="menu_i"><a href="/dashboard.html" class="menu_i_a"><i class="ico-27 __dashboards menu_i_a__ico"></i>Дэшборд</a></li>
-        <li class="menu_i"><a href="/dialogs.html" class="menu_i_a"><i class="ico-27 __messages menu_i_a__ico"></i>Сообщения <span class="badge __main">3</span></a></li>
-        <li class="menu_i"><a href="/calendar.html" class="menu_i_a"><i class="ico-27 __calendar menu_i_a__ico"></i>Календарь</a></li>
-        <li class="menu_i"><a href="/classes.html" class="menu_i_a __current"><i class="ico-27 __items menu_i_a__ico"></i>Предметы</a></li>
-        <li class="menu_i"><a href="/classmates.html" class="menu_i_a"><i class="ico-27 __classmates menu_i_a__ico"></i>Одногрупники</a></li>
-      </menu>
-    </aside>
-    <!--#include virtual="/views/classes/_navigation.html" -->
+    <!--#include virtual="/views/layouts/_sidebar.html" -->
+    <nav id="nav" class="nav clearfix">
+      <a href="#" class="nav_prev"></a><span class="nav_current">2013 / 2 курс / 4 семестр</span><a href="#" class="nav_next"></a>
+    </nav>
     <section id="section" class="section" role="main">
       <div class="ctn">
         <div class="cols">
@@ -25,7 +19,27 @@
           </div><div class="cols-6 mod tx __right">
             <!--#include virtual="/views/classes/_menu.html" -->
           </div><div class="cols-9 mod">
-            <!--#include virtual="/views/classes/_table.html" -->
+            <table class="table classes">
+              <thead class="table_h">
+                <tr>
+                  <th class="table_th"><a href="#" class="table_th_a">Предмет <i class="ico-sorting __default table_th_sort"></i></a></th>
+                  <th class="table_th __current"><a href="#" class="table_th_a">Пара <i class="ico-sorting __bottom table_th_sort"></i></a></th>
+                  <th class="table_th"><a href="#" class="table_th_a">Успеваемость <i class="ico-sorting __default table_th_sort"></i></a></th>
+                </tr>
+              </thead>
+              <tbody class="table_b">
+                <!--#include virtual="/views/classes/_item.html" -->
+                <!--#include virtual="/views/classes/_item.html" -->
+                <!--#include virtual="/views/classes/_item.html" -->
+                <!--#include virtual="/views/classes/_item.html" -->
+                <!--#include virtual="/views/classes/_item.html" -->
+                <!--#include virtual="/views/classes/_item.html" -->
+                <!--#include virtual="/views/classes/_item.html" -->
+                <!--#include virtual="/views/classes/_item.html" -->
+                <!--#include virtual="/views/classes/_item.html" -->
+                <!--#include virtual="/views/classes/_item.html" -->
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
