@@ -8,24 +8,115 @@
     <!--#include virtual="/views/layouts/_alerts.html" -->
     <!--#include virtual="/views/layouts/_header.html" -->
     <!--#include virtual="/views/layouts/_sidebar.html" -->
-    <!--#include virtual="/views/chat/_navigation.html" -->
+    <nav id="nav" class="nav clearfix">
+      <div class="f-l">
+        <a href="/messages.html" class="nav_prev"></a>
+      </div>
+      <div class="f-r">
+        <span class="form_button __color __s" style="margin-right: 1rem;">
+          Максим Повстасюк <a href="#" class="form_button_remove">&times;</a>
+        </span><span class="form_button __color __s" style="margin-right: 1rem;">
+          Ксения Бородина <a href="#" class="form_button_remove">&times;</a>
+        </span><span class="form_button __default __s" style="margin-right: 1rem;">
+          Жирайр <a href="#" class="form_button_remove">&times;</a>
+        </span>
+      </div>
+    </nav>
     <section id="section" class="section" role="main">
       <div class="ctn">
         <div class="cols">
           <div class="cols-9 mod">
             <div class="chat">
-              <!--<header class="chat_h">-->
-                <!-- virtual="/views/chat/_list.html" -->
-              <!--</header>-->
-              <section class="chat_b cols">
-                <!--#include virtual="/views/chat/_item_left.html" -->
-                <!--#include virtual="/views/chat/_item_right.html" -->
-                <!--#include virtual="/views/chat/_item_left.html" -->
-                <!--#include virtual="/views/chat/_item_right.html" -->
-              </section>
-              <footer class="chat_f">
-                <!--#include virtual="/views/chat/_add.html" -->
-              </footer>
+
+              <figure class="chat_date"><p>вчера в 17:24</p></figure>
+
+              <figure class="chat_i __to">
+                <figcaption class="chat_msg">
+                  <div class="user-avatar __online"><img data-src="/js/vendor/holder.js/32x32/#999:#fff/text: " class="user-avatar_img" width="32" height="32"></div><p class="chat_msg_p">русик ничем не занимается) тока универ закончил все просит работу найти русик ничем не занимается) тока универ закончил все просит работу найти</p>
+                </figcaption>
+                <a href="#trash" class="chat_i_trash"><i class="ico-12 __trash"></i></a>
+              </figure>
+
+              <figure class="chat_i __to">
+                <figcaption class="chat_msg">
+                  <p class="chat_msg_p">русик ничем не занимается) тока универ закончил все просит работу найти</p>
+                </figcaption>
+                <a href="#trash" class="chat_i_trash"><i class="ico-12 __trash"></i></a>
+              </figure>
+
+              <figure class="chat_date"><p>вчера в 17:24</p></figure>
+
+              <figure class="chat_i __from">
+                <figcaption class="chat_msg">
+                  <p class="chat_msg_p">русик ничем не занимается) тока универ закончил все просит работу найти</p><div class="user-avatar __online"><img data-src="/js/vendor/holder.js/32x32/#999:#fff/text: " class="user-avatar_img" width="32" height="32"></div>
+                </figcaption>
+                <a href="#trash" class="chat_i_trash"><i class="ico-12 __trash"></i></a>
+              </figure>
+
+              <figure class="chat_i __from">
+                <figcaption class="chat_msg">
+                  <p class="chat_msg_p">русик ничем не занимается) тока универ закончил все просит работу найти</p>
+                </figcaption>
+                <a href="#trash" class="chat_i_trash"><i class="ico-12 __trash"></i></a>
+              </figure>
+
+              <figure class="chat_i __from">
+                <figcaption class="chat_msg">
+                  <p class="chat_msg_p">русик ничем не занимается) тока универ закончил все просит работу найти</p>
+                </figcaption>
+                <a href="#trash" class="chat_i_trash"><i class="ico-12 __trash"></i></a>
+              </figure>
+
+              <figure class="chat_i __from">
+                <figcaption class="chat_msg">
+                  <p class="chat_msg_p clearfix">
+                    <img src="/img/fake/img_300_300_01.jpg" class="f-l" width="150" height="150" alt="">
+                    <img src="/img/fake/img_300_300_02.jpg" class="f-l" width="150" height="150" alt="">
+                  </p>
+                </figcaption>
+                <a href="#trash" class="chat_i_trash"><i class="ico-12 __trash"></i></a>
+              </figure>
+
+              <figure class="chat_date"><p>вчера в 17:24</p></figure>
+
+              <figure class="chat_i __to __unread">
+                <figcaption class="chat_msg">
+                  <div class="user-avatar __online"><img data-src="/js/vendor/holder.js/32x32/#999:#fff/text: " class="user-avatar_img" width="32" height="32"></div><p class="chat_msg_p">русик ничем не занимается) тока универ закончил все просит работу найти русик ничем не занимается) тока универ закончил все просит работу найти</p>
+                </figcaption>
+                <a href="#trash" class="chat_i_trash"><i class="ico-12 __trash"></i></a>
+              </figure>
+
+              <figure class="chat_i __to __unread">
+                <figcaption class="chat_msg">
+                  <p class="chat_msg_p">русик ничем не занимается) тока универ закончил все просит работу найти</p>
+                </figcaption>
+                <a href="#trash" class="chat_i_trash"><i class="ico-12 __trash"></i></a>
+              </figure>
+
+              <figure class="chat_i __to __unread">
+                <figcaption class="chat_msg">
+                  <p class="chat_msg_p clearfix">
+                    <img src="/img/fake/img_300_300_02.jpg" class="f-l" width="150" height="150" alt="">
+                    <img src="/img/fake/img_300_300_01.jpg" class="f-l" width="150" height="150" alt="">
+                  </p>
+                </figcaption>
+                <a href="#trash" class="chat_i_trash"><i class="ico-12 __trash"></i></a>
+              </figure>
+
+              <div class="chat_new">
+                <form class="form">
+                  <div class="form_ro">
+                    <div class="cols">
+                      <div class="cols-7 mod">
+                        <input type="text" class="form_text __l cols-7" autofocus placeholder="Введите текст сообщения...">
+                      </div><div class="cols-2 mod">
+                        <input type="submit" class="form_button __color __l cols-2" value="Отправить">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
             </div>
           </div>
         </div>
