@@ -898,6 +898,9 @@
   padding: 1rem 2.5rem;
   vertical-align: middle;
 }
+.table_td.__current {
+  background: #e1f1f3;
+}
 
 /* Group */
 .table_group {
@@ -917,6 +920,32 @@
   /*border-left: none !important;*/
   text-align: center;
 }
+
+/* SCROLL TABLE
+---------------------------------------------------------------------------------------------------- */
+/*.table-outer {*/
+  /*position: relative*/
+/*}*/
+/*.table-inner {*/
+  /*margin-left: 200px;*/
+  /*overflow-x: scroll;*/
+  /*overflow-y: visible;*/
+  /*width: 100%;*/
+/*}*/
+
+/*.table.__scroll {*/
+  /*table-layout: fixed;*/
+  /*width: 100%;*/
+/*}*/
+
+/*.table.__scroll th.table_td {*/
+  /*width: 200px;*/
+/*}*/
+/*.table.__scroll th {*/
+  /*position: absolute;*/
+  /*left: 0;*/
+  /*width: 200px;*/
+/*}*/
 
 /* USER AVATAR
 ---------------------------------------------------------------------------------------------------- */
@@ -1010,10 +1039,9 @@
 /* PROGRESS BAR
 ---------------------------------------------------------------------------------------------------- */
 .progress {
-  background: #d9e8ea;
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   color: #fff;
   display: inline-block;
   font-weight: 600;
@@ -1021,7 +1049,9 @@
   width: 100%;
 }
 .progress_bar {
-  background: #07a6a6;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   height: 100%;
   left: 0;
   padding: 0 1rem;
@@ -1030,21 +1060,19 @@
   width: 60%;
 }
 .progress_bar > span {
-  /*z-index: 999;*/
+
 }
 .progress_bar.__secondary {
-  background: #c4e1e3;
   text-align: right;
-  /*z-index: 998;*/
 }
 .progress_total {
-  color: #07a6a6;
   content: attr(data-value);
   position: absolute;
   right: 1rem;
   top: 0;
 }
 
+/* Size */
 /* small */
 .progress.__s {
   font-size: 1.2rem;
@@ -1057,6 +1085,52 @@
   height: 2.8rem;
   line-height: 2.8rem;
 }
+
+/* Color */
+/* default */
+.progress.__default {background: #d9e8ea;}
+.progress.__default .progress_bar {background: #07a6a6;}
+.progress.__default .progress_total {color: #07a6a6}
+
+/* red */
+.progress.__red {background: rgba(192, 57, 43, 0.5);}
+.progress.__red .progress_bar {background: rgba(192, 57, 43, 1);}
+.progress.__red .progress_total {color: rgba(192, 57, 43, 1);}
+
+/* orange */
+.progress.__orange {background: rgba(230, 126, 34, 0.5);}
+.progress.__orange .progress_bar {background: rgba(230, 126, 34, 1);}
+.progress.__orange .progress_total {color: rgba(230, 126, 34, 1);}
+
+/* yellow */
+.progress.__yellow {background: rgba(241, 196, 15, 0.5);}
+.progress.__yellow .progress_bar {background: rgba(241, 196, 15, 1);}
+.progress.__yellow .progress_total {color: rgba(241, 196, 15, 1);}
+
+/* green */
+.progress.__green {background: rgba(39, 174, 96, 0.5);}
+.progress.__green .progress_bar {background: rgba(39, 174, 96, 1);}
+.progress.__green .progress_total {color: rgba(39, 174, 96, 1);}
+
+/* blue */
+.progress.__blue {background: rgba(41, 128, 185, 0.5);}
+.progress.__blue .progress_bar {background: rgba(41, 128, 185, 1);}
+.progress.__blue .progress_total {color: rgba(41, 128, 185, 1);}
+
+/* violet */
+.progress.__violet {background: rgba(155, 89, 182, 0.5);}
+.progress.__violet .progress_bar {background: rgba(155, 89, 182, 1);}
+.progress.__violet .progress_total {color: rgba(155, 89, 182, 1);}
+
+/* gray */
+.progress.__gray {background: rgba(149, 165, 166, 0.5);}
+.progress.__gray .progress_bar {background: rgba(149, 165, 166, 1);}
+.progress.__gray .progress_total {color: rgba(149, 165, 166, 1);}
+
+/* dark */
+.progress.__dark {background: rgba(44, 62, 80, 0.5);}
+.progress.__dark .progress_bar {background: rgba(44, 62, 80, 1);}
+.progress.__dark .progress_total {color: rgba(44, 62, 80, 1);}
 
 /* ARROW
 ---------------------------------------------------------------------------------------------------- */
