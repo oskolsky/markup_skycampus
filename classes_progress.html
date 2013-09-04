@@ -56,6 +56,19 @@
     <!--#include virtual="/views/layouts/_footer.html" -->
     <script type="text/javascript">
       $(function() {
+
+        var color = {
+          default: "#07a6a6",
+          red:     "rgba(192, 57, 43, 1)",
+          orange:  "rgba(230, 126, 34, 1)",
+          yellow:  "rgba(241, 196, 15, 1)",
+          green:   "rgba(39, 174, 96, 1)",
+          blue:    "rgba(41, 128, 185, 1)",
+          violet:  "rgba(155, 89, 182, 1)",
+          gray:    "rgba(149, 165, 166, 1)",
+          dark:    "rgba(44, 62, 80, 1)"
+        };
+
         var chart = new SingleChart({
           height: 180,
           avail: 2 * Math.PI,
@@ -66,10 +79,15 @@
             color: "#e6e6e6"
           },
           parts: [
-            {color: "#6599ae", val: 70},
-            {color: "#a9add0", val: 50},
-            {color: "#b997c3", val: 20},
-            {color: "#73c2d6", val: 10}
+            {color: color.default, val: 20},
+            {color: color.red, val: 20},
+            {color: color.orange, val: 20},
+            {color: color.yellow, val: 20},
+            {color: color.green, val: 20},
+            {color: color.blue, val: 20},
+            {color: color.violet, val: 20},
+            {color: color.gray, val: 20},
+            {color: color.dark, val: 20}
           ]
         });
         chart.createOn('chart');
