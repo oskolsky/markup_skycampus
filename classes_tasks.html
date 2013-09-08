@@ -29,14 +29,14 @@
             <h1 class="section_t">Задания</h1>
           </div><div class="cols-9 mod">
             <table class="table tasks">
-              <thead class="table_h">
+              <thead>
                 <tr>
-                  <th class="table_th"><a href="#" class="table_th_a">Название <i class="ico-sorting __default table_th_sort"></i></a></th>
-                  <th class="table_th"><a href="#" class="table_th_a">Тип <i class="ico-sorting __default table_th_sort"></i></a></th>
-                  <th class="table_th __current"><a href="#" class="table_th_a">Дата <i class="ico-sorting __bottom table_th_sort"></i></a></th>
+                  <th><div class="table_arrow">Название</div></th>
+                  <th><div class="table_arrow">Тип</div></th>
+                  <th><div class="table_arrow">Дата</div></th>
                 </tr>
               </thead>
-              <tbody class="table_b">
+              <tbody>
                 <!--#include virtual="/views/classes/tasks/_item_group.html" -->
                 <!--#include virtual="/views/classes/tasks/_item.html" -->
                 <!--#include virtual="/views/classes/tasks/_item.html" -->
@@ -53,13 +53,13 @@
     <script type="text/javascript">
       $(function() {
 
-        $('.tasks').find('.tasks_switch').click(function() {
-          if ( $(this).closest('.table_d_tr').find('.tasks_description').is(':hidden') ) {
-            $(this).closest('.table_d_tr').find('.tasks_description').slideDown();
-            $(this).addClass('__current');
+        $('.table').find('td').click(function() {
+          if ( $(this).find('.tasks_description').is(':hidden') ) {
+            $(this).find('.tasks_description').slideDown();
+            $(this).find('.tasks_switch').addClass('__current');
           } else {
-            $(this).closest('.table_d_tr').find('.tasks_description').slideUp();
-            $(this).removeClass('__current');
+            $(this).find('.tasks_description').slideUp();
+            $(this).find('.tasks_switch').removeClass('__current');
           }
           return false;
         });

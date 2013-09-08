@@ -4,6 +4,7 @@
 /*@import "/css/vendor/jquery-ui-1.10.3.custom.css" all;*/
 @import "/css/vendor/jquery.arcticmodal-0.3.css" all;
 @import "/css/vendor/jquery.tagit.css" all;
+@import "/css/vendor/jquery.dataTables.css" all;
 
 @import "/css/layers/base/layout.css" all;
 @import "/css/layers/base/styles.css" all;

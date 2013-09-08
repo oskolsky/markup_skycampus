@@ -641,11 +641,8 @@
 .tasks {
 
 }
-.tasks .table_td {
+table.dataTable.tasks td  {
   vertical-align: top;
-}
-.tasks .table_d_tr {
-  cursor: default;
 }
 
 /* Description switch */
@@ -849,103 +846,64 @@
 
 /* TABLE
 ---------------------------------------------------------------------------------------------------- */
-.table {
-  border: 1px solid #e8e8ea !important;
+table.dataTable {
   box-shadow: 0 0 0 .1rem #e8e8ea;
-  width: 100%;
 }
-
-/* Head */
-.table_h {
-  background: #6c788c;
-  height: 3.6rem;
-  line-height: 3.6rem;
-  text-transform: uppercase;
-}
-.table_th {
-  border: 1px solid #6c788c !important;
-  font-weight: 600;
-  text-align: left;
-  padding: 0 2.5rem;
-  white-space: nowrap;
-}
-.table_th.__current {
-  background: #575f73;
-}
-.table_th_a, .table_th_a:hover {
+table.dataTable thead th {
+  background-color: #6c788c;
+  border: none;
   color: #fff;
-  text-decoration: none;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  text-align: left;
+  text-transform: uppercase;
+  vertical-align: middle;
 }
-.table_th_sort {
-  margin-right: .3rem;
-  position: relative;
-  top: .2rem;
-}
-
-/* Body */
-.table_b {
-
-}
-.table_d_tr {
-  background: #fafafc;
-  cursor: pointer;
-}
-.table_d_tr:nth-child(2n) {
-  background: #fff;
-}
-.table_td {
+table.dataTable td {
   border: 1px solid #f5f6f7;
+  cursor: pointer;
   padding: 1rem 2.5rem;
   vertical-align: middle;
 }
-.table_td.__current {
-  background: #e1f1f3;
+table.dataTable tr.odd  {background-color: #fafafc;}
+table.dataTable tr.even {background-color: #fff;}
+
+table.dataTable tr.odd td.sorting_1  {background-color: transparent;}
+table.dataTable tr.odd td.sorting_2  {background-color: transparent;}
+table.dataTable tr.odd td.sorting_3  {background-color: transparent;}
+table.dataTable tr.even td.sorting_1 {background-color: transparent;}
+table.dataTable tr.even td.sorting_2 {background-color: transparent;}
+table.dataTable tr.even td.sorting_3 {background-color: transparent;}
+
+table.dataTable thead th.sorting_asc,
+table.dataTable thead th.sorting_desc {background-color: #575f73;}
+
+.sorting      {background: none;}
+.sorting_asc  {background: none;}
+.sorting_desc {background: none;}
+
+.sorting      .table_arrow,
+.sorting_asc  .table_arrow,
+.sorting_desc .table_arrow {
+  display: inline-block;
+  position: relative;
 }
-
-/* Group */
-.table_group {
-  background: #abb4c3;
-  border: 1px solid #abb4c3 !important;
-  color: #fff;
-  cursor: default;
-  font-size: 1.1rem;
-  font-weight: 300;
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  text-transform: uppercase;
+.sorting      .table_arrow::before,
+.sorting_asc  .table_arrow::before,
+.sorting_desc .table_arrow::before {
+  content: '';
+  background: url('/img/ico-sorting.png') no-repeat;
+  display: inline-block;
+  height: 10px;
+  margin-top: -.4rem;
+  position: absolute;
+  right: -1rem;
+  top: 50%;
+  width: 7px;
 }
-
-/* Action */
-.table_action {
-  /*border-left: none !important;*/
-  text-align: center;
-}
-
-/* SCROLL TABLE
----------------------------------------------------------------------------------------------------- */
-/*.table-outer {*/
-  /*position: relative*/
-/*}*/
-/*.table-inner {*/
-  /*margin-left: 200px;*/
-  /*overflow-x: scroll;*/
-  /*overflow-y: visible;*/
-  /*width: 100%;*/
-/*}*/
-
-/*.table.__scroll {*/
-  /*table-layout: fixed;*/
-  /*width: 100%;*/
-/*}*/
-
-/*.table.__scroll th.table_td {*/
-  /*width: 200px;*/
-/*}*/
-/*.table.__scroll th {*/
-  /*position: absolute;*/
-  /*left: 0;*/
-  /*width: 200px;*/
-/*}*/
+.sorting      .table_arrow::before      {background-position: 0 0;}
+.sorting_asc  .table_arrow::before  {background-position: -7px 0;}
+.sorting_desc .table_arrow::before {background-position: -14px 0;}
 
 /* USER AVATAR
 ---------------------------------------------------------------------------------------------------- */

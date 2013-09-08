@@ -58,6 +58,17 @@ $(function() {
     nextText: ''
   });
 
+  // DATA TABLE
+  // ----------------------------------------------------------------------------------------------------
+  $('.table').dataTable({
+    bPaginate: false,
+    bLengthChange: false,
+    bFilter: false,
+    bSort: true,
+    bInfo: false,
+    bAutoWidth: false
+  });
+
   // SHOW PUSH
   // ----------------------------------------------------------------------------------------------------
   $('#show-push').click(function() {
