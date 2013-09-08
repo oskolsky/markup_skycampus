@@ -55,50 +55,6 @@
   vertical-align: top;
 }
 
-/* Search */
-.search {
-  display: inline-block;
-  position: relative;
-}
-.search_input {
-  background: #e3e4e9;
-  border: none;
-  color: #575f73;
-  padding-left: 3rem;
-}
-.search_btn {
-  font-size: 1.6em; /* This controls the size. */
-  display: inline-block;
-  width: 0.4em;
-  height: 0.4em;
-  border: 0.1em solid #575f73;
-  position: absolute;
-  top: 50%;
-  left: 1rem;
-  -webkit-transform: translate(0, -50%);
-     -moz-transform: translate(0, -50%);
-      -ms-transform: translate(0, -50%);
-       -o-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  border-radius: 0.35em;
-}
-.search_btn::before {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  right: -0.25em;
-  bottom: -0.1em;
-  border-width: 0;
-  background: #575f73;
-  width: 0.35em;
-  height: 0.08em;
-  -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
 /* NAVIGATION
 ---------------------------------------------------------------------------------------------------- */
 .nav {
@@ -269,6 +225,7 @@
 ---------------------------------------------------------------------------------------------------- */
 .section {
   margin-left: 24rem;
+  margin-right: 3rem;
   padding-top: 16rem;
   padding-left: 3rem;
 }
@@ -573,7 +530,7 @@
 /* CALENDAR
 ---------------------------------------------------------------------------------------------------- */
 .calendar {
-  padding-right: 3rem;
+
 }
 .calendar_nav {
 
@@ -844,67 +801,6 @@ table.dataTable.tasks td  {
   top: 11rem;
 }
 
-/* TABLE
----------------------------------------------------------------------------------------------------- */
-table.dataTable {
-  box-shadow: 0 0 0 .1rem #e8e8ea;
-}
-table.dataTable thead th {
-  background-color: #6c788c;
-  border: none;
-  color: #fff;
-  font-weight: 600;
-  padding: 1rem 2.5rem;
-  text-align: left;
-  text-transform: uppercase;
-  vertical-align: middle;
-}
-table.dataTable td {
-  border: 1px solid #f5f6f7;
-  cursor: pointer;
-  padding: 1rem 2.5rem;
-  vertical-align: middle;
-}
-table.dataTable tr.odd  {background-color: #fafafc;}
-table.dataTable tr.even {background-color: #fff;}
-
-table.dataTable tr.odd td.sorting_1  {background-color: transparent;}
-table.dataTable tr.odd td.sorting_2  {background-color: transparent;}
-table.dataTable tr.odd td.sorting_3  {background-color: transparent;}
-table.dataTable tr.even td.sorting_1 {background-color: transparent;}
-table.dataTable tr.even td.sorting_2 {background-color: transparent;}
-table.dataTable tr.even td.sorting_3 {background-color: transparent;}
-
-table.dataTable thead th.sorting_asc,
-table.dataTable thead th.sorting_desc {background-color: #575f73;}
-
-.sorting      {background: none;}
-.sorting_asc  {background: none;}
-.sorting_desc {background: none;}
-
-.sorting      .table_arrow,
-.sorting_asc  .table_arrow,
-.sorting_desc .table_arrow {
-  display: inline-block;
-  position: relative;
-}
-.sorting      .table_arrow::before,
-.sorting_asc  .table_arrow::before,
-.sorting_desc .table_arrow::before {
-  content: '';
-  background: url('/img/ico-sorting.png') no-repeat;
-  display: inline-block;
-  height: 10px;
-  margin-top: -.4rem;
-  position: absolute;
-  right: -1rem;
-  top: 50%;
-  width: 7px;
-}
-.sorting      .table_arrow::before      {background-position: 0 0;}
-.sorting_asc  .table_arrow::before  {background-position: -7px 0;}
-.sorting_desc .table_arrow::before {background-position: -14px 0;}
-
 /* USER AVATAR
 ---------------------------------------------------------------------------------------------------- */
 .users-avatar {
@@ -1116,6 +1012,70 @@ table.dataTable thead th.sorting_desc {background-color: #575f73;}
 /* <a href="#" class="arrow"><svg class="arrow_svg" viewBox="0 0 10 20"><polyline class="arrow_svg_polyline" points="8,2 2,10 8,18" stroke-linecap="round" stroke-linejoin="round"></svg></a> */
 /* <a href="#" class="arrow"><svg class="arrow_svg" viewBox="0 0 10 20"><polyline class="arrow_svg_polyline" points="8,2 2,10 8,18" stroke-linecap="round" stroke-linejoin="round" transform="translate(10,0) scale(-1,1)"></svg></a> */
 
+/* TABLE
+---------------------------------------------------------------------------------------------------- */
+.fixed-table-wrap {
+  /*padding-right: 3rem;*/
+}
+
+table.dataTable {
+  box-shadow: 0 0 0 .1rem #e8e8ea;
+}
+table.dataTable thead th {
+  background-color: #6c788c;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  text-align: left;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+table.dataTable td {
+  border: 1px solid #f5f6f7;
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  vertical-align: middle;
+}
+table.dataTable tr.odd  {background-color: #fafafc;}
+table.dataTable tr.even {background-color: #fff;}
+
+table.dataTable tr.odd td.sorting_1  {background-color: transparent;}
+table.dataTable tr.odd td.sorting_2  {background-color: transparent;}
+table.dataTable tr.odd td.sorting_3  {background-color: transparent;}
+table.dataTable tr.even td.sorting_1 {background-color: transparent;}
+table.dataTable tr.even td.sorting_2 {background-color: transparent;}
+table.dataTable tr.even td.sorting_3 {background-color: transparent;}
+
+table.dataTable thead th.sorting_asc,
+table.dataTable thead th.sorting_desc {background-color: #575f73;}
+
+.sorting      {background: none;}
+.sorting_asc  {background: none;}
+.sorting_desc {background: none;}
+
+.sorting      .table_arrow,
+.sorting_asc  .table_arrow,
+.sorting_desc .table_arrow {
+  display: inline-block;
+  position: relative;
+}
+.sorting      .table_arrow::before,
+.sorting_asc  .table_arrow::before,
+.sorting_desc .table_arrow::before {
+  content: '';
+  background: url('/img/ico-sorting.png') no-repeat;
+  display: inline-block;
+  height: 10px;
+  margin-top: -.4rem;
+  position: absolute;
+  right: -1rem;
+  top: 50%;
+  width: 7px;
+}
+.sorting      .table_arrow::before      {background-position: 0 0;}
+.sorting_asc  .table_arrow::before  {background-position: -7px 0;}
+.sorting_desc .table_arrow::before {background-position: -14px 0;}
 
 /* DATEPIKER
 ---------------------------------------------------------------------------------------------------- */
