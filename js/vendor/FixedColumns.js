@@ -999,10 +999,10 @@ FixedColumns.prototype = {
 				anOriginal[i]._DTTC_iHeight !== null )
 			{
 				/* Oddly enough, IE / Chrome seem not to copy the style height - Mozilla and Opera keep it */
-				if ( $.browser.msie )
-				{
-					$(anClone[i]).children().height( anOriginal[i]._DTTC_iHeight-iBoxHack );
-				}
+//				if ( $.browser.msie )
+//				{
+//					$(anClone[i]).children().height( anOriginal[i]._DTTC_iHeight-iBoxHack );
+//				}
 				continue;
 			}
 			

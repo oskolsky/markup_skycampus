@@ -1031,11 +1031,17 @@ table.dataTable thead th {
   text-transform: uppercase;
   vertical-align: middle;
 }
+table.dataTable thead th.__current {
+  background-color: #575f73;
+}
 table.dataTable td {
   border: 1px solid #f5f6f7;
   cursor: pointer;
   padding: 1rem 2.5rem;
   vertical-align: middle;
+}
+table.dataTable td.__current {
+  background-color: #e1f1f3;
 }
 table.dataTable tr.odd  {background-color: #fafafc;}
 table.dataTable tr.even {background-color: #fff;}
@@ -1073,8 +1079,8 @@ table.dataTable thead th.sorting_desc {background-color: #575f73;}
   top: 50%;
   width: 7px;
 }
-.sorting      .table_arrow::before      {background-position: 0 0;}
-.sorting_asc  .table_arrow::before  {background-position: -7px 0;}
+.sorting      .table_arrow::before {background-position: 0 0;}
+.sorting_asc  .table_arrow::before {background-position: -7px 0;}
 .sorting_desc .table_arrow::before {background-position: -14px 0;}
 
 /* DATEPIKER
