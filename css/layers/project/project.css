@@ -671,6 +671,45 @@ table.dataTable.tasks td  {
   text-decoration: none;
 }
 
+/* LIST
+---------------------------------------------------------------------------------------------------- */
+.list-month {
+  background-color: #6c788c;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 5rem;
+  text-align: justify;
+  text-align-last: justify;
+}
+.list-month::after {
+  content: "";
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+.list-month_i {
+  display: inline-block;
+}
+.list-month_a {
+  color: #fff;
+  text-decoration: none;
+}
+.list-month_a.__current {
+  display: block;
+  position: relative;
+}
+.list-month_a.__current::before {
+  border: 2px solid #07a6a6;
+  bottom: .3rem;
+  content: '';
+  left: -1rem;
+  position: absolute;
+  right: -1rem;
+  top: .3rem;
+}
+
+
 /* AUTOCOMPLETE
 ---------------------------------------------------------------------------------------------------- */
 .autocomplete {

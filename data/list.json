@@ -1,0 +1,143 @@
+{
+  "aaData": [
+    [
+      "Авдеев Митрофан",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false"
+    ],
+    [
+      "Клишенко Фома",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false"
+    ],
+    [
+      "Константинопольский Константин",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false"
+    ],
+    [
+      "Оскольский Максим",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false"
+    ],
+    [
+      "Песков Дмитрий",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false"
+    ],
+    [
+      "Песков Дмитрий",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false"
+    ],
+    [
+      "Петропавловский Сигизмунд",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false"
+    ],
+    [
+      "Сидорова Аксильдия",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false"
+    ],
+    [
+      "Сперанская Екатерина",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false"
+    ],
+    [
+      "Тинькофф Олег",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false",
+      "false"
+    ]
+  ],
+  "aoColumns": [
+    {
+      "sTitle": "Имя"
+    },
+    {
+      "sTitle": "01.09"
+    },
+    {
+      "sTitle": "03.09"
+    },
+    {
+      "sTitle": "05.09"
+    },
+    {
+      "sTitle": "07.09"
+    },
+    {
+      "sTitle": "09.09"
+    },
+    {
+      "sTitle": "11.09"
+    },
+    {
+      "sTitle": "13.09"
+    },
+    {
+      "sTitle": "15.09"
+    }
+  ]
+}
