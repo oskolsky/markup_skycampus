@@ -17,16 +17,6 @@
 .header_right {
   float: right;
   margin-top: 2.1rem;
-  position: relative;
-}
-.header_right_devider {
-  background: #069191;
-  display: inline-block;
-  height: 14px;
-  left: 144px;
-  position: absolute;
-  top: 7px;
-  width: 1px;
 }
 
 /* Logo */
@@ -70,7 +60,7 @@
   padding: 0 3rem;
   position: fixed;
   right: 0;
-  z-index: 9999;
+  z-index: 9997;
 }
 
 /* Current page */
@@ -840,6 +830,16 @@ table.dataTable.tasks td  {
   top: 11rem;
 }
 
+/* USER AREA (HEADER: avatar + menu)
+---------------------------------------------------------------------------------------------------- */
+.user-area {
+  bottom: 0;
+  position: absolute;
+  right: 3rem;
+  top: 2.1rem;
+}
+
+
 /* USER AVATAR
 ---------------------------------------------------------------------------------------------------- */
 .users-avatar {
@@ -874,6 +874,57 @@ table.dataTable.tasks td  {
   position: absolute;
   right: -.2rem;
   width: .4rem;
+}
+
+/* USER MENU
+---------------------------------------------------------------------------------------------------- */
+.user-area:hover .user-menu {
+  display: block;
+}
+
+.user-menu {
+  background: #fafafc;
+  display: none;
+  min-width: 15rem;
+  padding: 1rem 0;
+  position: absolute;
+  right: 0;
+  box-shadow: 0 .1rem .1rem .1rem #d3d5db;
+  top: 100%;
+  z-index: 9999;
+}
+.user-menu:before {
+  content: '';
+  border-bottom: .5rem solid #fafafc;
+  border-left:   .5rem solid transparent;
+  border-right:  .5rem solid transparent;
+  height: 0;
+  position: absolute;
+  right: .9rem;
+  top: -.5rem;
+  width: 0;
+}
+.user-menu_i {
+
+}
+.user-menu_i.__logout {
+  border-top: .1rem solid #ecedf1;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.user-menu_i_a {
+  display: block;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  padding: 0 1.5rem;
+  text-decoration: none;
+}
+.user-menu_i_a.__logout {
+  color: #9aa1b1;
+}
+.user-menu_i_a:hover {
+  background: #abb4c3;
+  color: #fff;
 }
 
 /* USER DETAILS
@@ -1121,6 +1172,11 @@ table.dataTable thead th.sorting_desc {background-color: #575f73;}
 .sorting      .table_arrow::before {background-position: 0 0;}
 .sorting_asc  .table_arrow::before {background-position: -7px 0;}
 .sorting_desc .table_arrow::before {background-position: -14px 0;}
+
+.dataTables_scrollHead,
+.dataTables_scrollBody {
+  width: auto !important;
+}
 
 /* DATEPIKER
 ---------------------------------------------------------------------------------------------------- */
