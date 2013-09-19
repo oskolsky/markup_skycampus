@@ -24,7 +24,7 @@ $(function() {
       type: 'ajax',
       url: '/views/dialogs/_' + id + '.html',
       afterOpen: function() {
-        forms.init();
+        $('.form').customForm();
       }
     });
     return false;

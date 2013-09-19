@@ -20,9 +20,10 @@ $(function() {
 
   ]);
 
-  // FORMS
-  // ----------------------------------------------------------------------------------------------------
-  forms.init();
+  //
+  // .. Global init form elements
+  //
+  $('.form').customForm(); // $('#checkbox').customForm() to init single element; $('body').customForm() to init all elements
   
   // DIALOGS
   // ----------------------------------------------------------------------------------------------------
