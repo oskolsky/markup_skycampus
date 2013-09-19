@@ -329,7 +329,7 @@ input:focus, select:focus, textarea:focus, button:focus {outline: none;}
 /* Disabled*/
 [disabled] {
   background: #e6e8ed !important;
-  border: 1px soldi #cfd1d6;
+  border: 1px solid #cfd1d6;
   color: #626a7c;
   cursor: no-drop;
 }
@@ -355,10 +355,8 @@ input:focus, select:focus, textarea:focus, button:focus {outline: none;}
 [data-valid="true"] {
   border-color: green;
   background: #e5ffe5;
-  color: green;
 }
 [data-valid="false"] {
-  border-color: red;
-  background: #ffe5e5;
-  color: red;
+  border-color: rgba(185, 151, 195, 0.25);
+  background: rgba(185, 151, 195, 0.5);
 }

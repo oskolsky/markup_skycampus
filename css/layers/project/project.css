@@ -1108,8 +1108,8 @@ table.dataTable.tasks td  {
 
 }
 .alert.__error {
-  background-color: rgba(192, 57, 43, 0.5);
-  border: 1px solid rgba(192, 57, 43, 0.25);
+  background-color: rgba(185, 151, 195, 0.5);
+  border: 1px solid rgba(185, 151, 195, 0.25);
   border-radius: .3rem;
   color: #fff;
   padding: 1rem;
