@@ -544,6 +544,10 @@
     vertical-align: middle;
   }
 
+.calendar .fc-event-time {
+  display: block;
+}
+
 /* ACTIVITY
 ---------------------------------------------------------------------------------------------------- */
 .activity {
