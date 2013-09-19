@@ -1102,6 +1102,19 @@ table.dataTable.tasks td  {
 /* <a href="#" class="arrow"><svg class="arrow_svg" viewBox="0 0 10 20"><polyline class="arrow_svg_polyline" points="8,2 2,10 8,18" stroke-linecap="round" stroke-linejoin="round"></svg></a> */
 /* <a href="#" class="arrow"><svg class="arrow_svg" viewBox="0 0 10 20"><polyline class="arrow_svg_polyline" points="8,2 2,10 8,18" stroke-linecap="round" stroke-linejoin="round" transform="translate(10,0) scale(-1,1)"></svg></a> */
 
+/* ALERTS
+---------------------------------------------------------------------------------------------------- */
+.alert {
+
+}
+.alert.__error {
+  background-color: rgba(192, 57, 43, 0.5);
+  border: 1px solid rgba(192, 57, 43, 0.25);
+  border-radius: .3rem;
+  color: #fff;
+  padding: 1rem;
+}
+
 /* TABLE
 ---------------------------------------------------------------------------------------------------- */
 .fixed-table-wrap {

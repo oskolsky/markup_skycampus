@@ -17,7 +17,12 @@
           <div class="cols-9 mod">
             <form class="form">
 
-              <div class="form_row">
+              <div class="alert __error m-b_4">
+                <p>Введите адрес электройнной почты</p>
+                <p>Введите номер телефона</p>
+              </div>
+
+              <div class="form_row m-b_4">
                 <label class="form_label form_el __block">Фотография</label>
                 <div class="form_row">
                   <div class="form_file form_el __fake cols-5"><p>&nbsp;</p></div>
@@ -25,22 +30,26 @@
                 </div>
               </div>
 
-              <div class="form_row">
-                <label class="form_label form_el __block" data-required="after">Имя</label>
-                <input type="text" class="form_text __l cols-5" autofocus="autofocus">
+              <div class="m-b_4">
+
+                <div class="form_row">
+                  <label class="form_label form_el __block" data-required="after">Имя</label>
+                  <input type="text" class="form_text __l cols-5" autofocus="autofocus" required>
+                </div>
+
+                <div class="form_row">
+                  <label class="form_label form_el __block" data-required="after">Фамилия</label>
+                  <input type="text" class="form_text __l cols-5" required>
+                </div>
+
+                <div class="form_row">
+                  <label class="form_label form_el __block">Отчество</label>
+                  <input type="text" class="form_text __l cols-5">
+                </div>
+
               </div>
 
-              <div class="form_row">
-                <label class="form_label form_el __block" data-required="after">Фамилия</label>
-                <input type="text" class="form_text __l cols-5">
-              </div>
-
-              <div class="form_row">
-                <label class="form_label form_el __block">Отчество</label>
-                <input type="text" class="form_text __l cols-5">
-              </div>
-
-              <div class="form_row">
+              <div class="form_row m-b_4">
                 <label class="form_label form_el __block">Дата рождения</label>
                 <div class="form_select form_el __fake">
                   <p>&nbsp;</p>
@@ -79,28 +88,53 @@
                 </div>
               </div>
 
-              <div class="form_row">
-                <label class="form_label form_el __block" data-required="after">Телефон</label>
-                <input type="tel" class="form_text __l cols-5">
+              <div class="m-b_4">
+
+                <div class="form_row">
+                  <label class="form_label form_el __block" data-required="after">Телефон</label>
+                  <input type="tel" class="form_text __l cols-5" data-valid="false" required>
+                </div>
+
+                <div class="form_row">
+                  <label class="form_label form_el __block" data-required="after">E-mail</label>
+                  <input type="email" class="form_text __l cols-5" data-valid="false" required>
+                </div>
+
+                <div class="form_row">
+                  <label class="form_label form_el __block">Скайп</label>
+                  <input type="text" class="form_text __l cols-5">
+                </div>
+
               </div>
 
-              <div class="form_row">
-                <label class="form_label form_el __block">E-mail</label>
-                <input type="email" class="form_text __l cols-5">
-              </div>
-
-              <div class="form_row">
-                <label class="form_label form_el __block" data-required="after">Скайп</label>
-                <input type="text" class="form_text __l cols-5">
-              </div>
-
-              <div class="cols">
-                <div class="cols-2 mod">
-                  <input type="submit" class="form_button __color __l cols-2" value="Сохранить">
-                </div><div class="cols-2 offset-1 mod">
-                  <a href="#" class="form_button __default __l cols-2" data-dialog="change_password">Сменить пароль</a>
+              <div class="form_row m-b_4">
+                <label class="form_label form_el __block">Подключить аккаунты социальных сетей</label>
+                <div class="cols">
+                  <div class="cols-2 mod">
+                    <a href="#" class="form_button __default __s cols-2">VK</a>
+                  </div><div class="cols-2 mod">
+                    <a href="#" class="form_button __default __s cols-2" disabled>Twitter</a>
+                  </div><div class="cols-2 mod">
+                    <a href="#" class="form_button __default __s cols-2">Facebook</a>
+                  </div><div class="cols-2 mod">
+                    <a href="#" class="form_button __default __s cols-2">Foursquare</a>
+                  </div><div class="cols-2 mod">
+                    <a href="#" class="form_button __default __s cols-2">Instagram</a>
+                  </div>
                 </div>
               </div>
+
+              <div class="form_row m-b_4">
+                <a href="#" class="form_button __default __s cols-2" data-dialog="change_password">Сменить пароль</a>
+              </div>
+
+              <div class="form_row m-b_4">
+                <label for="checkbox" class="form_label">
+                  <span class="form_checkbox form_el __fake"><input type="checkbox" id="checkbox" class="form_checkbox form_el __real"></span> получать смс уведомления
+                </label>
+              </div>
+
+              <input type="submit" class="form_button __color __l cols-3" value="Сохранить">
 
             </form>
           </div>
