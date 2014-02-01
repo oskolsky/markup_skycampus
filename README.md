@@ -1,4 +1,4 @@
-# Cantata
+# Skycampus
 
 Version: 1.0
 
