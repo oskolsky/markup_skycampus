@@ -1,0 +1,150 @@
+!!!
+%html.no-js{lang: "ru-RU"}
+  %head
+    %title SkyCampus
+    / #include virtual="/views/layouts/_head.html"
+  %body
+    / #include virtual="/views/layouts/_alerts.html"
+    / #include virtual="/views/layouts/_header.html"
+    / #include virtual="/views/layouts/_sidebar.html"
+    %nav#nav.nav.clearfix
+      %span.nav_current Перечень страниц
+    %section#section.section{role: "main"}
+      .ctn
+        .cols
+          .cols-9.mod
+            %table.table
+              %thead
+                %tr
+                  %th
+                    .table_arrow Название
+                  %th
+                    .table_arrow Ссылка
+              %tbody
+                %tr
+                  %td
+                    %p.tx.__large
+                      %b Guideline
+                  %td
+                    %p
+                      %a{href: "/guideline.html", target: "_blank"} guideline.html
+                %tr
+                  %td
+                    %p.tx.__large
+                      %b Дэшборд
+                  %td
+                    %p
+                      %a{href: "/dashboard.html", target: "_blank"} dashboard.html
+                %tr
+                  %td
+                    %p.tx.__large
+                      %b Профиль
+                  %td
+                    %p
+                      %a{href: "/profile.html", target: "_blank"} profile.html
+                %tr
+                  %td
+                    %p.tx.__large
+                      %b Редактирование личных данных
+                  %td
+                    %p
+                      %a{href: "/profile_edit.html", target: "_blank"} profile_edit.html
+                %tr
+                  %td
+                    %p.tx.__large
+                      %b Сообщения
+                  %td
+                    %p
+                      %a{href: "/messages.html", target: "_blank"} messages.html
+                %tr
+                  %td
+                    %p.tx.__large
+                      %b Чат
+                  %td
+                    %p
+                      %a{href: "/messages_chat.html", target: "_blank"} messages_chat.html
+                %tr
+                  %td
+                    %p.tx.__large
+                      %b Календарь
+                  %td
+                    %p
+                      %a{href: "/calendar.html", target: "_blank"} calendar.html
+                %tr
+                  %td
+                    %p.tx.__large
+                      %b Предметы
+                  %td
+                    %p
+                      %a{href: "/classes.html", target: "_blank"} classes.html
+                %tr
+                  %td
+                    %p.tx.__large
+                      %b Успеваемость
+                  %td
+                    %p
+                      %a{href: "/classes_progress.html", target: "_blank"} classes_progress.html
+                %tr
+                  %td
+                    %p.tx.__large
+                      %b Расписание
+                  %td
+                    %p
+                      %a{href: "/classes_schedule.html", target: "_blank"} classes_schedule.html
+                %tr
+                  %td
+                    %p.tx.__large
+                      %b Задания
+                  %td
+                    %p
+                      %a{href: "/classes_tasks.html", target: "_blank"} classes_tasks.html
+                %tr
+                  %td
+                    %p.tx.__large
+                      %b Учебные материалы
+                  %td
+                    %p
+                      %a{href: "/classes_files.html", target: "_blank"} classes_files.html
+                %tr
+                  %td
+                    %p.tx.__large
+                      %b Преподаватели
+                  %td
+                    %p
+                      %a{href: "/classes_teachers.html", target: "_blank"} classes_teachers.html
+                %tr
+                  %td
+                    %p.tx.__large
+                      %b Все группы
+                  %td
+                    %p
+                      %a{href: "/group.html", target: "_blank"} group.html
+                %tr
+                  %td
+                    %p.tx.__large
+                      %b Ведомость
+                  %td
+                    %p
+                      %a{href: "/list.html", target: "_blank"} list.html
+                %tr
+                  %td
+                    %p.tx.__large
+                      %b Ведомость (рейтинг)
+                  %td
+                    %p
+                      %a{href: "/list_rating.html", target: "_blank"} list_rating.html
+                %tr
+                  %td
+                    %p.tx.__large
+                      %b Одногруппники
+                  %td
+                    %p
+                      %a{href: "/classmates.html", target: "_blank"} classmates.html
+                %tr
+                  %td
+                    %p.tx.__large
+                      %b Коллеги
+                  %td
+                    %p
+                      %a{href: "/colleagues.html", target: "_blank"} colleagues.html
+    / #include virtual="/views/layouts/_footer.html"

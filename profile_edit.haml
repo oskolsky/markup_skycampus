@@ -1,0 +1,87 @@
+!!!
+%html.no-js{lang: "ru-RU"}
+  %head
+    %title Редактирование личных данных / SkyCampus
+    / #include virtual="/views/layouts/_head.html"
+  %body
+    / #include virtual="/views/layouts/_alerts.html"
+    / #include virtual="/views/layouts/_header.html"
+    / #include virtual="/views/layouts/_sidebar.html"
+    %nav#nav.nav.clearfix
+      %span.nav_current Редактирование личных данных
+    %section#section.section{role: "main"}
+      .ctn
+        .cols
+          .cols-9.mod
+            %form.form
+              .alert.__error.m-b_4
+                %p Введите адрес электройнной почты
+                %p Введите номер телефона
+              .form_row.m-b_4
+                %label.form_label.form_el.__block Фотография
+                .form_row
+                  .form_file.form_el.__fake.cols-5
+                    %p  
+                    %input.form_file.form_el.__real{type: "file"}/
+              .m-b_4
+                .form_row
+                  %label.form_label.form_el.__block{"data-required" => "after"} Имя
+                  %input.form_text.__l.cols-5{autofocus: "autofocus", required: "", type: "text"}/
+                .form_row
+                  %label.form_label.form_el.__block{"data-required" => "after"} Фамилия
+                  %input.form_text.__l.cols-5{required: "", type: "text"}/
+                .form_row
+                  %label.form_label.form_el.__block Отчество
+                  %input.form_text.__l.cols-5{type: "text"}/
+              .form_row.m-b_4
+                %label.form_label.form_el.__block Дата рождения
+                .form_select.form_el.__fake
+                  %p  
+                  %select.form_select.form_el.__real
+                    %option{selected: "selected"} 1986
+                    %option 1985
+                    %option 1984
+                    %option 1983
+                .form_select.form_el.__fake{style: "margin: 0 2rem;"}
+                  %p  
+                  %select.form_select.form_el.__real
+                    %option{selected: "selected"} Январь
+                    %option Февраль
+                    %option Март
+                    %option Апрель
+                    %option Май
+                    %option Июнь
+                    %option Июль
+                    %option Август
+                    %option Сентябрь
+                    %option Октябрь
+                    %option Ноябрь
+                    %option Декабрь
+                .form_select.form_el.__fake
+                  %p  
+                  %select.form_select.form_el.__real
+                    %option{selected: "selected"} 01
+                    %option 02
+                    %option 03
+                    %option 04
+              .m-b_4
+                .form_row
+                  %label.form_label.form_el.__block{"data-required" => "after"} Телефон
+                  %input.form_text.__l.cols-3{"data-valid" => "false", required: "", type: "tel"}/
+                .form_row
+                  %label.form_label.form_el.__block{"data-required" => "after"} E-mail
+                  %input.form_text.__l.cols-3{"data-valid" => "false", required: "", type: "email"}/
+                .form_row
+                  %label.form_label.form_el.__block Скайп
+                  %input.form_text.__l.cols-3{type: "text"}/
+              .form_row.m-b_4
+                %a.form_button.__default.__s.cols-4{"data-dialog" => "social_profile", href: "#"} Аккаунты социальных сетей
+              .form_row.m-b_4
+                %a.form_button.__default.__s.cols-2{"data-dialog" => "change_password", href: "#"} Сменить пароль
+              .form_row.m-b_4
+                %label.form_label{for: "checkbox"}
+                  %span.form_checkbox.form_el.__fake
+                    %input#checkbox.form_checkbox.form_el.__real{type: "checkbox"}/
+                  получать смс уведомления
+              %input.form_button.__color.__l.cols-3{type: "submit", value: "Сохранить"}/
+    / #include virtual="/views/layouts/_footer.html"

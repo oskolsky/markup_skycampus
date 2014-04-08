@@ -1,0 +1,36 @@
+!!!
+%html.no-js{lang: "ru-RU"}
+  %head
+    %title Преподаватели / SkyCampus
+    / #include virtual="/views/layouts/_head.html"
+  %body
+    / #include virtual="/views/layouts/_alerts.html"
+    / #include virtual="/views/layouts/_header.html"
+    / #include virtual="/views/layouts/_sidebar.html"
+    %nav#nav.nav.clearfix
+      .f-l
+        %a.nav_prev{href: "#"}
+        %span.nav_current КолАнал
+        %a.nav_next{href: "#"}
+      .f-r
+        %menu.nav_menu.__color
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "/classes_progress.html"} Успеваемость
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "/classes_schedule.html"} Расписание
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "/classes_tasks.html"} Задания
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "/classes_files.html"} Материалы
+          %li.nav_menu_i
+            %a.nav_menu_i_a.__current{href: "/classes_teachers.html"} Преподы
+    %section#section.section{role: "main"}
+      .ctn
+        .cols
+          .cols-9.mod
+            %h1.section_t Преподаватели
+          .cols-9.mod
+            .teachers
+              / #include virtual="/views/common/_user_item.html"
+              / #include virtual="/views/common/_user_item.html"
+    / #include virtual="/views/layouts/_footer.html"

@@ -1,54 +1,56 @@
-<!DOCTYPE HTML>
-<html lang="ru-RU" class="no-js">
-  <head>
-    <title>Календарь / SkyCampus</title>
-    <!--#include virtual="/views/layouts/_head.html" -->
-  </head>
-  <body>
-    <!--#include virtual="/views/layouts/_alerts.html" -->
-    <!--#include virtual="/views/layouts/_header.html" -->
-    <!--#include virtual="/views/layouts/_sidebar.html" -->
-    <nav id="nav" class="nav clearfix">
-      <div class="f-l">
-        <a href="#" class="nav_a nav_prev" data-nav="prev"></a><span class="nav_current">Август 2013</span><a href="#" class="nav_a nav_next" data-nav="next"></a>
-      </div>
-      <div class="f-r">
-        <a href="#" class="form_button __color __s cols-2" id="today-button" style="margin-right: 2rem;">Сегодня</a>
-        <menu class="nav_menu __color" id="calendar-view">
-          <li class="nav_menu_i"><a href="#" class="nav_menu_i_a" data-view="agendaDay">День</a></li>
-          <li class="nav_menu_i"><a href="#" class="nav_menu_i_a __current" data-view="agendaWeek">Неделя</a></li>
-          <li class="nav_menu_i"><a href="#" class="nav_menu_i_a" data-view="month">Месяц</a></li>
-        </menu>
-      </div>
-    </nav>
-    <section id="section" class="section" role="main">
-      <div class="calendar">
-        <nav class="calendar_nav clearfix m-b_2">
-          <div class="f-l calendar_nav_checkbox">
-            <label class="form_label calendar_nav_checkbox_i">
-              <span class="form_checkbox form_el __fake"><input type="checkbox" class="form_checkbox form_el __real"></span>Учебный
-            </label>
-            <label class="form_label calendar_nav_checkbox_i">
-              <span class="form_checkbox form_el __fake"><input type="checkbox" class="form_checkbox form_el __real"></span>Личный
-            </label>
-          </div>
-          <div class="f-r">
-            <menu class="nav_menu __default calendar_nav_menu">
-              <li class="nav_menu_i"><a href="#" class="nav_menu_i_a">Все</a></li>
-              <li class="nav_menu_i"><a href="#" class="nav_menu_i_a">Лекции</a></li>
-              <li class="nav_menu_i"><a href="#" class="nav_menu_i_a">Семинары</a></li>
-              <li class="nav_menu_i"><a href="#" class="nav_menu_i_a">Прочее</a></li>
-            </menu>
-            <a href="#" class="form_button __default __s calendar_nav_button cols-2"><b>+</b> Создать событие</a>
-            <a href="#" class="form_button __default __s calendar_nav_button __settings"><i class="ico-16 __settings"></i></a>            
-          </div>
-        </nav>
-        <div id="calendar"></div>
-      </div>
-    </section>
-    <!--#include virtual="/views/layouts/_footer.html" -->
-
-    <script type="text/javascript">
+!!!
+%html.no-js{lang: "ru-RU"}
+  %head
+    %title Календарь / SkyCampus
+    / #include virtual="/views/layouts/_head.html"
+  %body
+    / #include virtual="/views/layouts/_alerts.html"
+    / #include virtual="/views/layouts/_header.html"
+    / #include virtual="/views/layouts/_sidebar.html"
+    %nav#nav.nav.clearfix
+      .f-l
+        %a.nav_a.nav_prev{"data-nav" => "prev", href: "#"}
+        %span.nav_current Август 2013
+        %a.nav_a.nav_next{"data-nav" => "next", href: "#"}
+      .f-r
+        %a#today-button.form_button.__color.__s.cols-2{href: "#", style: "margin-right: 2rem;"} Сегодня
+        %menu#calendar-view.nav_menu.__color
+          %li.nav_menu_i
+            %a.nav_menu_i_a{"data-view" => "agendaDay", href: "#"} День
+          %li.nav_menu_i
+            %a.nav_menu_i_a.__current{"data-view" => "agendaWeek", href: "#"} Неделя
+          %li.nav_menu_i
+            %a.nav_menu_i_a{"data-view" => "month", href: "#"} Месяц
+    %section#section.section{role: "main"}
+      .calendar
+        %nav.calendar_nav.clearfix.m-b_2
+          .f-l.calendar_nav_checkbox
+            %label.form_label.calendar_nav_checkbox_i
+              %span.form_checkbox.form_el.__fake>
+                %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              Учебный
+            %label.form_label.calendar_nav_checkbox_i
+              %span.form_checkbox.form_el.__fake>
+                %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              Личный
+          .f-r
+            %menu.nav_menu.__default.calendar_nav_menu
+              %li.nav_menu_i
+                %a.nav_menu_i_a{href: "#"} Все
+              %li.nav_menu_i
+                %a.nav_menu_i_a{href: "#"} Лекции
+              %li.nav_menu_i
+                %a.nav_menu_i_a{href: "#"} Семинары
+              %li.nav_menu_i
+                %a.nav_menu_i_a{href: "#"} Прочее
+            %a.form_button.__default.__s.calendar_nav_button.cols-2{href: "#"}
+              %b +
+              Создать событие
+            %a.form_button.__default.__s.calendar_nav_button.__settings{href: "#"}
+              %i.ico-16.__settings
+        #calendar
+    / #include virtual="/views/layouts/_footer.html"
+    :javascript
       $(function() {
 
         var date = new Date();
@@ -140,7 +142,3 @@
         }        
 
       });
-    </script>
-
-  </body>
-</html>

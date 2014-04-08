@@ -1,0 +1,42 @@
+!!!
+%html.no-js{lang: "ru-RU"}
+  %head
+    %title Предметы / SkyCampus
+    / #include virtual="/views/layouts/_head.html"
+  %body
+    / #include virtual="/views/layouts/_alerts.html"
+    / #include virtual="/views/layouts/_header.html"
+    / #include virtual="/views/layouts/_sidebar.html"
+    %nav#nav.nav.clearfix
+      %a.nav_prev{href: "#"}
+      %span.nav_current 2013 / 2 курс / 4 семестр
+      %a.nav_next{href: "#"}
+    %section#section.section{role: "main"}
+      .ctn
+        .cols
+          .cols-3.mod
+            %h1.section_t Предметы
+          .cols-6.mod.tx.__right
+            / #include virtual="/views/classes/_menu.html"
+          .cols-9.mod
+            %table.table
+              %thead
+                %tr
+                  %th
+                    .table_arrow Предмет
+                  %th
+                    .table_arrow Пара
+                  %th
+                    .table_arrow Успеваемость
+              %tbody
+                / #include virtual="/views/classes/_item.html"
+                / #include virtual="/views/classes/_item.html"
+                / #include virtual="/views/classes/_item.html"
+                / #include virtual="/views/classes/_item.html"
+                / #include virtual="/views/classes/_item.html"
+                / #include virtual="/views/classes/_item.html"
+                / #include virtual="/views/classes/_item.html"
+                / #include virtual="/views/classes/_item.html"
+                / #include virtual="/views/classes/_item.html"
+                / #include virtual="/views/classes/_item.html"
+    / #include virtual="/views/layouts/_footer.html"

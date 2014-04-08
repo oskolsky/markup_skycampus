@@ -1,0 +1,19 @@
+!!!
+%html.no-js{lang: "ru-RU"}
+  %head
+    %title Одногруппники / SkyCampus
+    / #include virtual="/views/layouts/_head.html"
+  %body
+    / #include virtual="/views/layouts/_alerts.html"
+    / #include virtual="/views/layouts/_header.html"
+    / #include virtual="/views/layouts/_sidebar.html"
+    %nav#nav.nav.clearfix
+      %span.nav_current Одногруппники
+    %section#section.section{role: "main"}
+      .ctn
+        .cols
+          .cols-9.mod
+            .teachers
+              / #include virtual="/views/common/_user_item.html"
+              / #include virtual="/views/common/_user_item.html"
+    / #include virtual="/views/layouts/_footer.html"

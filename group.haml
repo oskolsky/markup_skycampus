@@ -1,0 +1,44 @@
+!!!
+%html.no-js{lang: "ru-RU"}
+  %head
+    %title Группы / SkyCampus
+    / #include virtual="/views/layouts/_head.html"
+  %body
+    / #include virtual="/views/layouts/_alerts.html"
+    / #include virtual="/views/layouts/_header.html"
+    / #include virtual="/views/layouts/_sidebar.html"
+    %nav#nav.nav.clearfix
+      %span.nav_current Все группы
+    %section#section.section{role: "main"}
+      .ctn
+        .cols
+          .cols-2.offset-5.mod
+            %a.form_button.__default.__s.cols-2{href: "#"}
+              %b +
+              Добавить задание
+          .cols-2.mod
+            %a.form_button.__default.__s.cols-2{href: "#"}
+              %b +
+              Добавить материал
+          .cols-9.mod
+            %table.table
+              %thead
+                %tr
+                  %th
+                    .table_arrow Группа
+                  %th
+                    .table_arrow Предмет
+                  %th
+                    .table_arrow Пара
+              %tbody
+                / #include virtual="/views/group/_item.html"
+                / #include virtual="/views/group/_item.html"
+                / #include virtual="/views/group/_item.html"
+                / #include virtual="/views/group/_item.html"
+                / #include virtual="/views/group/_item.html"
+                / #include virtual="/views/group/_item.html"
+                / #include virtual="/views/group/_item.html"
+                / #include virtual="/views/group/_item.html"
+                / #include virtual="/views/group/_item.html"
+                / #include virtual="/views/group/_item.html"
+    / #include virtual="/views/layouts/_footer.html"

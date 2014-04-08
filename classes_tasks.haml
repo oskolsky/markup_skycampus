@@ -1,0 +1,64 @@
+!!!
+%html.no-js{lang: "ru-RU"}
+  %head
+    %title Задания / SkyCampus
+    / #include virtual="/views/layouts/_head.html"
+  %body
+    / #include virtual="/views/layouts/_alerts.html"
+    / #include virtual="/views/layouts/_header.html"
+    / #include virtual="/views/layouts/_sidebar.html"
+    %nav#nav.nav.clearfix
+      .f-l
+        %a.nav_prev{href: "#"}
+        %span.nav_current КолАнал
+        %a.nav_next{href: "#"}
+      .f-r
+        %menu.nav_menu.__color
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "/classes_progress.html"} Успеваемость
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "/classes_schedule.html"} Расписание
+          %li.nav_menu_i
+            %a.nav_menu_i_a.__current{href: "/classes_tasks.html"} Задания
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "/classes_files.html"} Материалы
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "/classes_teachers.html"} Преподы
+    %section#section.section{role: "main"}
+      .ctn
+        .cols
+          .cols-9.mod
+            %h1.section_t Задания
+          .cols-9.mod
+            %table.table.tasks
+              %thead
+                %tr
+                  %th
+                    .table_arrow Название
+                  %th
+                    .table_arrow Тип
+                  %th
+                    .table_arrow Дата
+              %tbody
+                / #include virtual="/views/classes/tasks/_item_group.html"
+                / #include virtual="/views/classes/tasks/_item.html"
+                / #include virtual="/views/classes/tasks/_item.html"
+                / #include virtual="/views/classes/tasks/_item_group.html"
+                / #include virtual="/views/classes/tasks/_item.html"
+                / #include virtual="/views/classes/tasks/_item.html"
+    / #include virtual="/views/layouts/_footer.html"
+    :javascript
+      $(function() {
+
+        $('.table').find('td').click(function() {
+          if ( $(this).find('.tasks_description').is(':hidden') ) {
+            $(this).find('.tasks_description').slideDown();
+            $(this).find('.tasks_switch').addClass('__current');
+          } else {
+            $(this).find('.tasks_description').slideUp();
+            $(this).find('.tasks_switch').removeClass('__current');
+          }
+          return false;
+        });
+
+      });

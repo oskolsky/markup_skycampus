@@ -1,0 +1,88 @@
+!!!
+%html.no-js{lang: "ru-RU"}
+  %head
+    %title Сообщения / SkyCampus
+    / #include virtual="/views/layouts/_head.html"
+  %body
+    / #include virtual="/views/layouts/_alerts.html"
+    / #include virtual="/views/layouts/_header.html"
+    / #include virtual="/views/layouts/_sidebar.html"
+    %nav#nav.nav.clearfix
+      %span.nav_current Сообщения
+    %section#section.section{role: "main"}
+      .ctn
+        .cols
+          .cols-7.mod
+            .search
+              %form
+                %input.form_text.__s.search_input.cols-3{placeholder: "Поиск", type: "text"}/
+                %a.search_btn{href: "#"}
+          .cols-2.mod
+            %a.form_button.__default.__s.form_el.__block{href: "#"} Написать сообщение
+          .cols-9.mod
+            %section.messages
+              %figure.messages_i.__push.__unread
+                %a{href: "/messages_chat.html"}
+                  .messages_i_left
+                    .user-avatar.__online
+                      %img.user-avatar_img{"data-src" => "/js/vendor/holder.js/48x48/#999:#fff/text: ", height: "48", width: "48"}/
+                    .details
+                      %p.details_user
+                        %b Ксения Бородина
+                      %p.details_time сегодня в 17:06
+                  .messages_i_right
+                    %article.message_i_cnt
+                      %p Не желаешь на наш фестиваль заглянуть?
+                      %p https://vk.com/kfest201
+                %a.messages_i_trash{href: "#trash"}
+                  %i.ico-12.__trash
+              %figure.messages_i.__push
+                %a{href: "/messages_chat.html"}
+                  .messages_i_left
+                    .user-avatar.__online
+                      %img.user-avatar_img{"data-src" => "/js/vendor/holder.js/48x48/#999:#fff/text: ", height: "48", width: "48"}/
+                    .details
+                      %p.details_user
+                        %b Константин Константинопольский
+                      %p.details_time вчера в 12:47
+                  .messages_i_right
+                    %article.message_i_cnt
+                      %p ))
+                %a.messages_i_trash{href: "#trash"}
+                  %i.ico-12.__trash
+              %figure.messages_i.__pull
+                %a{href: "/messages_chat.html"}
+                  .messages_i_left
+                    .user-avatar.__online
+                      %img.user-avatar_img{"data-src" => "/js/vendor/holder.js/48x48/#999:#fff/text: ", height: "48", width: "48"}/
+                    .details
+                      %p.details_user
+                        %b Максим Повстасюк
+                      %p.details_time вчера в 00:16
+                  .messages_i_right
+                    %article.message_i_cnt
+                      %p Ты чего не отвечаешь?
+                %a.messages_i_trash{href: "#trash"}
+                  %i.ico-12.__trash
+              %figure.messages_i.__push.__group
+                %a{href: "/messages_chat.html"}
+                  .messages_i_left
+                    %p.messages_i_group-title
+                      %b Экзамен по МатАну
+                    .users-avatar
+                      .user-avatar.__online
+                        %img.user-avatar_img{"data-src" => "/js/vendor/holder.js/24x24/#999:#fff/text: ", height: "24", width: "24"}/
+                      .user-avatar
+                        %img.user-avatar_img{"data-src" => "/js/vendor/holder.js/24x24/#999:#fff/text: ", height: "24", width: "24"}/
+                      .user-avatar
+                        %img.user-avatar_img{"data-src" => "/js/vendor/holder.js/24x24/#999:#fff/text: ", height: "24", width: "24"}/
+                      .user-avatar.__online
+                        %img.user-avatar_img{"data-src" => "/js/vendor/holder.js/24x24/#999:#fff/text: ", height: "24", width: "24"}/
+                  .messages_i_right
+                    .user-avatar.__online
+                      %img.user-avatar_img{"data-src" => "/js/vendor/holder.js/24x24/#999:#fff/text: ", height: "24", width: "24"}/
+                    %article.message_i_cnt
+                      %p Как решить 3ий пункт?
+                %a.messages_i_trash{href: "#trash"}
+                  %i.ico-12.__trash
+    / #include virtual="/views/layouts/_footer.html"

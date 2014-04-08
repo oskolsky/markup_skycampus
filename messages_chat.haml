@@ -1,0 +1,97 @@
+!!!
+%html.no-js{lang: "ru-RU"}
+  %head
+    %title Чат / SkyCampus
+    / #include virtual="/views/layouts/_head.html"
+  %body
+    / #include virtual="/views/layouts/_alerts.html"
+    / #include virtual="/views/layouts/_header.html"
+    / #include virtual="/views/layouts/_sidebar.html"
+    %nav#nav.nav.clearfix
+      .f-l
+        %a.nav_prev{href: "/messages.html"}
+      .f-r
+        %span.form_button.__color.__s.__removed
+          Максим Повстасюк
+          %a.form_button_remove{href: "#"} ×
+        %span.form_button.__color.__s.__removed
+          Ксения Бородина
+          %a.form_button_remove{href: "#"} ×
+        %span.form_button.__default.__s.__removed
+          Жирайр
+          %a.form_button_remove{href: "#"} ×
+    %section#section.section{role: "main"}
+      .ctn
+        .cols
+          .cols-9.mod
+            .chat
+              %figure.chat_date
+                %p вчера в 17:24
+              %figure.chat_i.__to
+                %figcaption.chat_msg
+                  .user-avatar.__online
+                    %img.user-avatar_img{"data-src" => "/js/vendor/holder.js/32x32/#999:#fff/text: ", height: "32", width: "32"}/
+                  %p.chat_msg_p русик ничем не занимается) тока универ закончил все просит работу найти русик ничем не занимается) тока универ закончил все просит работу найти
+                %a.chat_i_trash{href: "#trash"}
+                  %i.ico-12.__trash
+              %figure.chat_i.__to
+                %figcaption.chat_msg
+                  %p.chat_msg_p русик ничем не занимается) тока универ закончил все просит работу найти
+                %a.chat_i_trash{href: "#trash"}
+                  %i.ico-12.__trash
+              %figure.chat_date
+                %p вчера в 17:24
+              %figure.chat_i.__from
+                %figcaption.chat_msg
+                  %p.chat_msg_p русик ничем не занимается) тока универ закончил все просит работу найти
+                  .user-avatar.__online
+                    %img.user-avatar_img{"data-src" => "/js/vendor/holder.js/32x32/#999:#fff/text: ", height: "32", width: "32"}/
+                %a.chat_i_trash{href: "#trash"}
+                  %i.ico-12.__trash
+              %figure.chat_i.__from
+                %figcaption.chat_msg
+                  %p.chat_msg_p русик ничем не занимается) тока универ закончил все просит работу найти
+                %a.chat_i_trash{href: "#trash"}
+                  %i.ico-12.__trash
+              %figure.chat_i.__from
+                %figcaption.chat_msg
+                  %p.chat_msg_p русик ничем не занимается) тока универ закончил все просит работу найти
+                %a.chat_i_trash{href: "#trash"}
+                  %i.ico-12.__trash
+              %figure.chat_i.__from
+                %figcaption.chat_msg
+                  %p.chat_msg_p.clearfix
+                    %img.f-l{alt: "", height: "150", src: "/img/fake/img_300_300_01.jpg", width: "150"}/
+                    %img.f-l{alt: "", height: "150", src: "/img/fake/img_300_300_02.jpg", width: "150"}/
+                %a.chat_i_trash{href: "#trash"}
+                  %i.ico-12.__trash
+              %figure.chat_date
+                %p вчера в 17:24
+              %figure.chat_i.__to.__unread
+                %figcaption.chat_msg
+                  .user-avatar.__online
+                    %img.user-avatar_img{"data-src" => "/js/vendor/holder.js/32x32/#999:#fff/text: ", height: "32", width: "32"}/
+                  %p.chat_msg_p русик ничем не занимается) тока универ закончил все просит работу найти русик ничем не занимается) тока универ закончил все просит работу найти
+                %a.chat_i_trash{href: "#trash"}
+                  %i.ico-12.__trash
+              %figure.chat_i.__to.__unread
+                %figcaption.chat_msg
+                  %p.chat_msg_p русик ничем не занимается) тока универ закончил все просит работу найти
+                %a.chat_i_trash{href: "#trash"}
+                  %i.ico-12.__trash
+              %figure.chat_i.__to.__unread
+                %figcaption.chat_msg
+                  %p.chat_msg_p.clearfix
+                    %img.f-l{alt: "", height: "150", src: "/img/fake/img_300_300_02.jpg", width: "150"}/
+                    %img.f-l{alt: "", height: "150", src: "/img/fake/img_300_300_01.jpg", width: "150"}/
+                %a.chat_i_trash{href: "#trash"}
+                  %i.ico-12.__trash
+              .chat_new
+                %form.form
+                  .form_ro
+                    .cols
+                      .cols-7.mod
+                        %input.form_text.__l.cols-7{autofocus: "", placeholder: "Введите текст сообщения...", type: "text"}/
+                      .cols-2.mod
+                        %input.form_button.__color.__l.cols-2{type: "submit", value: "Отправить"}/
+    / #include virtual="/views/layouts/_footer.html"

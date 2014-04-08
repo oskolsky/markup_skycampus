@@ -1,0 +1,120 @@
+!!!
+%html.no-js{lang: "ru-RU"}
+  %head
+    %title Успеваемость / SkyCampus
+    / #include virtual="/views/layouts/_head.html"
+  %body
+    / #include virtual="/views/layouts/_alerts.html"
+    / #include virtual="/views/layouts/_header.html"
+    / #include virtual="/views/layouts/_sidebar.html"
+    %nav#nav.nav.clearfix
+      .f-l
+        %a.nav_prev{href: "#"}
+        %span.nav_current КолАнал
+        %a.nav_next{href: "#"}
+      .f-r
+        %menu.nav_menu.__color
+          %li.nav_menu_i
+            %a.nav_menu_i_a.__current{href: "/classes_progress.html"} Успеваемость
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "/classes_schedule.html"} Расписание
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "/classes_tasks.html"} Задания
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "/classes_files.html"} Материалы
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "/classes_teachers.html"} Преподы
+    %section#section.section{role: "main"}
+      .ctn
+        .cols
+          .cols-9.mod
+            %h1.section_t Успеваемость
+          .cols-6.mod
+            .cols.activity
+              .cols-6.mod
+                .activity_t
+                  Общее количество баллов
+                  %b 120
+                  из
+                  %b 180
+                  возможных
+                / #include virtual="/views/common/_progress_l.html"
+              .cols-3.mod
+                / #include virtual="/views/classes/progress/_progress.html"
+                / #include virtual="/views/classes/progress/_progress.html"
+              .cols-3.mod
+                / #include virtual="/views/classes/progress/_progress.html"
+                / #include virtual="/views/classes/progress/_progress.html"
+            %ul.notify
+              %li.notify_i
+                %b 25 апреля
+                получил
+                %b 10
+                баллов за
+                %span Домашнее Задание
+              %li.notify_i
+                %b 27 апреля
+                получил
+                %b 1
+                балл за
+                %span Посещение
+              %li.notify_i
+                %b 2 апреля
+                получил
+                %b 14
+                баллов за
+                %span Домашнее Задание
+              %li.notify_i
+                %b 20 марта
+                получил
+                %b 17
+                баллов за
+                %span Экзамен
+              %li.notify_i
+                %b 1 декабря
+                получил
+                %b 26
+                баллов за
+                %span Курсовыю
+          .cols-3.mod.tx.__right
+            #chart.chart.__activity
+              .chart_total
+    / #include virtual="/views/layouts/_footer.html"
+    :javascript
+      $(function() {
+
+        var color = {
+          default: "#07a6a6",
+          red:     "rgba(192, 57, 43, 1)",
+          orange:  "rgba(230, 126, 34, 1)",
+          yellow:  "rgba(241, 196, 15, 1)",
+          green:   "rgba(39, 174, 96, 1)",
+          blue:    "rgba(41, 128, 185, 1)",
+          violet:  "rgba(155, 89, 182, 1)",
+          gray:    "rgba(149, 165, 166, 1)",
+          dark:    "rgba(44, 62, 80, 1)"
+        };
+
+        var chart = new SingleChart({
+          height: 180,
+          avail: 2 * Math.PI,
+          disp: 1.5 * Math.PI,
+          clockwise: false,
+          border: {
+            size: 40,
+            color: "#e6e6e6"
+          },
+          parts: [
+            {color: color.default, val: 20},
+            {color: color.red,     val: 20},
+            {color: color.orange,  val: 20},
+            {color: color.yellow,  val: 20},
+            {color: color.green,   val: 20},
+            {color: color.blue,    val: 20},
+            {color: color.violet,  val: 20},
+            {color: color.gray,    val: 20},
+            {color: color.dark,    val: 20}
+          ]
+        });
+        chart.createOn('chart');
+      });

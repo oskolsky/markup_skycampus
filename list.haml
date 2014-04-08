@@ -1,0 +1,1306 @@
+!!!
+%html.no-js{lang: "ru-RU"}
+  %head
+    %title Ведомость / SkyCampus
+    / #include virtual="/views/layouts/_head.html"
+  %body
+    / #include virtual="/views/layouts/_alerts.html"
+    / #include virtual="/views/layouts/_header.html"
+    / #include virtual="/views/layouts/_sidebar.html"
+    %nav#nav.nav.clearfix
+      .f-l
+        %a.nav_prev{href: "#"}
+        %span.nav_current ПИНФ-ОД-1
+        %a.nav_next{href: "#"}
+      .f-r
+        %menu#calendar-view.nav_menu.__color
+          %li.nav_menu_i
+            %a.nav_menu_i_a.__current{href: "#"} Ведомость
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "#"} Задания
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "#"} Материалы
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "#"} Студенты
+    %section#section.section{role: "main"}
+      .m-b_2
+        .clearfix
+          .f-l
+            %h1.section_t Ведомость
+          .f-r
+            %menu.nav_menu.__default
+              %li.nav_menu_i
+                %a.nav_menu_i_a.__current{href: "/list.html"} Посещаемость
+              %li.nav_menu_i
+                %a.nav_menu_i_a{href: "/list_rating.html"} Лекции
+              %li.nav_menu_i
+                %a.nav_menu_i_a{href: "/list_rating.html"} Семинары
+              %li.nav_menu_i
+                %a.nav_menu_i_a{href: "/list_rating.html"} Домашние
+              %li.nav_menu_i
+                %a.nav_menu_i_a{href: "/list_rating.html"} Лабораторные
+      .m-b_2
+        %table.fixed-table
+          %thead
+            %tr
+              %th.tx.__center
+                .table_arrow Имя
+              %th.tx.__center
+                .table_arrow 14.08
+              %th.tx.__center
+                .table_arrow 15.08
+              %th.tx.__center
+                .table_arrow 16.08
+              %th.tx.__center
+                .table_arrow 17.08
+              %th.tx.__center
+                .table_arrow 18.08
+              %th.tx.__center.__current
+                .table_arrow 19.08
+              %th.tx.__center
+                .table_arrow 20.08
+              %th.tx.__center
+                .table_arrow 21.08
+              %th.tx.__center
+                .table_arrow 22.08
+              %th.tx.__center
+                .table_arrow 23.08
+              %th.tx.__center
+                .table_arrow 24.08
+              %th.tx.__center
+                .table_arrow 25.08
+              %th.tx.__center
+                .table_arrow 26.08
+              %th.tx.__center
+                .table_arrow 27.08
+              %th.tx.__center
+                .table_arrow 28.08
+              %th.tx.__center
+                .table_arrow 29.08
+              %th.tx.__center
+                .table_arrow 30.08
+              %th.tx.__center
+                .table_arrow 31.08
+              %th.tx.__center
+                .table_arrow 01.09
+              %th.tx.__center
+                .table_arrow 02.09
+          %tbody
+            %tr
+              %td
+                %p.tx.__large
+                  %b Клишенко Фома
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center.__current
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+            %tr
+              %td
+                %p.tx.__large
+                  %b Тинькофф Олег
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center.__current
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+            %tr
+              %td
+                %p.tx.__large
+                  %b Константинопольский Константин
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center.__current
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+            %tr
+              %td
+                %p.tx.__large
+                  %b Авдеев Митрофан
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center.__current
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+            %tr
+              %td
+                %p.tx.__large
+                  %b Сидорова Аксильдия
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center.__current
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+            %tr
+              %td
+                %p.tx.__large
+                  %b Сперанская Екатерина
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center.__current
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+            %tr
+              %td
+                %p.tx.__large
+                  %b Оскольский Максим
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center.__current
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+            %tr
+              %td
+                %p.tx.__large
+                  %b Петропавловский Сигизмунд
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center.__current
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+            %tr
+              %td
+                %p.tx.__large
+                  %b Песков Дмитрий
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center.__current
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+            %tr
+              %td
+                %p.tx.__large
+                  %b Клишенко Фома
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center.__current
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+            %tr
+              %td
+                %p.tx.__large
+                  %b Тинькофф Олег
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center.__current
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+            %tr
+              %td
+                %p.tx.__large
+                  %b Константинопольский Константин
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center.__current
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+            %tr
+              %td
+                %p.tx.__large
+                  %b Авдеев Митрофан
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center.__current
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+            %tr
+              %td
+                %p.tx.__large
+                  %b Сидорова Аксильдия
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center.__current
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+            %tr
+              %td
+                %p.tx.__large
+                  %b Сперанская Екатерина
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center.__current
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+            %tr
+              %td
+                %p.tx.__large
+                  %b Оскольский Максим
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center.__current
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+            %tr
+              %td
+                %p.tx.__large
+                  %b Петропавловский Сигизмунд
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center.__current
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+            %tr
+              %td
+                %p.tx.__large
+                  %b Песков Дмитрий
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center.__current
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+              %td.tx.__center
+                %span.form_checkbox.form_el.__fake
+                  %input.form_checkbox.form_el.__real{type: "checkbox"}/
+      %menu.list-month
+        %li.list-month_i
+          %a.list-month_a.__current{href: "#"} Январь
+        %li.list-month_i
+          %a.list-month_a{href: "#"} Февраль
+        %li.list-month_i
+          %a.list-month_a{href: "#"} Март
+        %li.list-month_i
+          %a.list-month_a{href: "#"} Апрель
+        %li.list-month_i
+          %a.list-month_a{href: "#"} Май
+        %li.list-month_i
+          %a.list-month_a{href: "#"} Июнь
+        %li.list-month_i
+          %a.list-month_a{href: "#"} Июль
+        %li.list-month_i
+          %a.list-month_a{href: "#"} Август
+        %li.list-month_i
+          %a.list-month_a{href: "#"} Сентябрь
+        %li.list-month_i
+          %a.list-month_a{href: "#"} Октябрь
+        %li.list-month_i
+          %a.list-month_a{href: "#"} Ноябрь
+        %li.list-month_i
+          %a.list-month_a{href: "#"} Декабрь
+    / #include virtual="/views/layouts/_footer.html"
+    :javascript
+      $(function() {
+      
+              var h = $(window).outerHeight() - $('.header').outerHeight() - $('.nav').outerHeight() - $('.footer').outerHeight() - 64 * 3;
+      
+      //        h = $('.footer').outerHeight();
+              console.log(h);
+      
+              var fixTable = $('.fixed-table').dataTable({
+                bPaginate: false,
+                bLengthChange: false,
+                bFilter: false,
+                bSort: true,
+                bInfo: false,
+                bAutoWidth: false,
+      
+                sScrollY: h + "px",
+                bScrollInfinite: true,
+      //          bPaginate: false,
+                bScrollCollapse: true,
+      
+      //          bProcessing: true,
+      //          sAjaxSource: "/data/list.json",
+      
+                sScrollX: "100%",
+                sScrollXInner: "150%",
+                bScrollCollapse: true
+              });
+              new FixedColumns(fixTable, {
+                iLeftColumns: 1,
+                iLeftWidth: 250
+              });
+      
+      //        $('.list-month').find('.list-month_a').click(function() {
+      //          $('.list-month').find('.__current').removeClass('__current');
+      //          $(this).addClass('__current');
+      //          return false;
+      //        });
+      
+            });

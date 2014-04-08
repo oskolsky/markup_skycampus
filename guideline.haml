@@ -1,0 +1,148 @@
+!!!
+%html.no-js{lang: "ru-RU"}
+  %head
+    %title SkyCampus
+    / #include virtual="/views/layouts/_head.html"
+  %body
+    / #include virtual="/views/layouts/_alerts.html"
+    / #include virtual="/views/layouts/_header.html"
+    / #include virtual="/views/layouts/_sidebar.html"
+    %nav#nav.nav.clearfix
+      %span.nav_current Guideline
+    %section#section.section{role: "main"}
+      .ctn
+        .cols
+          .cols-9.mod
+            %section.m-b_4{"aria-label" => "Dialogs", role: "region"}
+              %h1.m-b_2 Dialogs
+              %p
+                %a{"data-dialog" => "message_new", href: "#"} Написать сообщение
+              %p
+                %a{"data-dialog" => "message_group_new", href: "#"} Написать сообщение группе
+              %p
+                %a#show-push{href: "#"} Новое сообщение
+              %p
+                %a{"data-dialog" => "files_on_group", href: "#"} Добавление материала для группы
+              %p
+                %a{"data-dialog" => "files_on_groups", href: "#"} Добавление материала для нескольких групп
+              %p
+                %a{"data-dialog" => "task_on_group", href: "#"} Добавление задания для группы
+              %p
+                %a{"data-dialog" => "task_on_groups", href: "#"} Добавление задания для нескольких групп
+              %p
+                %a{"data-dialog" => "change_password", href: "#"} Сменить пароль
+              %p
+                %a{"data-dialog" => "social_profile", href: "#"} Социальные сети
+            %section{"aria-label" => "Form elements", role: "region"}
+              %h1.m-b_2 Forms
+              %form.form{action: "#"}
+                %fieldset.m-b_4
+                  %legend.form_legend.m-b_2 Button
+                  .form_row
+                    %button.form_button.__default.__s.cols-2 Button default
+                  .form_row
+                    %button.form_button.__color.__s.cols-2 Button color
+                  .form_row
+                    %button.form_button.__default.__l.cols-2 Button default
+                  .form_row
+                    %button.form_button.__color.__l.cols-2 Button color
+                %fieldset.m-b_4
+                  %legend.form_legend.m-b_2 Search
+                  .form_row
+                    .search
+                      %input.form_text.__s.search_input.cols-3{placeholder: "Поиск", type: "text"}/
+                      %a.search_btn{href: "#"}
+                %fieldset.m-b_4
+                  %legend.form_legend.m-b_2 Input
+                  .form_row
+                    %label.form_label.form_el.__block Label
+                    %input.form_text.__s.cols-5{placeholder: "I am Text input", type: "text"}/
+                  .form_row
+                    %label.form_label.form_el.__block Label
+                    %input.form_text.__l.cols-5{placeholder: "I am Text input", type: "text"}/
+                  .form_row.p-r
+                    %input.form_text.__l.__datepiker.cols-2.js-datepicker{placeholder: "Дата...", type: "text"}/
+                %fieldset.m-b_4
+                  %legend.form_legend.m-b_2 Checkbox
+                  .form_row
+                    %span.form_checkbox.form_el.__fake
+                      %input.form_checkbox.form_el.__real{type: "checkbox"}/
+                    %span.form_checkbox.form_el.__fake
+                      %input.form_checkbox.form_el.__real{checked: "checked", type: "checkbox"}/
+                    %span.form_checkbox.form_el.__fake
+                      %input.form_checkbox.form_el.__real{"data-valid" => "false", type: "checkbox"}/
+                    %span.form_checkbox.form_el.__fake
+                      %input.form_checkbox.form_el.__real{checked: "checked", "data-valid" => "true", type: "checkbox"}/
+                    %span.form_checkbox.form_el.__fake
+                      %input.form_checkbox.form_el.__real{disabled: "disabled", type: "checkbox"}/
+                    %span.form_checkbox.form_el.__fake
+                      %input.form_checkbox.form_el.__real{checked: "checked", disabled: "disabled", type: "checkbox"}/
+                  .form_row
+                    %label.form_label{for: "checkbox"}
+                      %span.form_checkbox.form_el.__fake
+                        %input#checkbox.form_checkbox.form_el.__real{type: "checkbox"}/
+                      Checkbox
+                %fieldset.m-b_4
+                  %legend.form_legend.m-b_2 Radiobutton
+                  .form_row
+                    %span.form_radio.form_el.__fake
+                      %input.form_radio.form_el.__real{checked: "checked", name: "radio1", type: "radio"}/
+                    %span.form_radio.form_el.__fake
+                      %input.form_radio.form_el.__real{"data-valid" => "true", name: "radio1", type: "radio"}/
+                    %span.form_radio.form_el.__fake
+                      %input.form_radio.form_el.__real{"data-valid" => "false", name: "radio1", type: "radio"}/
+                    %span.form_radio.form_el.__fake
+                      %input.form_radio.form_el.__real{disabled: "disabled", name: "radio2", type: "radio"}/
+                  .form_row
+                    %label.form_label{for: "radio"}
+                      %span.form_radio.form_el.__fake
+                        %input#radio.form_radio.form_el.__real{name: "radio2", type: "radio"}/
+                      Radio
+                %fieldset.m-b_4
+                  %legend.form_legend.m-b_2 File
+                  .form_row
+                    .form_file.form_el.__fake.cols-5
+                      %p  
+                      %input.form_file.form_el.__real{type: "file"}/
+                %fieldset.m-b_4
+                  %legend.form_legend.m-b_2 Select
+                  .form_row
+                    .form_select.form_el.__fake.cols-5
+                      %p  
+                      %select.form_select.form_el.__real
+                        %option{selected: "selected"} Выберите
+                        %option Первый
+                        %option Второй
+                        %option Третий третий третий третий
+                %fieldset
+                  %legend.form_legend.m-b_2 Textarea
+                  .form_row
+                    %textarea.form_textarea.form_el.__block{placeholder: "I am Textarea", rows: "8"}
+    / #include virtual="/views/layouts/_footer.html"
+    .push-stack
+      / #include virtual="/views/dialogs/_push.html"
+    :javascript
+      $(function() {
+        $.datepicker.regional['ru'] = { 
+          closeText: 'Закрыть', 
+          prevText: '<Пред', 
+          nextText: 'След>', 
+          currentText: 'Сегодня', 
+          monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'], 
+          monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'], 
+          dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'], 
+          dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'], 
+          dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'], 
+          dateFormat: 'dd.mm.yy', 
+          firstDay: 1, 
+          isRTL: false 
+        };
+        $.datepicker.setDefaults($.datepicker.regional['ru']); 
+        $('.js-datepicker').datepicker({
+          prevText: '',
+          nextText: '',
+          showOn: "button",
+          buttonImage: "/img/calendar.png",
+          buttonImageOnly: true
+        });
+      });

@@ -1,0 +1,73 @@
+!!!
+%html.no-js{lang: "ru-RU"}
+  %head
+    %title Расписание / SkyCampus
+    / #include virtual="/views/layouts/_head.html"
+  %body
+    / #include virtual="/views/layouts/_alerts.html"
+    / #include virtual="/views/layouts/_header.html"
+    / #include virtual="/views/layouts/_sidebar.html"
+    %nav#nav.nav.clearfix
+      .f-l
+        %a.nav_prev{href: "#"}
+        %span.nav_current КолАнал
+        %a.nav_next{href: "#"}
+      .f-r
+        %menu.nav_menu.__color
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "/classes_progress.html"} Успеваемость
+          %li.nav_menu_i
+            %a.nav_menu_i_a.__current{href: "/classes_schedule.html"} Расписание
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "/classes_tasks.html"} Задания
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "/classes_files.html"} Материалы
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "/classes_teachers.html"} Преподы
+    %section#section.section{role: "main"}
+      .ctn
+        .cols
+          .cols-9.mod
+            %h1.section_t
+              Расписание
+              %span
+                лекции и семинары проходят по
+                %b нечетным
+                неделям
+          .cols-6.mod
+            .cols.schedule
+              .cols-3.mod
+                .schedule_t
+                  Всего лекций
+                  %b 12
+                / #include virtual="/views/classes/schedule/_progress_1.html"
+                / #include virtual="/views/classes/schedule/_progress_2.html"
+              .cols-3.mod
+                .schedule_t
+                  Всего семинаров
+                  %b 16
+                / #include virtual="/views/classes/schedule/_progress_1.html"
+                / #include virtual="/views/classes/schedule/_progress_2.html"
+            %ul.notify
+              %li.notify_i
+                %i.ico-9.__star.notify_i_ico>
+                Экзамен пройдет
+                %b 1 июня
+              %li.notify_i
+                %b 15 мая
+                семинар
+                %b отменяется
+              %li.notify_i
+                %b 31 мая
+                лекция
+                %b отменяется
+          .cols-3.mod
+            %menu.nav_menu.__default.m-b_2
+              %li.nav_menu_i
+                %a.nav_menu_i_a{href: "#"} Все
+              %li.nav_menu_i
+                %a.nav_menu_i_a{href: "#"} Лекции
+              %li.nav_menu_i
+                %a.nav_menu_i_a{href: "#"} Семинары
+            .datepicker
+    / #include virtual="/views/layouts/_footer.html"

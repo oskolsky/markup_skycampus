@@ -1,0 +1,56 @@
+!!!
+%html.no-js{lang: "ru-RU"}
+  %head
+    %title Дэшборд / SkyCampus
+    / #include virtual="/views/layouts/_head.html"
+  %body
+    / #include virtual="/views/layouts/_alerts.html"
+    / #include virtual="/views/layouts/_header.html"
+    / #include virtual="/views/layouts/_sidebar.html"
+    %nav#nav.nav.clearfix
+      .f-l
+        %span.nav_current Дэшборд
+      .f-r
+        %menu.nav_menu.__color
+          %li.nav_menu_i
+            %a.nav_menu_i_a.__current{href: "#"} Новости
+          %li.nav_menu_i
+            %a.nav_menu_i_a{href: "#"} Комментарии
+    %section#section.section{role: "main"}
+      .ctn
+        .cols
+          .cols-9.mod
+            .dashboard
+              %header.dashboard_h
+                .dashboard_h_checkbox
+                  %label.form_label.dashboard_h_checkbox_i
+                    %span.form_checkbox.form_el.__fake>
+                      %input.form_checkbox.form_el.__real{checked: "checked", type: "checkbox"}/
+                    Задания
+                  %label.form_label.dashboard_h_checkbox_i
+                    %span.form_checkbox.form_el.__fake>
+                      %input.form_checkbox.form_el.__real{checked: "checked", type: "checkbox"}/
+                    Успеваемость
+                  %label.form_label.dashboard_h_checkbox_i
+                    %span.form_checkbox.form_el.__fake>
+                      %input.form_checkbox.form_el.__real{checked: "checked", type: "checkbox"}/
+                    Календарь
+                  %label.form_label.dashboard_h_checkbox_i
+                    %span.form_checkbox.form_el.__fake>
+                      %input.form_checkbox.form_el.__real{checked: "checked", type: "checkbox"}/
+                    Прочее
+              %section.dashboard_b
+                .dashboard_date Сегодня
+                / #include virtual="/views/dashboard/_item.html"
+                / #include virtual="/views/dashboard/_item.html"
+                / #include virtual="/views/dashboard/_item.html"
+                / #include virtual="/views/dashboard/_item.html"
+                / #include virtual="/views/dashboard/_item.html"
+                .dashboard_date Вчера
+                / #include virtual="/views/dashboard/_item.html"
+                / #include virtual="/views/dashboard/_item.html"
+                / #include virtual="/views/dashboard/_item.html"
+                .dashboard_date 28.07.2013
+                / #include virtual="/views/dashboard/_item.html"
+                / #include virtual="/views/dashboard/_item.html"
+    / #include virtual="/views/layouts/_footer.html"
